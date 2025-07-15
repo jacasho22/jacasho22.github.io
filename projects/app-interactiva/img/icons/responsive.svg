@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Fondo circular -->
+  <circle cx="50" cy="50" r="45" fill="#8e2de2" opacity="0.2" />
+  
+  <!-- Dispositivos responsivos -->
+  <!-- Monitor/Desktop -->
+  <rect x="20" y="25" width="45" height="35" rx="2" fill="none" stroke="#8e2de2" stroke-width="2" />
+  <rect x="20" y="60" width="45" height="5" rx="1" fill="#8e2de2" />
+  <rect x="37.5" y="65" width="10" height="3" rx="1" fill="#8e2de2" />
+  
+  <!-- Tablet -->
+  <rect x="70" y="30" width="20" height="30" rx="2" fill="none" stroke="#8e2de2" stroke-width="2" />
+  <circle cx="80" cy="65" r="2" fill="#8e2de2" />
+  
+  <!-- Smartphone -->
+  <rect x="55" y="45" width="10" height="20" rx="2" fill="none" stroke="#8e2de2" stroke-width="2" />
+  <rect x="58" y="67" width="4" height="2" rx="1" fill="#8e2de2" />
+</svg>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web Interactiva</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Aplicación Interactiva</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Aplicación Web Interactiva</h1>
+            <p>Una experiencia de usuario moderna y dinámica con JavaScript, HTML5 y CSS3</p>
+            <a href="#demo" class="btn">Ver Demo</a>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <h2>Características</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Diseño Responsivo</h3>
+                    <p>Adaptable a cualquier dispositivo y tamaño de pantalla</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Interfaz Moderna</h3>
+                    <p>Diseño limpio y atractivo con animaciones suaves</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Alto Rendimiento</h3>
+                    <p>Optimizada para cargar rápidamente y funcionar sin problemas</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3>Accesibilidad</h3>
+                    <p>Diseñada siguiendo las pautas de accesibilidad web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2>Demo Interactiva</h2>
+            <div class="demo-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="tab1">Calculadora</button>
+                    <button class="tab-btn" data-tab="tab2">Todo List</button>
+                    <button class="tab-btn" data-tab="tab3">Galería</button>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                        <div class="calculator">
+                            <div class="calculator-display">
+                                <div class="calculator-operation">0</div>
+                                <div class="calculator-result">0</div>
+                            </div>
+                            <div class="calculator-keys">
+                                <button class="key-operator" data-action="clear">AC</button>
+                                <button class="key-operator" data-action="delete">⌫</button>
+                                <button class="key-operator" data-action="percent">%</button>
+                                <button class="key-operator" data-action="divide">÷</button>
+                                <button class="key-number">7</button>
+                                <button class="key-number">8</button>
+                                <button class="key-number">9</button>
+                                <button class="key-operator" data-action="multiply">×</button>
+                                <button class="key-number">4</button>
+                                <button class="key-number">5</button>
+                                <button class="key-number">6</button>
+                                <button class="key-operator" data-action="subtract">-</button>
+                                <button class="key-number">1</button>
+                                <button class="key-number">2</button>
+                                <button class="key-number">3</button>
+                                <button class="key-operator" data-action="add">+</button>
+                                <button class="key-number">0</button>
+                                <button class="key-number">.</button>
+                                <button class="key-equal" data-action="calculate">=</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                        <div class="todo-app">
+                            <div class="todo-header">
+                                <input type="text" id="todo-input" placeholder="Añadir nueva tarea...">
+                                <button id="add-todo">Añadir</button>
+                            </div>
+                            <ul id="todo-list">
+                                <li class="todo-item">
+                                    <span class="todo-text">Ejemplo de tarea 1</span>
+                                    <div class="todo-actions">
+                                        <button class="todo-complete"><i class="fas fa-check"></i></button>
+                                        <button class="todo-delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </li>
+                                <li class="todo-item">
+                                    <span class="todo-text">Ejemplo de tarea 2</span>
+                                    <div class="todo-actions">
+                                        <button class="todo-complete"><i class="fas fa-check"></i></button>
+                                        <button class="todo-delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                        <div class="gallery">
+                            <div class="gallery-controls">
+                                <button id="prev-img"><i class="fas fa-chevron-left"></i></button>
+                                <button id="next-img"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="gallery-container">
+                                <img src="img/gallery/image1.jpg" alt="Imagen 1" class="gallery-img active">
+                                <img src="img/gallery/image2.jpg" alt="Imagen 2" class="gallery-img">
+                                <img src="img/gallery/image3.jpg" alt="Imagen 3" class="gallery-img">
+                                <img src="img/gallery/stock1.svg" alt="Paisaje Natural" class="gallery-img">
+                                <img src="img/gallery/stock2.svg" alt="Ciudad Nocturna" class="gallery-img">
+                                <img src="img/gallery/stock3.svg" alt="Playa Tropical" class="gallery-img">
+                            </div>
+                            <div class="gallery-thumbnails">
+                                <img src="img/gallery/image1.jpg" alt="Miniatura 1" class="gallery-thumb active" data-index="0">
+                                <img src="img/gallery/image2.jpg" alt="Miniatura 2" class="gallery-thumb" data-index="1">
+                                <img src="img/gallery/image3.jpg" alt="Miniatura 3" class="gallery-thumb" data-index="2">
+                                <img src="img/gallery/stock1.svg" alt="Miniatura 4" class="gallery-thumb" data-index="3">
+                                <img src="img/gallery/stock2.svg" alt="Miniatura 5" class="gallery-thumb" data-index="4">
+                                <img src="img/gallery/stock3.svg" alt="Miniatura 6" class="gallery-thumb" data-index="5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Interesado en implementar una aplicación similar? ¡Contáctame!</p>
+            <a href="../../index.html#contacto" class="btn">Ir al Formulario de Contacto</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Javier C. Castillo Hódar. Todos los derechos reservados.</p>
+            <a href="../../index.html" class="btn btn-outline">Volver al Portfolio</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

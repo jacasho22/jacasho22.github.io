@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <style>
+    .logo-text { font-family: 'Arial', sans-serif; font-weight: bold; font-size: 24px; }
+    .primary { fill: #2563eb; }
+    .secondary { fill: #4f46e5; }
+  </style>
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#2563eb" stroke-width="2" />
+  <path class="primary" d="M30,35 L45,50 L30,65 L35,70 L55,50 L35,30 Z" />
+  <path class="secondary" d="M55,35 L70,50 L55,65 L60,70 L80,50 L60,30 Z" />
+  <text x="50" y="85" text-anchor="middle" class="logo-text primary">P</text>
+</svg>

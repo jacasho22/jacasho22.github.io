@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Funcional Detallado | Metodología y Ejemplos</title>
+    <meta name="description" content="Proyecto de análisis funcional detallado que muestra metodologías, diagramas y ejemplos prácticos para el desarrollo de software.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón de modo oscuro -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo Análisis Funcional">
+                <h1>Análisis Funcional</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introducción</a></li>
+                    <li><a href="#phases">Fases</a></li>
+                    <li><a href="#diagrams">Diagramas</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Análisis Funcional Detallado para Proyectos de Software</h2>
+                <p>Metodología completa para definir requisitos, casos de uso, arquitectura y prototipos que garantizan el éxito de tu proyecto.</p>
+                <a href="#intro" class="btn btn-primary">Descubrir Metodología</a>
+                <a href="#contact" class="btn">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Introducción -->
+    <section id="intro" class="intro">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Qué es el Análisis Funcional?</h2>
+            </div>
+            <div class="intro-content">
+                <div class="intro-text fade-in">
+                    <h3>La base de todo proyecto exitoso</h3>
+                    <p>El análisis funcional es la fase crítica en el desarrollo de software donde se definen y documentan los requisitos del sistema desde la perspectiva del usuario. Es el puente entre las necesidades del negocio y la implementación técnica.</p>
+                    <p>Un análisis funcional detallado permite:</p>
+                    <ul>
+                        <li>Comprender completamente las necesidades del cliente</li>
+                        <li>Definir el alcance exacto del proyecto</li>
+                        <li>Establecer una base sólida para la estimación y planificación</li>
+                        <li>Reducir cambios costosos durante el desarrollo</li>
+                        <li>Facilitar la comunicación entre stakeholders y equipo técnico</li>
+                    </ul>
+                </div>
+                <div class="intro-image slide-in-right">
+                    <img src="img/diagrams/flujo-proceso.svg" alt="Proceso de Análisis Funcional">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Fases -->
+    <section id="phases" class="phases">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fases del Análisis Funcional</h2>
+            </div>
+            <div class="phases-container">
+                <!-- Fase 1: Requisitos -->
+                <div class="phase-card fade-in">
+                    <div class="phase-icon">
+                        <img src="img/icons/requisitos.svg" alt="Recopilación de Requisitos">
+                    </div>
+                    <div class="phase-content">
+                        <h3>Recopilación de Requisitos</h3>
+                        <p>Identificación y documentación de todas las necesidades y expectativas de los stakeholders mediante entrevistas, workshops y técnicas de elicitación.</p>
+                        <p>Incluye requisitos funcionales, no funcionales, restricciones y reglas de negocio.</p>
+                    </div>
+                </div>
+                
+                <!-- Fase 2: Casos de Uso -->
+                <div class="phase-card fade-in">
+                    <div class="phase-icon">
+                        <img src="img/icons/casos-uso.svg" alt="Diseño de Casos de Uso">
+                    </div>
+                    <div class="phase-content">
+                        <h3>Diseño de Casos de Uso</h3>
+                        <p>Modelado de las interacciones entre usuarios y sistema mediante diagramas UML y descripciones detalladas de escenarios principales y alternativos.</p>
+                        <p>Define el comportamiento del sistema desde la perspectiva del usuario.</p>
+                    </div>
+                </div>
+                
+                <!-- Fase 3: Arquitectura -->
+                <div class="phase-card fade-in">
+                    <div class="phase-icon">
+                        <img src="img/icons/arquitectura.svg" alt="Diseño de Arquitectura">
+                    </div>
+                    <div class="phase-content">
+                        <h3>Diseño de Arquitectura</h3>
+                        <p>Definición de la estructura general del sistema, componentes principales, interfaces y flujos de datos.</p>
+                        <p>Establece las bases técnicas para cumplir con los requisitos funcionales y no funcionales.</p>
+                    </div>
+                </div>
+                
+                <!-- Fase 4: Prototipos -->
+                <div class="phase-card fade-in">
+                    <div class="phase-icon">
+                        <img src="img/icons/prototipos.svg" alt="Creación de Prototipos">
+                    </div>
+                    <div class="phase-content">
+                        <h3>Creación de Prototipos</h3>
+                        <p>Desarrollo de wireframes y mockups interactivos que visualizan la interfaz de usuario y los flujos de navegación.</p>
+                        <p>Permite validar conceptos con usuarios finales antes de la implementación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Diagramas -->
+    <section id="diagrams" class="diagrams">
+        <div class="container">
+            <div class="section-title">
+                <h2>Diagramas y Documentación</h2>
+            </div>
+            
+            <!-- Tabs de navegación -->
+            <div class="diagrams-tabs">
+                <button class="tab-btn" data-tab="tab-casos-uso">Casos de Uso</button>
+                <button class="tab-btn" data-tab="tab-arquitectura">Arquitectura</button>
+                <button class="tab-btn" data-tab="tab-wireframe">Wireframes</button>
+                <button class="tab-btn" data-tab="tab-flujo">Flujo de Proceso</button>
+            </div>
+            
+            <!-- Contenido de las tabs -->
+            <div class="tab-contents">
+                <!-- Tab: Casos de Uso -->
+                <div id="tab-casos-uso" class="tab-content">
+                    <div class="diagram-container">
+                        <img src="img/diagrams/casos-uso.svg" alt="Diagrama de Casos de Uso">
+                        <h3>Diagrama de Casos de Uso</h3>
+                        <p>Los diagramas de casos de uso representan las interacciones entre los actores (usuarios u otros sistemas) y el sistema. Cada caso de uso representa una funcionalidad específica que el sistema debe proporcionar.</p>
+                        <p>Este diagrama muestra los principales actores del sistema (Administrador, Usuario y Sistema Externo) y sus interacciones con las funcionalidades clave como gestión de usuarios, proyectos, informes y configuración.</p>
+                    </div>
+                </div>
+                
+                <!-- Tab: Arquitectura -->
+                <div id="tab-arquitectura" class="tab-content">
+                    <div class="diagram-container">
+                        <img src="img/diagrams/arquitectura.svg" alt="Diagrama de Arquitectura">
+                        <h3>Diagrama de Arquitectura</h3>
+                        <p>El diagrama de arquitectura define la estructura general del sistema, mostrando sus componentes principales y cómo interactúan entre sí.</p>
+                        <p>Esta arquitectura en capas separa claramente las responsabilidades: presentación (interfaces de usuario), lógica de negocio (servicios y procesos) y datos (persistencia y acceso). También incluye componentes transversales como seguridad e integración con sistemas externos.</p>
+                    </div>
+                </div>
+                
+                <!-- Tab: Wireframe -->
+                <div id="tab-wireframe" class="tab-content">
+                    <div class="diagram-container">
+                        <img src="img/diagrams/wireframe.svg" alt="Wireframe de Interfaz">
+                        <h3>Wireframe de Interfaz</h3>
+                        <p>Los wireframes son representaciones visuales de bajo nivel que muestran la estructura y organización de las interfaces de usuario, sin entrar en detalles de diseño gráfico.</p>
+                        <p>Este wireframe muestra la pantalla de gestión de usuarios con una barra de navegación lateral, un área de búsqueda, una tabla de datos y controles de paginación. Define la ubicación de los elementos sin especificar colores o estilos finales.</p>
+                    </div>
+                </div>
+                
+                <!-- Tab: Flujo de Proceso -->
+                <div id="tab-flujo" class="tab-content">
+                    <div class="diagram-container">
+                        <img src="img/diagrams/flujo-proceso.svg" alt="Diagrama de Flujo de Proceso">
+                        <h3>Diagrama de Flujo de Proceso</h3>
+                        <p>Los diagramas de flujo representan la secuencia de actividades y decisiones en un proceso, mostrando el orden lógico de las operaciones.</p>
+                        <p>Este diagrama muestra el proceso completo de análisis funcional, desde la recopilación inicial de requisitos hasta la validación final, incluyendo ciclos de refinamiento y ajustes basados en feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Beneficios del Análisis Funcional Detallado</h2>
+            </div>
+            <div class="benefits-container">
+                <!-- Beneficio 1 -->
+                <div class="benefit-item slide-in-left">
+                    <div class="benefit-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Reducción de Riesgos</h3>
+                        <p>Identificación temprana de problemas potenciales y requisitos conflictivos, minimizando cambios costosos durante el desarrollo.</p>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 2 -->
+                <div class="benefit-item slide-in-left">
+                    <div class="benefit-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Optimización de Costos</h3>
+                        <p>Estimaciones más precisas y menor cantidad de retrabajos, resultando en un uso más eficiente de recursos y presupuesto.</p>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 3 -->
+                <div class="benefit-item slide-in-right">
+                    <div class="benefit-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Mejor Comunicación</h3>
+                        <p>Lenguaje común entre stakeholders técnicos y no técnicos, facilitando el entendimiento y alineación de expectativas.</p>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 4 -->
+                <div class="benefit-item slide-in-right">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Mayor Calidad</h3>
+                        <p>Base sólida para pruebas exhaustivas y validación, asegurando que el producto final cumpla con todos los requisitos.</p>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 5 -->
+                <div class="benefit-item slide-in-left">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Reducción de Tiempo</h3>
+                        <p>Desarrollo más eficiente al tener claridad desde el inicio, evitando retrasos por malentendidos o cambios de alcance.</p>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 6 -->
+                <div class="benefit-item slide-in-right">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Satisfacción del Cliente</h3>
+                        <p>Producto final que se alinea perfectamente con las expectativas y necesidades reales de los usuarios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item zoom-in">
+                    <div class="stat-number">
+                        <span class="counter" data-target="85">0</span>%
+                    </div>
+                    <div class="stat-label">Reducción de cambios durante el desarrollo</div>
+                </div>
+                
+                <div class="stat-item zoom-in">
+                    <div class="stat-number">
+                        <span class="counter" data-target="40">0</span>%
+                    </div>
+                    <div class="stat-label">Ahorro en costos de implementación</div>
+                </div>
+                
+                <div class="stat-item zoom-in">
+                    <div class="stat-number">
+                        <span class="counter" data-target="95">0</span>%
+                    </div>
+                    <div class="stat-label">Satisfacción de clientes</div>
+                </div>
+                
+                <div class="stat-item zoom-in">
+                    <div class="stat-number">
+                        <span class="counter" data-target="30">0</span>%
+                    </div>
+                    <div class="stat-label">Reducción en tiempo de desarrollo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Llamada a la Acción -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para mejorar tus proyectos de software?</h2>
+            <p>Implementa un análisis funcional detallado en tu próximo proyecto y experimenta la diferencia en calidad, tiempo y costos.</p>
+            <a href="#contact" class="btn btn-accent">Solicitar Consultoría</a>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>¿Tienes alguna pregunta?</h3>
+                    <p>Estamos aquí para ayudarte a implementar un análisis funcional detallado en tu próximo proyecto. Contáctanos para una consultoría personalizada.</p>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@analisis-funcional.com</span>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+34 91 123 45 67</span>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Calle Gran Vía 123, Madrid, España</span>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Tu email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="Tu mensaje"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        
+                        <div id="form-message" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Análisis Funcional</h3>
+                    <p>Metodología completa para definir requisitos, casos de uso, arquitectura y prototipos que garantizan el éxito de tu proyecto de software.</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#intro">Introducción</a></li>
+                        <li><a href="#phases">Fases</a></li>
+                        <li><a href="#diagrams">Diagramas</a></li>
+                        <li><a href="#benefits">Beneficios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Guía de Análisis Funcional</a></li>
+                        <li><a href="#">Plantillas de Documentación</a></li>
+                        <li><a href="#">Ejemplos de Casos de Uso</a></li>
+                        <li><a href="#">Herramientas Recomendadas</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Análisis Funcional. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Inicializar contadores cuando se carga la página -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar contadores
+            initCounters();
+        });
+    </script>
+</body>
+</html>

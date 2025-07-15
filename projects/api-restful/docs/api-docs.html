@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación API RESTful</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2c3e50;
+      --success-color: #2ecc71;
+      --warning-color: #f1c40f;
+      --danger-color: #e74c3c;
+      --light-color: #ecf0f1;
+      --dark-color: #2c3e50;
+      --code-bg: #f8f9fa;
+      --border-color: #ddd;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 20px 0;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    
+    .sidebar-header {
+      padding: 0 20px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .sidebar-header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+    
+    .sidebar-header p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    
+    .sidebar-nav {
+      margin-top: 20px;
+    }
+    
+    .sidebar-nav h2 {
+      padding: 10px 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.8;
+    }
+    
+    .sidebar-nav ul {
+      list-style: none;
+    }
+    
+    .sidebar-nav li a {
+      display: block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .sidebar-nav li a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .sidebar-nav li a.active {
+      background-color: var(--primary-color);
+      border-left: 4px solid white;
+    }
+    
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      margin-left: 250px;
+    }
+    
+    .section {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .section h2 {
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .section h3 {
+      color: var(--primary-color);
+      margin: 25px 0 15px;
+    }
+    
+    .section p {
+      margin-bottom: 15px;
+    }
+    
+    .endpoint {
+      margin-bottom: 30px;
+      border: 1px solid var(--border-color);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .endpoint-header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .method {
+      padding: 5px 10px;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      margin-right: 15px;
+      min-width: 60px;
+      text-align: center;
+    }
+    
+    .get { background-color: var(--primary-color); }
+    .post { background-color: var(--success-color); }
+    .put { background-color: var(--warning-color); }
+    .delete { background-color: var(--danger-color); }
+    
+    .endpoint-path {
+      font-family: monospace;
+      font-size: 1rem;
+    }
+    
+    .endpoint-body {
+      padding: 15px;
+    }
+    
+    .endpoint-description {
+      margin-bottom: 15px;
+    }
+    
+    .params-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+    
+    .params-table th,
+    .params-table td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .params-table th {
+      background-color: #f8f9fa;
+    }
+    
+    .code-block {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      padding: 15px;
+      font-family: monospace;
+      overflow-x: auto;
+      margin-bottom: 15px;
+    }
+    
+    .response-example {
+      margin-top: 15px;
+    }
+    
+    .status-code {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      margin-right: 10px;
+    }
+    
+    .status-200 { background-color: var(--success-color); color: white; }
+    .status-201 { background-color: var(--success-color); color: white; }
+    .status-204 { background-color: var(--light-color); color: var(--dark-color); }
+    .status-400 { background-color: var(--warning-color); color: var(--dark-color); }
+    .status-401 { background-color: var(--warning-color); color: var(--dark-color); }
+    .status-403 { background-color: var(--warning-color); color: var(--dark-color); }
+    .status-404 { background-color: var(--warning-color); color: var(--dark-color); }
+    .status-500 { background-color: var(--danger-color); color: white; }
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>API RESTful</h1>
+        <p>v1.0.0</p>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <h2>Documentación</h2>
+        <ul>
+          <li><a href="#introduccion" class="active">Introducción</a></li>
+          <li><a href="#autenticacion">Autenticación</a></li>
+          <li><a href="#errores">Manejo de Errores</a></li>
+        </ul>
+        
+        <h2>Endpoints</h2>
+        <ul>
+          <li><a href="#auth-endpoints">Autenticación</a></li>
+          <li><a href="#users-endpoints">Usuarios</a></li>
+          <li><a href="#products-endpoints">Productos</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <main class="main-content">
+      <section id="introduccion" class="section">
+        <h2>Introducción</h2>
+        <p>Bienvenido a la documentación de nuestra API RESTful. Esta API proporciona acceso a recursos como usuarios y productos, con funcionalidades completas de CRUD (Crear, Leer, Actualizar, Eliminar).</p>
+        
+        <h3>Base URL</h3>
+        <p>Todas las URLs referenciadas en la documentación tienen la siguiente base:</p>
+        <div class="code-block">http://localhost:3000/api/v1</div>
+        
+        <h3>Formatos de Respuesta</h3>
+        <p>La API devuelve datos en formato JSON. Cada respuesta incluirá los datos solicitados o un mensaje de error cuando corresponda.</p>
+      </section>
+      
+      <section id="autenticacion" class="section">
+        <h2>Autenticación</h2>
+        <p>La API utiliza autenticación basada en tokens JWT (JSON Web Tokens). Para acceder a endpoints protegidos, debes incluir el token en el encabezado de autorización.</p>
+        
+        <h3>Obtener un Token</h3>
+        <p>Para obtener un token, debes autenticarte usando el endpoint <code>/auth/login</code>.</p>
+        
+        <h3>Usar el Token</h3>
+        <p>Una vez obtenido el token, inclúyelo en el encabezado de autorización de tus solicitudes:</p>
+        <div class="code-block">Authorization: Bearer &lt;tu_token&gt;</div>
+        
+        <h3>Expiración del Token</h3>
+        <p>Los tokens tienen una validez limitada (por defecto, 1 hora). Después de este tiempo, necesitarás obtener un nuevo token.</p>
+      </section>
+      
+      <section id="errores" class="section">
+        <h2>Manejo de Errores</h2>
+        <p>La API utiliza códigos de estado HTTP estándar para indicar el éxito o fracaso de una solicitud.</p>
+        
+        <h3>Códigos de Estado</h3>
+        <ul>
+          <li><strong>200 OK</strong>: La solicitud se completó con éxito</li>
+          <li><strong>201 Created</strong>: El recurso se creó correctamente</li>
+          <li><strong>204 No Content</strong>: La solicitud se completó pero no hay contenido para devolver</li>
+          <li><strong>400 Bad Request</strong>: La solicitud es inválida o no puede ser procesada</li>
+          <li><strong>401 Unauthorized</strong>: Autenticación requerida o fallida</li>
+          <li><strong>403 Forbidden</strong>: No tienes permiso para acceder al recurso</li>
+          <li><strong>404 Not Found</strong>: El recurso solicitado no existe</li>
+          <li><strong>500 Internal Server Error</strong>: Error en el servidor</li>
+        </ul>
+        
+        <h3>Formato de Error</h3>
+        <p>Cuando ocurre un error, la respuesta incluirá un objeto JSON con información sobre el error:</p>
+        <div class="code-block">{
+  "error": "Mensaje de error",
+  "details": ["Detalles adicionales"] // opcional
+}</div>
+      </section>
+      
+      <section id="auth-endpoints" class="section">
+        <h2>Endpoints de Autenticación</h2>
+        
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method post">POST</span>
+            <span class="endpoint-path">/auth/login</span>
+          </div>
+          <div class="endpoint-body">
+            <div class="endpoint-description">
+              <p>Inicia sesión y obtiene un token de autenticación.</p>
+            </div>
+            
+            <h4>Parámetros de Solicitud</h4>
+            <table class="params-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Requerido</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>username</td>
+                  <td>string</td>
+                  <td>Sí</td>
+                  <td>Nombre de usuario</td>
+                </tr>
+                <tr>
+                  <td>password</td>
+                  <td>string</td>
+                  <td>Sí</td>
+                  <td>Contraseña</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h4>Ejemplo de Solicitud</h4>
+            <div class="code-block">{
+  "username": "admin",
+  "password": "admin123"
+}</div>
+            
+            <div class="response-example">
+              <h4>Respuesta Exitosa</h4>
+              <span class="status-code status-200">200 OK</span>
+              <div class="code-block">{
+  "message": "Inicio de sesión exitoso",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "expiresIn": "1h"
+}</div>
+            </div>
+            
+            <div class="response-example">
+              <h4>Respuesta de Error</h4>
+              <span class="status-code status-400">400 Bad Request</span>
+              <div class="code-block">{
+  "error": "Se requiere nombre de usuario y contraseña"
+}</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method post">POST</span>
+            <span class="endpoint-path">/auth/register</span>
+          </div>
+          <div class="endpoint-body">
+            <div class="endpoint-description">
+              <p>Registra un nuevo usuario.</p>
+            </div>
+            
+            <h4>Parámetros de Solicitud</h4>
+            <table class="params-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Requerido</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>username</td>
+                  <td>string</td>
+                  <td>Sí</td>
+                  <td>Nombre de usuario</td>
+                </tr>
+                <tr>
+                  <td>email</td>
+                  <td>string</td>
+                  <td>Sí</td>
+                  <td>Correo electrónico</td>
+                </tr>
+                <tr>
+                  <td>password</td>
+                  <td>string</td>
+                  <td>Sí</td>
+                  <td>Contraseña</td>
+                </tr>
+                <tr>
+                  <td>firstName</td>
+                  <td>string</td>
+                  <td>No</td>
+                  <td>Nombre</td>
+                </tr>
+                <tr>
+                  <td>lastName</td>
+                  <td>string</td>
+                  <td>No</td>
+                  <td>Apellido</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="response-example">
+              <h4>Respuesta Exitosa</h4>
+              <span class="status-code status-201">201 Created</span>
+              <div class="code-block">{
+  "message": "Usuario registrado exitosamente",
+  "user": {
+    "username": "newuser",
+    "email": "user@example.com",
+    "firstName": "John",
+    "lastName": "Doe",
+    "role": "user"
+  }
+}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="users-endpoints" class="section">
+        <h2>Endpoints de Usuarios</h2>
+        
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="endpoint-path">/users</span>
+          </div>
+          <div class="endpoint-body">
+            <div class="endpoint-description">
+              <p>Obtiene una lista de usuarios. Requiere autenticación y rol de administrador.</p>
+            </div>
+            
+            <h4>Parámetros de Consulta</h4>
+            <table class="params-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Requerido</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>page</td>
+                  <td>integer</td>
+                  <td>No</td>
+                  <td>Número de página (por defecto: 1)</td>
+                </tr>
+                <tr>
+                  <td>limit</td>
+                  <td>integer</td>
+                  <td>No</td>
+                  <td>Resultados por página (por defecto: 10)</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="response-example">
+              <h4>Respuesta Exitosa</h4>
+              <span class="status-code status-200">200 OK</span>
+              <div class="code-block">{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "admin",
+      "createdAt": "2023-01-01T00:00:00.000Z",
+      "updatedAt": "2023-01-01T00:00:00.000Z",
+      "lastLogin": null,
+      "active": true
+    },
+    // más usuarios...
+  ],
+  "pagination": {
+    "total": 3,
+    "page": 1,
+    "limit": 10,
+    "pages": 1
+  }
+}</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="endpoint-path">/users/:id</span>
+          </div>
+          <div class="endpoint-body">
+            <div class="endpoint-description">
+              <p>Obtiene un usuario por su ID. Requiere autenticación.</p>
+            </div>
+            
+            <h4>Parámetros de Ruta</h4>
+            <table class="params-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Requerido</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>id</td>
+                  <td>string</td>
+                  <td>Sí</td>
+                  <td>ID del usuario</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="response-example">
+              <h4>Respuesta Exitosa</h4>
+              <span class="status-code status-200">200 OK</span>
+              <div class="code-block">{
+  "id": "1",
+  "username": "admin",
+  "email": "admin@example.com",
+  "firstName": "Admin",
+  "lastName": "User",
+  "role": "admin",
+  "createdAt": "2023-01-01T00:00:00.000Z",
+  "updatedAt": "2023-01-01T00:00:00.000Z",
+  "lastLogin": null,
+  "active": true
+}</div>
+            </div>
+            
+            <div class="response-example">
+              <h4>Respuesta de Error</h4>
+              <span class="status-code status-404">404 Not Found</span>
+              <div class="code-block">{
+  "error": "Usuario no encontrado"
+}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="products-endpoints" class="section">
+        <h2>Endpoints de Productos</h2>
+        
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="endpoint-path">/products</span>
+          </div>
+          <div class="endpoint-body">
+            <div class="endpoint-description">
+              <p>Obtiene una lista de productos con opciones de filtrado, ordenamiento y paginación.</p>
+            </div>
+            
+            <h4>Parámetros de Consulta</h4>
+            <table class="params-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Requerido</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>category</td>
+                  <td>string</td>
+                  <td>No</td>
+                  <td>Filtrar por categoría</td>
+                </tr>
+                <tr>
+                  <td>minPrice</td>
+                  <td>number</td>
+                  <td>No</td>
+                  <td>Precio mínimo</td>
+                </tr>
+                <tr>
+                  <td>maxPrice</td>
+                  <td>number</td>
+                  <td>No</td>
+                  <td>Precio máximo</td>
+                </tr>
+                <tr>
+                  <td>inStock</td>
+                  <td>boolean</td>
+                  <td>No</td>
+                  <td>Filtrar productos en stock</td>
+                </tr>
+                <tr>
+                  <td>featured</td>
+                  <td>boolean</td>
+                  <td>No</td>
+                  <td>Filtrar productos destacados</td>
+                </tr>
+                <tr>
+                  <td>sort</td>
+                  <td>string</td>
+                  <td>No</td>
+                  <td>Ordenar por (price_asc, price_desc, name_asc, name_desc, rating)</td>
+                </tr>
+                <tr>
+                  <td>page</td>
+                  <td>integer</td>
+                  <td>No</td>
+                  <td>Número de página (por defecto: 1)</td>
+                </tr>
+                <tr>
+                  <td>limit</td>
+                  <td>integer</td>
+                  <td>No</td>
+                  <td>Resultados por página (por defecto: 10)</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="response-example">
+              <h4>Respuesta Exitosa</h4>
+              <span class="status-code status-200">200 OK</span>
+              <div class="code-block">{
+  "products": [
+    {
+      "id": "1",
+      "name": "Smartphone XYZ",
+      "description": "Smartphone de última generación...",
+      "price": 599.99,
+      "category": "electronics",
+      "tags": ["smartphone", "tech", "camera"],
+      "stock": 50,
+      "images": ["smartphone1.jpg", "smartphone2.jpg"],
+      "featured": true,
+      "rating": { "average": 4.5, "count": 120 },
+      "createdAt": "2023-01-10T00:00:00.000Z",
+      "updatedAt": "2023-01-10T00:00:00.000Z",
+      "active": true
+    },
+    // más productos...
+  ],
+  "pagination": {
+    "total": 4,
+    "page": 1,
+    "limit": 10,
+    "pages": 1
+  }
+}</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method post">POST</span>
+            <span class="endpoint-path">/products/:id/rate</span>
+          </div>
+          <div class="endpoint-body">
+            <div class="endpoint-description">
+              <p>Añade una calificación a un producto. Requiere autenticación.</p>
+            </div>
+            
+            <h4>Parámetros de Ruta</h4>
+            <table class="params-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Requerido</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>id</td>
+                  <td>string</td>
+                  <td>Sí</td>
+                  <td>ID del producto</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h4>Parámetros de Solicitud</h4>
+            <table class="params-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Requerido</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>rating</td>
+                  <td>number</td>
+                  <td>Sí</td>
+                  <td>Calificación (1-5)</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h4>Ejemplo de Solicitud</h4>
+            <div class="code-block">{
+  "rating": 4
+}</div>
+            
+            <div class="response-example">
+              <h4>Respuesta Exitosa</h4>
+              <span class="status-code status-200">200 OK</span>
+              <div class="code-block">{
+  "message": "Calificación añadida correctamente",
+  "rating": {
+    "average": 4.4,
+    "count": 121
+  }
+}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script>
+    // Script para manejar la navegación en la barra lateral
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.sidebar-nav a');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          // Eliminar clase active de todos los enlaces
+          navLinks.forEach(l => l.classList.remove('active'));
+          
+          // Añadir clase active al enlace clickeado
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

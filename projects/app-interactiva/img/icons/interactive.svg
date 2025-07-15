@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Fondo circular -->
+  <circle cx="50" cy="50" r="45" fill="#8e2de2" opacity="0.2" />
+  
+  <!-- Mano interactiva -->
+  <path d="M40,65 L40,40 C40,37.791 41.791,36 44,36 C46.209,36 48,37.791 48,40 L48,60" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+  <path d="M48,60 L48,45 C48,42.791 49.791,41 52,41 C54.209,41 56,42.791 56,45 L56,60" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+  <path d="M56,60 L56,50 C56,47.791 57.791,46 60,46 C62.209,46 64,47.791 64,50 L64,60" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+  <path d="M64,60 L64,55 C64,52.791 65.791,51 68,51 C70.209,51 72,52.791 72,55 L72,65 C72,70 68,75 60,75 L45,75 C37,75 35,70 35,65 L35,60" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Ondas de interacción -->
+  <path d="M25,40 Q35,35 25,30" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+  <path d="M20,50 Q30,45 20,40" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+  <path d="M75,40 Q85,35 75,30" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+  <path d="M80,50 Q90,45 80,40" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" />
+</svg>

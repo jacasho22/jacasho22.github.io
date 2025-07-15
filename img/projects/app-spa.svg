@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#41B883" />
+      <stop offset="100%" stop-color="#34495E" />
+    </linearGradient>
+    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f8f9fa" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo principal -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Representación de una SPA con navegación y contenido dinámico -->
+  <!-- Barra de navegación -->
+  <rect x="50" y="50" width="700" height="60" rx="5" ry="5" fill="#35495E" />
+  
+  <!-- Logo de Vue.js (simplificado) -->
+  <polygon points="100,60 115,80 130,60 115,70" fill="#41B883" />
+  
+  <!-- Enlaces de navegación -->
+  <rect x="200" y="65" width="60" height="30" rx="15" ry="15" fill="#41B883" opacity="0.8" />
+  <rect x="280" y="65" width="60" height="30" rx="15" ry="15" fill="#41B883" opacity="0.6" />
+  <rect x="360" y="65" width="60" height="30" rx="15" ry="15" fill="#41B883" opacity="0.6" />
+  <rect x="440" y="65" width="60" height="30" rx="15" ry="15" fill="#41B883" opacity="0.6" />
+  
+  <!-- Área de contenido principal -->
+  <rect x="50" y="130" width="700" height="420" rx="10" ry="10" fill="#f8f9fa" opacity="0.9" />
+  
+  <!-- Componentes de la SPA -->
+  <!-- Tarjeta de componente 1 -->
+  <rect x="100" y="170" width="280" height="160" rx="10" ry="10" fill="url(#card-gradient)" stroke="#e9ecef" stroke-width="2" />
+  <rect x="120" y="190" width="240" height="20" rx="5" ry="5" fill="#41B883" opacity="0.8" />
+  <rect x="120" y="220" width="240" height="10" rx="5" ry="5" fill="#dee2e6" />
+  <rect x="120" y="240" width="180" height="10" rx="5" ry="5" fill="#dee2e6" />
+  <rect x="120" y="270" width="100" height="30" rx="5" ry="5" fill="#41B883" />
+  
+  <!-- Tarjeta de componente 2 -->
+  <rect x="420" y="170" width="280" height="160" rx="10" ry="10" fill="url(#card-gradient)" stroke="#e9ecef" stroke-width="2" />
+  <rect x="440" y="190" width="240" height="20" rx="5" ry="5" fill="#41B883" opacity="0.8" />
+  <rect x="440" y="220" width="240" height="10" rx="5" ry="5" fill="#dee2e6" />
+  <rect x="440" y="240" width="180" height="10" rx="5" ry="5" fill="#dee2e6" />
+  <rect x="440" y="270" width="100" height="30" rx="5" ry="5" fill="#41B883" />
+  
+  <!-- Tarjeta de componente 3 -->
+  <rect x="100" y="350" width="280" height="160" rx="10" ry="10" fill="url(#card-gradient)" stroke="#e9ecef" stroke-width="2" />
+  <circle cx="140" cy="390" r="30" fill="#41B883" opacity="0.8" />
+  <rect x="180" y="370" width="180" height="15" rx="5" ry="5" fill="#dee2e6" />
+  <rect x="180" y="395" width="140" height="15" rx="5" ry="5" fill="#dee2e6" />
+  <rect x="120" y="440" width="240" height="1" fill="#dee2e6" />
+  <rect x="120" y="460" width="100" height="30" rx="5" ry="5" fill="#41B883" />
+  
+  <!-- Tarjeta de componente 4 (formulario) -->
+  <rect x="420" y="350" width="280" height="160" rx="10" ry="10" fill="url(#card-gradient)" stroke="#e9ecef" stroke-width="2" />
+  <rect x="440" y="370" width="240" height="30" rx="5" ry="5" fill="#f8f9fa" stroke="#ced4da" stroke-width="1" />
+  <rect x="440" y="410" width="240" height="30" rx="5" ry="5" fill="#f8f9fa" stroke="#ced4da" stroke-width="1" />
+  <rect x="440" y="460" width="100" height="30" rx="5" ry="5" fill="#41B883" />
+</svg>

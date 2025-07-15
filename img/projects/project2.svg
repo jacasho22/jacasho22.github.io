@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Fondo -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Representación de un proyecto de análisis de datos -->
+  <g transform="translate(100, 50)">
+    <!-- Panel de notebook/IDE -->
+    <rect x="0" y="0" width="600" height="400" rx="10" ry="10" fill="white" stroke="#cbd5e1" stroke-width="2"/>
+    
+    <!-- Barra de herramientas -->
+    <rect x="0" y="0" width="600" height="30" rx="10" ry="10" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    
+    <!-- Botones de la barra de herramientas -->
+    <circle cx="15" cy="15" r="5" fill="#f8fafc" opacity="0.7"/>
+    <circle cx="35" cy="15" r="5" fill="#f8fafc" opacity="0.7"/>
+    <circle cx="55" cy="15" r="5" fill="#f8fafc" opacity="0.7"/>
+    <rect x="80" y="10" width="40" height="10" rx="2" ry="2" fill="#f8fafc" opacity="0.7"/>
+    <rect x="130" y="10" width="40" height="10" rx="2" ry="2" fill="#f8fafc" opacity="0.7"/>
+    
+    <!-- Contenido del notebook -->
+    <g transform="translate(20, 50)">
+      <!-- Celda de código 1 -->
+      <rect x="0" y="0" width="560" height="80" rx="3" ry="3" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="0" width="5" height="80" fill="#3b82f6"/>
+      <text x="15" y="20" font-family="monospace" font-size="12" fill="#334155">import pandas as pd</text>
+      <text x="15" y="40" font-family="monospace" font-size="12" fill="#334155">import matplotlib.pyplot as plt</text>
+      <text x="15" y="60" font-family="monospace" font-size="12" fill="#334155">import numpy as np</text>
+      
+      <!-- Celda de código 2 -->
+      <rect x="0" y="90" width="560" height="60" rx="3" ry="3" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="90" width="5" height="60" fill="#3b82f6"/>
+      <text x="15" y="110" font-family="monospace" font-size="12" fill="#334155">df = pd.read_csv('data.csv')</text>
+      <text x="15" y="130" font-family="monospace" font-size="12" fill="#334155">df.head()</text>
+      
+      <!-- Resultado de la celda 2 (tabla) -->
+      <rect x="0" y="160" width="560" height="100" rx="3" ry="3" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+      
+      <!-- Encabezado de la tabla -->
+      <rect x="10" y="170" width="540" height="20" fill="#f8fafc"/>
+      <line x1="10" y1="190" x2="550" y2="190" stroke="#e2e8f0" stroke-width="1"/>
+      
+      <!-- Columnas de la tabla -->
+      <text x="20" y="185" font-family="monospace" font-size="10" fill="#334155">ID</text>
+      <text x="80" y="185" font-family="monospace" font-size="10" fill="#334155">Name</text>
+      <text x="200" y="185" font-family="monospace" font-size="10" fill="#334155">Value</text>
+      <text x="300" y="185" font-family="monospace" font-size="10" fill="#334155">Category</text>
+      <text x="450" y="185" font-family="monospace" font-size="10" fill="#334155">Date</text>
+      
+      <!-- Filas de datos -->
+      <text x="20" y="210" font-family="monospace" font-size="10" fill="#334155">1</text>
+      <text x="80" y="210" font-family="monospace" font-size="10" fill="#334155">Data Point 1</text>
+      <text x="200" y="210" font-family="monospace" font-size="10" fill="#334155">42.5</text>
+      <text x="300" y="210" font-family="monospace" font-size="10" fill="#334155">A</text>
+      <text x="450" y="210" font-family="monospace" font-size="10" fill="#334155">2023-01-15</text>
+      
+      <text x="20" y="230" font-family="monospace" font-size="10" fill="#334155">2</text>
+      <text x="80" y="230" font-family="monospace" font-size="10" fill="#334155">Data Point 2</text>
+      <text x="200" y="230" font-family="monospace" font-size="10" fill="#334155">37.8</text>
+      <text x="300" y="230" font-family="monospace" font-size="10" fill="#334155">B</text>
+      <text x="450" y="230" font-family="monospace" font-size="10" fill="#334155">2023-01-16</text>
+      
+      <text x="20" y="250" font-family="monospace" font-size="10" fill="#334155">3</text>
+      <text x="80" y="250" font-family="monospace" font-size="10" fill="#334155">Data Point 3</text>
+      <text x="200" y="250" font-family="monospace" font-size="10" fill="#334155">45.2</text>
+      <text x="300" y="250" font-family="monospace" font-size="10" fill="#334155">A</text>
+      <text x="450" y="250" font-family="monospace" font-size="10" fill="#334155">2023-01-17</text>
+    </g>
+  </g>
+  
+  <!-- Gráfico de datos -->
+  <g transform="translate(150, 480)">
+    <!-- Ejes del gráfico -->
+    <line x1="0" y1="0" x2="0" y2="-100" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="0" x2="300" y2="0" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Barras del gráfico -->
+    <rect x="50" y="-85" width="40" height="85" fill="#3b82f6" opacity="0.7"/>
+    <rect x="150" y="-75" width="40" height="75" fill="#3b82f6" opacity="0.7"/>
+    <rect x="250" y="-90" width="40" height="90" fill="#3b82f6" opacity="0.7"/>
+    
+    <!-- Etiquetas -->
+    <text x="70" y="15" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="middle">A</text>
+    <text x="170" y="15" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="middle">B</text>
+    <text x="270" y="15" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="middle">C</text>
+  </g>
+  
+  <!-- Logo de Python -->
+  <g transform="translate(600, 480)">
+    <!-- Python logo (simplificado) -->
+    <path d="M30,0 C13.4,0 15,6.7 15,6.7 L15,13.3 L30,13.3 L30,15 L9.4,15 C9.4,15 0,13.9 0,30 C0,46.1 8.2,45 8.2,45 L13.1,45 L13.1,38.1 C13.1,38.1 12.8,30 21.1,30 L35.9,30 C35.9,30 43.4,30.1 43.4,22.9 L43.4,8.2 C43.4,8.2 44.4,0 30,0 Z M21.7,5 C23.4,5 24.7,6.3 24.7,8 C24.7,9.7 23.4,11 21.7,11 C20,11 18.7,9.7 18.7,8 C18.7,6.3 20,5 21.7,5 Z" fill="#366a96"/>
+    <path d="M30,60 C46.6,60 45,53.3 45,53.3 L45,46.7 L30,46.7 L30,45 L50.6,45 C50.6,45 60,46.1 60,30 C60,13.9 51.8,15 51.8,15 L46.9,15 L46.9,21.9 C46.9,21.9 47.2,30 38.9,30 L24.1,30 C24.1,30 16.6,29.9 16.6,37.1 L16.6,51.8 C16.6,51.8 15.6,60 30,60 Z M38.3,55 C36.6,55 35.3,53.7 35.3,52 C35.3,50.3 36.6,49 38.3,49 C40,49 41.3,50.3 41.3,52 C41.3,53.7 40,55 38.3,55 Z" fill="#ffd43b"/>
+  </g>
+</svg>

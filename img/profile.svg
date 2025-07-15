@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Fondo circular -->
+  <circle cx="200" cy="200" r="200" fill="#e2e8f0"/>
+  
+  <!-- Silueta de persona -->
+  <g>
+    <!-- Cabeza -->
+    <circle cx="200" cy="150" r="70" fill="#94a3b8"/>
+    
+    <!-- Cuerpo -->
+    <path d="M200,230 C130,230 80,280 80,350 L320,350 C320,280 270,230 200,230 Z" fill="#94a3b8"/>
+    
+    <!-- Detalles faciales (simplificados) -->
+    <circle cx="175" cy="140" r="10" fill="#e2e8f0"/>
+    <circle cx="225" cy="140" r="10" fill="#e2e8f0"/>
+    <path d="M170,180 Q200,200 230,180" fill="none" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Elementos decorativos de código -->
+  <g fill="#2563eb" opacity="0.1" font-family="monospace" font-size="12">
+    <!-- Símbolos de código dispersos en el fondo -->
+    <text x="50" y="50">{}</text>
+    <text x="320" y="80">[]</text>
+    <text x="100" y="350">function()</text>
+    <text x="280" y="320">class</text>
+    <text x="30" y="200">const</text>
+    <text x="300" y="180">let</text>
+    <text x="70" y="120">import</text>
+    <text x="250" y="100">export</text>
+    <text x="150" y="370">return</text>
+    <text x="40" y="300">if</text>
+    <text x="330" y="250">else</text>
+  </g>
+  
+  <!-- Círculos decorativos -->
+  <g fill="#2563eb" opacity="0.05">
+    <circle cx="50" cy="100" r="20"/>
+    <circle cx="350" cy="150" r="25"/>
+    <circle cx="100" cy="300" r="15"/>
+    <circle cx="300" cy="350" r="20"/>
+  </g>
+</svg>

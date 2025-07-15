@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <!-- Fondo con gradiente -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rectángulo de fondo -->
+  <rect width="200" height="60" rx="5" fill="url(#logoGradient)" />
+  
+  <!-- Elementos gráficos que representan análisis funcional -->
+  <!-- Documento con líneas -->
+  <rect x="20" y="15" width="30" height="35" rx="2" fill="#ecf0f1" stroke="#34495e" stroke-width="1" />
+  <line x1="25" y1="22" x2="45" y2="22" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="25" y1="27" x2="45" y2="27" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="25" y1="32" x2="45" y2="32" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="25" y1="37" x2="45" y2="37" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="25" y1="42" x2="45" y2="42" stroke="#7f8c8d" stroke-width="1" />
+  
+  <!-- Diagrama de flujo simplificado -->
+  <rect x="60" y="15" width="25" height="15" rx="2" fill="#e74c3c" stroke="#c0392b" stroke-width="1" />
+  <line x1="72.5" y1="30" x2="72.5" y2="35" stroke="#34495e" stroke-width="1.5" />
+  <polygon points="72.5,38 69,33 76,33" fill="#34495e" />
+  <rect x="60" y="38" width="25" height="15" rx="2" fill="#2ecc71" stroke="#27ae60" stroke-width="1" />
+  
+  <!-- Engranaje que representa procesos -->
+  <circle cx="105" cy="30" r="15" fill="#f39c12" stroke="#d35400" stroke-width="1" />
+  <circle cx="105" cy="30" r="5" fill="#e67e22" />
+  <g transform="translate(105, 30)">
+    <rect x="-2" y="-15" width="4" height="7" fill="#e67e22" />
+    <rect x="-2" y="8" width="4" height="7" fill="#e67e22" />
+    <rect x="-15" y="-2" width="7" height="4" fill="#e67e22" />
+    <rect x="8" y="-2" width="7" height="4" fill="#e67e22" />
+    <rect x="-12" y="-12" transform="rotate(45)" width="7" height="4" fill="#e67e22" />
+    <rect x="-12" y="-12" transform="rotate(135)" width="7" height="4" fill="#e67e22" />
+    <rect x="-12" y="-12" transform="rotate(-45)" width="7" height="4" fill="#e67e22" />
+    <rect x="-12" y="-12" transform="rotate(-135)" width="7" height="4" fill="#e67e22" />
+  </g>
+  
+  <!-- Texto del logo -->
+  <text x="135" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Análisis</text>
+  <text x="135" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Funcional</text>
+</svg>

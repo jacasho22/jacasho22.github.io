@@ -1,0 +1,65 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definiciones de gradientes -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="100%" stop-color="#FF9E9E" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo con gradiente -->
+  <rect width="300" height="200" rx="10" fill="url(#bgGradient)" />
+  
+  <!-- Elementos decorativos de fondo -->
+  <circle cx="50" cy="30" r="100" fill="white" opacity="0.05" />
+  <circle cx="250" cy="170" r="80" fill="white" opacity="0.05" />
+  
+  <!-- Gráfico de barras de marketing -->
+  <g transform="translate(50, 120)">
+    <!-- Eje X -->
+    <line x1="0" y1="0" x2="200" y2="0" stroke="white" stroke-width="2" />
+    
+    <!-- Barras -->
+    <rect x="20" y="-60" width="20" height="60" fill="#F1C40F" opacity="0.8" />
+    <rect x="60" y="-40" width="20" height="40" fill="#F1C40F" opacity="0.8" />
+    <rect x="100" y="-70" width="20" height="70" fill="#F1C40F" opacity="0.8" />
+    <rect x="140" y="-50" width="20" height="50" fill="#F1C40F" opacity="0.8" />
+    
+    <!-- Etiquetas -->
+    <text x="30" y="15" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Email</text>
+    <text x="70" y="15" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Social</text>
+    <text x="110" y="15" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">SEO</text>
+    <text x="150" y="15" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">PPC</text>
+  </g>
+  
+  <!-- Iconos de redes sociales -->
+  <g transform="translate(240, 50)">
+    <!-- Facebook -->
+    <circle cx="0" cy="0" r="15" fill="#3B5998" />
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">f</text>
+  </g>
+  
+  <g transform="translate(240, 90)">
+    <!-- Twitter/X -->
+    <circle cx="0" cy="0" r="15" fill="#000000" />
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">𝕏</text>
+  </g>
+  
+  <g transform="translate(240, 130)">
+    <!-- Instagram -->
+    <circle cx="0" cy="0" r="15" fill="#C13584" />
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">📷</text>
+  </g>
+  
+  <!-- Megáfono (símbolo de marketing) -->
+  <g transform="translate(70, 60)">
+    <path d="M0,0 L30,10 L30,-10 Z" fill="white" />
+    <rect x="-20" y="-5" width="20" height="10" rx="5" fill="white" />
+    <path d="M30,10 C40,10 40,-10 30,-10" fill="none" stroke="white" stroke-width="2" />
+    <path d="M35,15 C50,15 50,-15 35,-15" fill="none" stroke="white" stroke-width="1" opacity="0.7" />
+    <path d="M40,20 C60,20 60,-20 40,-20" fill="none" stroke="white" stroke-width="1" opacity="0.4" />
+  </g>
+  
+  <!-- Título del curso -->
+  <text x="150" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Marketing Digital</text>
+</svg>

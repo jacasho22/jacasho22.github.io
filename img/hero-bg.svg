@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="pattern1" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="100%" height="100%" fill="url(#grad1)"/>
+      <circle cx="30" cy="30" r="1" fill="#4f46e5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Fondo principal -->
+  <rect width="100%" height="100%" fill="url(#pattern1)"/>
+  
+  <!-- Formas decorativas -->
+  <circle cx="200" cy="200" r="100" fill="#2563eb" opacity="0.05"/>
+  <circle cx="1720" cy="880" r="150" fill="#4f46e5" opacity="0.05"/>
+  
+  <!-- Líneas de código estilizadas -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <!-- Líneas horizontales simulando código -->
+    <line x1="300" y1="200" x2="600" y2="200" />
+    <line x1="320" y1="220" x2="550" y2="220" />
+    <line x1="340" y1="240" x2="580" y2="240" />
+    <line x1="300" y1="260" x2="500" y2="260" />
+    <line x1="320" y1="280" x2="560" y2="280" />
+    
+    <line x1="1200" y1="600" x2="1500" y2="600" />
+    <line x1="1220" y1="620" x2="1450" y2="620" />
+    <line x1="1240" y1="640" x2="1480" y2="640" />
+    <line x1="1200" y1="660" x2="1400" y2="660" />
+    <line x1="1220" y1="680" x2="1460" y2="680" />
+  </g>
+  
+  <!-- Símbolos de programación -->
+  <g fill="#ffffff" opacity="0.05">
+    <text x="800" y="300" font-family="monospace" font-size="40">{}</text>
+    <text x="900" y="400" font-family="monospace" font-size="40">[]</text>
+    <text x="700" y="500" font-family="monospace" font-size="40">()</text>
+    <text x="1000" y="600" font-family="monospace" font-size="40">;</text>
+    <text x="1100" y="300" font-family="monospace" font-size="40">function</text>
+    <text x="600" y="700" font-family="monospace" font-size="40">class</text>
+    <text x="1200" y="800" font-family="monospace" font-size="40">import</text>
+    <text x="400" y="900" font-family="monospace" font-size="40">const</text>
+    <text x="1300" y="400" font-family="monospace" font-size="40">return</text>
+    <text x="500" y="800" font-family="monospace" font-size="40">if</text>
+  </g>
+  
+  <!-- Partículas decorativas -->
+  <g fill="#ffffff">
+    <circle cx="100" cy="100" r="1" opacity="0.5"/>
+    <circle cx="500" cy="300" r="1" opacity="0.5"/>
+    <circle cx="900" cy="200" r="1" opacity="0.5"/>
+    <circle cx="1300" cy="100" r="1" opacity="0.5"/>
+    <circle cx="1700" cy="300" r="1" opacity="0.5"/>
+    <circle cx="300" cy="500" r="1" opacity="0.5"/>
+    <circle cx="700" cy="700" r="1" opacity="0.5"/>
+    <circle cx="1100" cy="500" r="1" opacity="0.5"/>
+    <circle cx="1500" cy="700" r="1" opacity="0.5"/>
+    <circle cx="200" cy="900" r="1" opacity="0.5"/>
+    <circle cx="600" cy="1000" r="1" opacity="0.5"/>
+    <circle cx="1000" cy="900" r="1" opacity="0.5"/>
+    <circle cx="1400" cy="1000" r="1" opacity="0.5"/>
+    <circle cx="1800" cy="900" r="1" opacity="0.5"/>
+  </g>
+</svg>

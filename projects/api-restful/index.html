@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API RESTful - Diseño e Implementación</title>
+    <meta name="description" content="Proyecto de diseño e implementación de una API RESTful con autenticación, documentación y buenas prácticas">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Highlight.js para resaltado de código -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/json.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="API RESTful Logo">
+                <h1>API RESTful</h1>
+            </div>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#api-demo">Demo</a></li>
+                <li><a href="#documentation">Documentación</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li>
+                    <div class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <label for="theme-toggle" class="toggle-label">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Diseño e Implementación de API RESTful</h1>
+                <p>Una solución completa para crear APIs RESTful escalables, seguras y bien documentadas siguiendo las mejores prácticas de la industria.</p>
+                <div class="hero-buttons">
+                    <a href="#api-demo" class="btn">Ver Demo</a>
+                    <a href="docs/api-docs.html" class="btn btn-outline">Documentación API</a>
+                </div>
+            </div>
+        </div>
+        <img src="img/hero.svg" alt="API RESTful Ilustración" class="hero-image">
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+                    <div class="stat-label">Endpoints</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span class="counter" data-target="99">0</span>%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span class="counter" data-target="500">0</span>ms</div>
+                    <div class="stat-label">Tiempo de Respuesta</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span class="counter" data-target="1000">0</span>+</div>
+                    <div class="stat-label">Peticiones/min</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Características Principales</h2>
+                <p>Nuestra API RESTful está diseñada con un enfoque en la escalabilidad, seguridad y facilidad de uso, siguiendo los estándares y mejores prácticas de la industria.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="img/icons/endpoints.svg" alt="Endpoints" class="feature-icon">
+                    <h3>Endpoints Intuitivos</h3>
+                    <p>Diseño de endpoints siguiendo convenciones RESTful para una experiencia de desarrollo intuitiva y predecible.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="img/icons/authentication.svg" alt="Autenticación" class="feature-icon">
+                    <h3>Autenticación Segura</h3>
+                    <p>Sistema de autenticación basado en JWT con roles y permisos para proteger los recursos sensibles.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="img/icons/documentation.svg" alt="Documentación" class="feature-icon">
+                    <h3>Documentación Completa</h3>
+                    <p>Documentación detallada de todos los endpoints, parámetros y respuestas para facilitar la integración.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="img/icons/testing.svg" alt="Testing" class="feature-icon">
+                    <h3>Testing Exhaustivo</h3>
+                    <p>Cobertura de pruebas unitarias e integración para garantizar la fiabilidad y estabilidad de la API.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- API Demo Section -->
+    <section id="api-demo" class="api-demo section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Demo Interactiva</h2>
+                <p>Explora los principales endpoints de nuestra API y visualiza las respuestas en tiempo real.</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="demo-sidebar">
+                    <div class="endpoint-list">
+                        <div class="endpoint-item" data-endpoint="get-users">
+                            <span class="method-badge get">GET</span>
+                            <span class="endpoint-url">/api/v1/users</span>
+                        </div>
+                        <div class="endpoint-item" data-endpoint="get-user">
+                            <span class="method-badge get">GET</span>
+                            <span class="endpoint-url">/api/v1/users/1</span>
+                        </div>
+                        <div class="endpoint-item" data-endpoint="create-user">
+                            <span class="method-badge post">POST</span>
+                            <span class="endpoint-url">/api/v1/users</span>
+                        </div>
+                        <div class="endpoint-item" data-endpoint="get-products">
+                            <span class="method-badge get">GET</span>
+                            <span class="endpoint-url">/api/v1/products</span>
+                        </div>
+                        <div class="endpoint-item" data-endpoint="get-product">
+                            <span class="method-badge get">GET</span>
+                            <span class="endpoint-url">/api/v1/products/1</span>
+                        </div>
+                        <div class="endpoint-item" data-endpoint="login">
+                            <span class="method-badge post">POST</span>
+                            <span class="endpoint-url">/api/v1/auth/login</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-content">
+                    <div class="response-panel">
+                        <div class="response-header">
+                            <span>Respuesta</span>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <div class="response-body">
+                            <div class="loading">Selecciona un endpoint para ver la respuesta</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Documentación</h2>
+                <p>Guías detalladas y ejemplos para ayudarte a integrar nuestra API en tu aplicación.</p>
+            </div>
+            
+            <div class="doc-container">
+                <div class="doc-sidebar">
+                    <div class="doc-nav">
+                        <h3>Guías</h3>
+                        <ul>
+                            <li><a href="#getting-started" class="active">Primeros Pasos</a></li>
+                            <li><a href="#authentication">Autenticación</a></li>
+                            <li><a href="#endpoints">Endpoints</a></li>
+                            <li><a href="#error-handling">Manejo de Errores</a></li>
+                        </ul>
+                        
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="docs/api-docs.html">Documentación Completa</a></li>
+                            <li><a href="#">Ejemplos de Código</a></li>
+                            <li><a href="#">SDK Cliente</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="doc-content">
+                    <div id="getting-started" class="doc-section">
+                        <h2>Primeros Pasos</h2>
+                        <p>Para comenzar a utilizar nuestra API RESTful, sigue estos sencillos pasos:</p>
+                        
+                        <h3>1. Registro y Obtención de API Key</h3>
+                        <p>Regístrate en nuestra plataforma para obtener tu API Key personal que necesitarás para autenticar tus solicitudes.</p>
+                        
+                        <h3>2. Instalación</h3>
+                        <p>Puedes interactuar con nuestra API directamente mediante solicitudes HTTP o utilizando nuestro SDK oficial:</p>
+                        
+                        <div class="code-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-button active" onclick="switchTab(event, 'npm-tab')">npm</button>
+                                <button class="tab-button" onclick="switchTab(event, 'yarn-tab')">yarn</button>
+                                <button class="tab-button" onclick="switchTab(event, 'cdn-tab')">CDN</button>
+                            </div>
+                            
+                            <div id="npm-tab" class="tab-content" style="display: block;">
+                                <pre class="code-block">npm install api-restful-client</pre>
+                            </div>
+                            
+                            <div id="yarn-tab" class="tab-content" style="display: none;">
+                                <pre class="code-block">yarn add api-restful-client</pre>
+                            </div>
+                            
+                            <div id="cdn-tab" class="tab-content" style="display: none;">
+                                <pre class="code-block">&lt;script src="https://cdn.ejemplo.com/api-restful-client.min.js"&gt;&lt;/script&gt;</pre>
+                            </div>
+                        </div>
+                        
+                        <h3>3. Configuración</h3>
+                        <p>Configura el cliente con tu API Key:</p>
+                        
+                        <pre class="code-block language-javascript">// Inicializar el cliente
+const apiClient = new ApiRestfulClient({
+  apiKey: 'TU_API_KEY',
+  baseUrl: 'https://api.ejemplo.com/v1'
+});</pre>
+                        
+                        <h3>4. Realizar tu primera solicitud</h3>
+                        <p>Ahora puedes comenzar a realizar solicitudes a la API:</p>
+                        
+                        <pre class="code-block language-javascript">// Obtener todos los usuarios
+apiClient.users.getAll()
+  .then(response => {
+    console.log('Usuarios:', response.data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });</pre>
+                    </div>
+                    
+                    <div id="authentication" class="doc-section">
+                        <h2>Autenticación</h2>
+                        <p>Nuestra API utiliza autenticación basada en JWT (JSON Web Tokens) para proteger los recursos y verificar la identidad de los usuarios.</p>
+                        
+                        <h3>Obtener un Token</h3>
+                        <p>Para obtener un token de acceso, debes realizar una solicitud POST al endpoint de login:</p>
+                        
+                        <pre class="code-block language-javascript">// Iniciar sesión y obtener token
+apiClient.auth.login({
+  username: 'usuario',
+  password: 'contraseña'
+})
+.then(response => {
+  // Guardar el token para futuras solicitudes
+  const token = response.data.token;
+  console.log('Token:', token);
+})
+.catch(error => {
+  console.error('Error de autenticación:', error);
+});</pre>
+                        
+                        <h3>Usar el Token en Solicitudes</h3>
+                        <p>Una vez que tienes un token, puedes incluirlo en tus solicitudes de dos formas:</p>
+                        
+                        <h4>1. Configuración Global</h4>
+                        <pre class="code-block language-javascript">// Configurar el token para todas las solicitudes
+apiClient.setAuthToken(token);</pre>
+                        
+                        <h4>2. Por Solicitud Individual</h4>
+                        <pre class="code-block language-javascript">// Incluir el token en una solicitud específica
+apiClient.products.create(productData, { token: token });</pre>
+                    </div>
+                    
+                    <div id="endpoints" class="doc-section">
+                        <h2>Endpoints Principales</h2>
+                        <p>Nuestra API ofrece los siguientes grupos de endpoints:</p>
+                        
+                        <h3>Usuarios</h3>
+                        <ul>
+                            <li><code>GET /api/v1/users</code> - Obtener todos los usuarios</li>
+                            <li><code>GET /api/v1/users/:id</code> - Obtener un usuario por ID</li>
+                            <li><code>POST /api/v1/users</code> - Crear un nuevo usuario</li>
+                            <li><code>PUT /api/v1/users/:id</code> - Actualizar un usuario existente</li>
+                            <li><code>DELETE /api/v1/users/:id</code> - Eliminar un usuario</li>
+                        </ul>
+                        
+                        <h3>Productos</h3>
+                        <ul>
+                            <li><code>GET /api/v1/products</code> - Obtener todos los productos</li>
+                            <li><code>GET /api/v1/products/:id</code> - Obtener un producto por ID</li>
+                            <li><code>POST /api/v1/products</code> - Crear un nuevo producto</li>
+                            <li><code>PUT /api/v1/products/:id</code> - Actualizar un producto existente</li>
+                            <li><code>DELETE /api/v1/products/:id</code> - Eliminar un producto</li>
+                            <li><code>POST /api/v1/products/:id/rate</code> - Calificar un producto</li>
+                        </ul>
+                        
+                        <h3>Autenticación</h3>
+                        <ul>
+                            <li><code>POST /api/v1/auth/login</code> - Iniciar sesión</li>
+                            <li><code>POST /api/v1/auth/register</code> - Registrar nuevo usuario</li>
+                            <li><code>GET /api/v1/auth/verify</code> - Verificar token</li>
+                            <li><code>POST /api/v1/auth/logout</code> - Cerrar sesión</li>
+                        </ul>
+                        
+                        <p>Para obtener información detallada sobre cada endpoint, parámetros y respuestas, consulta nuestra <a href="docs/api-docs.html">documentación completa</a>.</p>
+                    </div>
+                    
+                    <div id="error-handling" class="doc-section">
+                        <h2>Manejo de Errores</h2>
+                        <p>Nuestra API utiliza códigos de estado HTTP estándar para indicar el éxito o fracaso de una solicitud. Además, todas las respuestas de error incluyen un objeto JSON con detalles adicionales.</p>
+                        
+                        <h3>Estructura de Respuesta de Error</h3>
+                        <pre class="code-block language-json">{
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Descripción detallada del error",
+  "errors": [
+    {
+      "field": "email",
+      "message": "El formato del email no es válido"
+    }
+  ]
+}</pre>
+                        
+                        <h3>Códigos de Estado Comunes</h3>
+                        <ul>
+                            <li><strong>200 OK</strong> - La solicitud se completó con éxito</li>
+                            <li><strong>201 Created</strong> - El recurso se creó correctamente</li>
+                            <li><strong>400 Bad Request</strong> - La solicitud contiene datos inválidos</li>
+                            <li><strong>401 Unauthorized</strong> - Autenticación requerida o inválida</li>
+                            <li><strong>403 Forbidden</strong> - No tienes permisos para acceder al recurso</li>
+                            <li><strong>404 Not Found</strong> - El recurso solicitado no existe</li>
+                            <li><strong>422 Unprocessable Entity</strong> - Validación fallida</li>
+                            <li><strong>429 Too Many Requests</strong> - Has excedido el límite de solicitudes</li>
+                            <li><strong>500 Internal Server Error</strong> - Error interno del servidor</li>
+                        </ul>
+                        
+                        <h3>Manejo de Errores en el Cliente</h3>
+                        <pre class="code-block language-javascript">apiClient.users.getById(999)
+  .then(response => {
+    console.log('Usuario:', response.data);
+  })
+  .catch(error => {
+    if (error.status === 404) {
+      console.error('Usuario no encontrado');
+    } else if (error.status === 401) {
+      console.error('Sesión expirada, inicia sesión nuevamente');
+      // Redirigir al login
+    } else {
+      console.error('Error:', error.message);
+    }
+  });</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="container">
+            <h2>¿Listo para comenzar?</h2>
+            <p>Regístrate hoy mismo y obtén acceso a nuestra API RESTful con 1000 solicitudes gratuitas al mes. Sin compromisos, sin tarjeta de crédito.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary">Registrarse</a>
+                <a href="docs/api-docs.html" class="btn">Ver Documentación</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p>¿Tienes preguntas o necesitas ayuda? Estamos aquí para asistirte.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>soporte@apirestful.com</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <p>+34 91 123 4567</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <p>Madrid, España</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="img/logo.svg" alt="API RESTful Logo">
+                    <h2>API RESTful</h2>
+                </div>
+                <p>Solución completa para el diseño e implementación de APIs RESTful siguiendo las mejores prácticas de la industria.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#api-demo">Demo</a></li>
+                    <li><a href="#documentation">Documentación</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="docs/api-docs.html">Documentación API</a></li>
+                    <li><a href="#">Ejemplos de Código</a></li>
+                    <li><a href="#">SDK Cliente</a></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">SLA</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 API RESTful. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

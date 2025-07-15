@@ -1,0 +1,104 @@
+# Archivos y directorios específicos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# Archivos de configuración de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de caché y logs
+.cache/
+.pytest_cache/
+logs/
+*.log
+
+# Archivos de base de datos
+*.db
+*.sqlite3
+
+# Archivos generados por Jupyter Notebook
+.ipynb_checkpoints
+
+# Archivos de configuración local
+instance/
+.webassets-cache
+
+# Archivos de distribución
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Archivos de configuración de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de configuración de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Archivos específicos de la aplicación
+*.pyc
+__pycache__/
+instance/
+.webassets-cache
+
+# Archivos de datos generados
+*.csv
+*.xlsx
+*.json
+!sample_data/*.csv
+!sample_data/*.json
+
+# Archivos de configuración de entorno
+.env
+.flaskenv

@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" />
+      <stop offset="100%" stop-color="#e0e0e0" />
+    </linearGradient>
+    
+    <!-- Sombras para elementos -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)" />
+    </filter>
+    
+    <!-- Gradientes para elementos -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+    
+    <linearGradient id="sidebarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34495e" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </linearGradient>
+    
+    <linearGradient id="buttonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2ecc71" />
+      <stop offset="100%" stop-color="#27ae60" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="600" height="400" fill="url(#bgGradient)" />
+  
+  <!-- Título del diagrama -->
+  <text x="300" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50" text-anchor="middle">Wireframe - Interfaz de Usuario</text>
+  
+  <!-- Marco del navegador -->
+  <rect x="50" y="50" width="500" height="320" rx="5" fill="white" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)" />
+  
+  <!-- Barra de navegador -->
+  <rect x="50" y="50" width="500" height="30" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" />
+  <circle cx="65" cy="65" r="5" fill="#e74c3c" />
+  <circle cx="85" cy="65" r="5" fill="#f1c40f" />
+  <circle cx="105" cy="65" r="5" fill="#2ecc71" />
+  <rect x="130" y="57.5" width="300" height="15" rx="7.5" fill="white" stroke="#bdc3c7" stroke-width="1" />
+  
+  <!-- Header -->
+  <rect x="50" y="80" width="500" height="60" fill="url(#headerGradient)" />
+  <rect x="70" y="95" width="150" height="30" rx="5" fill="white" fill-opacity="0.2" />
+  <text x="145" y="115" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Logo</text>
+  
+  <rect x="400" y="95" width="60" height="30" rx="5" fill="white" fill-opacity="0.2" />
+  <text x="430" y="115" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Login</text>
+  
+  <rect x="470" y="95" width="60" height="30" rx="5" fill="white" fill-opacity="0.2" />
+  <text x="500" y="115" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Registro</text>
+  
+  <!-- Sidebar -->
+  <rect x="50" y="140" width="100" height="230" fill="url(#sidebarGradient)" />
+  
+  <!-- Elementos del sidebar -->
+  <rect x="60" y="160" width="80" height="20" rx="3" fill="white" fill-opacity="0.1" />
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Inicio</text>
+  
+  <rect x="60" y="190" width="80" height="20" rx="3" fill="white" fill-opacity="0.1" />
+  <text x="100" y="205" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Proyectos</text>
+  
+  <rect x="60" y="220" width="80" height="20" rx="3" fill="white" fill-opacity="0.2" />
+  <text x="100" y="235" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Usuarios</text>
+  
+  <rect x="60" y="250" width="80" height="20" rx="3" fill="white" fill-opacity="0.1" />
+  <text x="100" y="265" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Informes</text>
+  
+  <rect x="60" y="280" width="80" height="20" rx="3" fill="white" fill-opacity="0.1" />
+  <text x="100" y="295" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Configuración</text>
+  
+  <rect x="60" y="330" width="80" height="20" rx="3" fill="white" fill-opacity="0.1" />
+  <text x="100" y="345" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Ayuda</text>
+  
+  <!-- Contenido principal -->
+  <rect x="150" y="140" width="400" height="230" fill="white" />
+  
+  <!-- Título de sección -->
+  <rect x="170" y="160" width="360" height="30" fill="#ecf0f1" rx="3" />
+  <text x="190" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Gestión de Usuarios</text>
+  
+  <!-- Barra de búsqueda -->
+  <rect x="170" y="200" width="280" height="30" rx="5" fill="white" stroke="#bdc3c7" stroke-width="1" />
+  <text x="190" y="220" font-family="Arial, sans-serif" font-size="12" fill="#95a5a6">Buscar usuario...</text>
+  
+  <rect x="460" y="200" width="70" height="30" rx="5" fill="url(#buttonGradient)" />
+  <text x="495" y="220" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Buscar</text>
+  
+  <!-- Tabla de usuarios -->
+  <rect x="170" y="240" width="360" height="100" fill="white" stroke="#bdc3c7" stroke-width="1" />
+  
+  <!-- Encabezado de tabla -->
+  <rect x="170" y="240" width="360" height="25" fill="#ecf0f1" />
+  <line x1="170" y1="265" x2="530" y2="265" stroke="#bdc3c7" stroke-width="1" />
+  
+  <text x="190" y="257" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">ID</text>
+  <text x="250" y="257" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Nombre</text>
+  <text x="350" y="257" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Email</text>
+  <text x="450" y="257" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Acciones</text>
+  
+  <!-- Filas de tabla -->
+  <line x1="170" y1="290" x2="530" y2="290" stroke="#ecf0f1" stroke-width="1" />
+  <line x1="170" y1="315" x2="530" y2="315" stroke="#ecf0f1" stroke-width="1" />
+  
+  <text x="190" y="282" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">001</text>
+  <text x="250" y="282" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Usuario 1</text>
+  <text x="350" y="282" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">usuario1@email.com</text>
+  
+  <text x="190" y="307" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">002</text>
+  <text x="250" y="307" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Usuario 2</text>
+  <text x="350" y="307" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">usuario2@email.com</text>
+  
+  <text x="190" y="332" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">003</text>
+  <text x="250" y="332" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Usuario 3</text>
+  <text x="350" y="332" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">usuario3@email.com</text>
+  
+  <!-- Botones de acción -->
+  <rect x="440" y="270" width="30" height="20" rx="3" fill="#3498db" />
+  <text x="455" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Ver</text>
+  
+  <rect x="475" y="270" width="40" height="20" rx="3" fill="#f1c40f" />
+  <text x="495" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Editar</text>
+  
+  <rect x="440" y="295" width="30" height="20" rx="3" fill="#3498db" />
+  <text x="455" y="310" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Ver</text>
+  
+  <rect x="475" y="295" width="40" height="20" rx="3" fill="#f1c40f" />
+  <text x="495" y="310" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Editar</text>
+  
+  <rect x="440" y="320" width="30" height="20" rx="3" fill="#3498db" />
+  <text x="455" y="335" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Ver</text>
+  
+  <rect x="475" y="320" width="40" height="20" rx="3" fill="#f1c40f" />
+  <text x="495" y="335" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Editar</text>
+  
+  <!-- Botón de nuevo usuario -->
+  <rect x="430" y="350" width="100" height="30" rx="5" fill="url(#buttonGradient)" />
+  <text x="480" y="370" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Nuevo Usuario</text>
+  
+  <!-- Paginación -->
+  <rect x="170" y="350" width="200" height="30" fill="white" />
+  <text x="190" y="370" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Mostrando 1-3 de 25 resultados</text>
+  
+  <rect x="370" y="350" width="30" height="30" rx="15" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" />
+  <text x="385" y="370" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" text-anchor="middle">1</text>
+  
+  <rect x="405" y="350" width="30" height="30" rx="15" fill="white" stroke="#bdc3c7" stroke-width="1" />
+  <text x="420" y="370" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" text-anchor="middle">2</text>
+</svg>

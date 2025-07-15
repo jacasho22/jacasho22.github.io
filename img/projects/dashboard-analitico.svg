@@ -1,0 +1,110 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#1a2533" />
+    </linearGradient>
+    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4CAF50" stop-opacity="0.1" />
+    </linearGradient>
+    <linearGradient id="barGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+    <linearGradient id="barGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#c0392b" />
+    </linearGradient>
+    <linearGradient id="barGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f1c40f" />
+      <stop offset="100%" stop-color="#f39c12" />
+    </linearGradient>
+    <linearGradient id="pieGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+    <linearGradient id="pieGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#c0392b" />
+    </linearGradient>
+    <linearGradient id="pieGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2ecc71" />
+      <stop offset="100%" stop-color="#27ae60" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo del dashboard -->
+  <rect width="400" height="300" rx="10" fill="url(#bgGradient)" />
+  
+  <!-- Barra superior -->
+  <rect x="20" y="20" width="360" height="40" rx="5" fill="#34495e" />
+  <circle cx="40" cy="40" r="10" fill="#3498db" />
+  <rect x="60" y="35" width="80" height="10" rx="2" fill="#ecf0f1" />
+  <rect x="280" y="35" width="40" height="10" rx="2" fill="#ecf0f1" />
+  <rect x="330" y="35" width="30" height="10" rx="2" fill="#ecf0f1" />
+  
+  <!-- KPI Cards -->
+  <rect x="20" y="70" width="80" height="60" rx="5" fill="#2980b9" />
+  <rect x="30" y="80" width="60" height="8" rx="2" fill="#ecf0f1" opacity="0.7" />
+  <rect x="30" y="95" width="40" height="12" rx="2" fill="#ecf0f1" />
+  <rect x="30" y="115" width="50" height="6" rx="2" fill="#ecf0f1" opacity="0.5" />
+  
+  <rect x="110" y="70" width="80" height="60" rx="5" fill="#27ae60" />
+  <rect x="120" y="80" width="60" height="8" rx="2" fill="#ecf0f1" opacity="0.7" />
+  <rect x="120" y="95" width="40" height="12" rx="2" fill="#ecf0f1" />
+  <rect x="120" y="115" width="50" height="6" rx="2" fill="#ecf0f1" opacity="0.5" />
+  
+  <rect x="200" y="70" width="80" height="60" rx="5" fill="#f39c12" />
+  <rect x="210" y="80" width="60" height="8" rx="2" fill="#ecf0f1" opacity="0.7" />
+  <rect x="210" y="95" width="40" height="12" rx="2" fill="#ecf0f1" />
+  <rect x="210" y="115" width="50" height="6" rx="2" fill="#ecf0f1" opacity="0.5" />
+  
+  <rect x="290" y="70" width="80" height="60" rx="5" fill="#8e44ad" />
+  <rect x="300" y="80" width="60" height="8" rx="2" fill="#ecf0f1" opacity="0.7" />
+  <rect x="300" y="95" width="40" height="12" rx="2" fill="#ecf0f1" />
+  <rect x="300" y="115" width="50" height="6" rx="2" fill="#ecf0f1" opacity="0.5" />
+  
+  <!-- Gráfico de línea -->
+  <rect x="20" y="140" width="230" height="140" rx="5" fill="#34495e" />
+  <rect x="30" y="150" width="100" height="10" rx="2" fill="#ecf0f1" opacity="0.7" />
+  
+  <!-- Ejes del gráfico -->
+  <line x1="40" y1="250" x2="40" y2="170" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="40" y1="250" x2="220" y2="250" stroke="#7f8c8d" stroke-width="1" />
+  
+  <!-- Línea del gráfico -->
+  <polyline points="40,230 70,210 100,220 130,190 160,180 190,200 220,170" fill="none" stroke="#2ecc71" stroke-width="2" />
+  
+  <!-- Área bajo la línea -->
+  <path d="M40,230 L70,210 L100,220 L130,190 L160,180 L190,200 L220,170 L220,250 L40,250 Z" fill="url(#chartGradient)" />
+  
+  <!-- Puntos de datos -->
+  <circle cx="40" cy="230" r="4" fill="#2ecc71" />
+  <circle cx="70" cy="210" r="4" fill="#2ecc71" />
+  <circle cx="100" cy="220" r="4" fill="#2ecc71" />
+  <circle cx="130" cy="190" r="4" fill="#2ecc71" />
+  <circle cx="160" cy="180" r="4" fill="#2ecc71" />
+  <circle cx="190" cy="200" r="4" fill="#2ecc71" />
+  <circle cx="220" cy="170" r="4" fill="#2ecc71" />
+  
+  <!-- Gráfico circular -->
+  <rect x="260" y="140" width="120" height="140" rx="5" fill="#34495e" />
+  <rect x="270" y="150" width="80" height="10" rx="2" fill="#ecf0f1" opacity="0.7" />
+  
+  <!-- Círculo del gráfico -->
+  <path d="M320,210 L320,180 A30,30 0 0,1 345,195 Z" fill="url(#pieGradient1)" />
+  <path d="M320,210 L345,195 A30,30 0 0,1 320,240 Z" fill="url(#pieGradient2)" />
+  <path d="M320,210 L320,240 A30,30 0 0,1 295,195 L320,210 Z" fill="url(#pieGradient3)" />
+  <path d="M320,210 L295,195 A30,30 0 0,1 320,180 L320,210 Z" fill="#f1c40f" />
+  
+  <!-- Leyenda -->
+  <rect x="270" y="250" width="8" height="8" rx="1" fill="#3498db" />
+  <rect x="290" y="250" width="8" height="8" rx="1" fill="#e74c3c" />
+  <rect x="310" y="250" width="8" height="8" rx="1" fill="#2ecc71" />
+  <rect x="330" y="250" width="8" height="8" rx="1" fill="#f1c40f" />
+  
+  <!-- Reflejo en la parte superior -->
+  <rect x="0" y="0" width="400" height="15" fill="white" opacity="0.05" />
+</svg>

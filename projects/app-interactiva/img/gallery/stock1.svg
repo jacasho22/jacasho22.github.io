@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <!-- Fondo de la imagen -->
+  <rect width="800" height="400" fill="#f5f5f5" />
+  
+  <!-- Imagen de paisaje montañoso -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#E0F7FA" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50" />
+      <stop offset="100%" stop-color="#1B5E20" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cielo -->
+  <rect width="800" height="250" fill="url(#skyGradient)" />
+  
+  <!-- Sol -->
+  <circle cx="650" cy="80" r="40" fill="#FFD54F" />
+  
+  <!-- Nubes -->
+  <ellipse cx="150" cy="100" rx="60" ry="30" fill="white" opacity="0.8" />
+  <ellipse cx="200" cy="90" rx="70" ry="40" fill="white" opacity="0.9" />
+  <ellipse cx="250" cy="110" rx="50" ry="25" fill="white" opacity="0.7" />
+  
+  <ellipse cx="500" cy="70" rx="50" ry="25" fill="white" opacity="0.7" />
+  <ellipse cx="550" cy="60" rx="60" ry="30" fill="white" opacity="0.8" />
+  
+  <!-- Montañas -->
+  <polygon points="0,250 200,100 400,200 600,120 800,180 800,250" fill="url(#mountainGradient)" />
+  
+  <!-- Lago -->
+  <rect x="0" y="250" width="800" height="150" fill="#0288D1" />
+  
+  <!-- Reflejo en el lago -->
+  <polygon points="0,250 200,280 400,260 600,270 800,250 800,300 0,300" fill="#29B6F6" opacity="0.5" />
+  
+  <!-- Texto de atribución -->
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white">Paisaje Natural</text>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">Foto de stock gratuita de Pexels</text>
+</svg>

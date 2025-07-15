@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Fondo del logo -->
+  <rect width="200" height="200" fill="transparent" />
+  
+  <!-- Logo de Vue.js (estilizado) -->
+  <g transform="translate(20, 20) scale(0.8)">
+    <!-- Forma exterior -->
+    <polygon points="100,0 200,173.2 0,173.2" fill="#41B883" />
+    
+    <!-- Forma interior -->
+    <polygon points="100,0 125,43.3 75,43.3" fill="#35495E" />
+    <polygon points="100,86.6 125,43.3 75,43.3" fill="#35495E" />
+  </g>
+  
+  <!-- Texto "SPA" -->
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#35495E">SPA</text>
+</svg>

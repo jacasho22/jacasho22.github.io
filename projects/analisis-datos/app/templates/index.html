@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Datos - Herramienta Interactiva</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-chart-line me-2"></i>DataAnalyzer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demo">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/../../index.html" target="_blank">Volver al Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="hero" class="d-flex align-items-center justify-content-center" style="padding-top: 120px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 fw-bold mb-4" style="margin-top: 20px; color: var(--primary-color);">Análisis de Datos Simplificado</h1>
+                    <p class="lead mb-4" style="font-size: 1.3rem;">Una herramienta interactiva para visualizar, analizar y comprender datos de manera sencilla y efectiva.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#demo" class="btn btn-primary btn-lg">Probar Demo</a>
+                        <a href="#features" class="btn btn-outline-secondary btn-lg">Conocer Más</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block text-center">
+                    <img src="{{ url_for('static', filename='img/hero-image.svg') }}" alt="Análisis de Datos" class="img-fluid" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Características Principales</h2>
+                <p class="section-subtitle">Descubre todo lo que puedes hacer con nuestra herramienta</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon bg-primary text-white mb-4">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="card-title h5">Visualización Interactiva</h3>
+                            <p class="card-text">Crea gráficos interactivos que te permiten explorar tus datos desde diferentes perspectivas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon bg-primary text-white mb-4">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <h3 class="card-title h5">Análisis Estadístico</h3>
+                            <p class="card-text">Obtén estadísticas descriptivas, correlaciones y distribuciones de tus datos con un solo clic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon bg-primary text-white mb-4">
+                                <i class="fas fa-file-export"></i>
+                            </div>
+                            <h3 class="card-title h5">Exportación Flexible</h3>
+                            <p class="card-text">Exporta tus análisis y visualizaciones en múltiples formatos para compartir o incluir en informes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon bg-primary text-white mb-4">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h3 class="card-title h5">Interfaz Intuitiva</h3>
+                            <p class="card-text">Diseñada para ser fácil de usar, sin necesidad de conocimientos técnicos avanzados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Demo -->
+    <section id="demo" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Demo Interactiva</h2>
+                <p class="section-subtitle">Prueba nuestra herramienta con datos de ejemplo</p>
+            </div>
+
+            <!-- Pestañas de navegación -->
+            <ul class="nav nav-tabs mb-4" id="demoTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="data-tab" data-bs-toggle="tab" data-bs-target="#tab-data" type="button">Datos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="visualization-tab" data-bs-toggle="tab" data-bs-target="#tab-visualization" type="button">Visualización</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="analysis-tab" data-bs-toggle="tab" data-bs-target="#tab-analysis" type="button">Análisis</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="export-tab" data-bs-toggle="tab" data-bs-target="#tab-export" type="button">Exportación</button>
+                </li>
+            </ul>
+
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content" id="demoTabsContent">
+                <!-- Pestaña de Datos -->
+                <div class="tab-pane fade show active" id="tab-data" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Conjuntos de Datos</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Selecciona uno de nuestros conjuntos de datos de ejemplo para comenzar:</p>
+                                    <div class="d-grid gap-2">
+                                        <button id="load-sample-1" class="btn btn-outline-primary">Datos de Ventas</button>
+                                        <button id="load-sample-2" class="btn btn-outline-primary">Datos Demográficos</button>
+                                        <button id="load-sample-3" class="btn btn-outline-primary">Datos Educativos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title mb-0">Vista Previa de Datos</h5>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="darkModeTable">
+                                        <label class="form-check-label text-white" for="darkModeTable">Modo Oscuro</label>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Fecha</th>
+                                                    <th>Región</th>
+                                                    <th>Producto</th>
+                                                    <th>Ventas</th>
+                                                    <th>Unidades</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01/01/2023</td>
+                                                    <td>Norte</td>
+                                                    <td>A</td>
+                                                    <td>€542</td>
+                                                    <td>12</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/01/2023</td>
+                                                    <td>Sur</td>
+                                                    <td>B</td>
+                                                    <td>€328</td>
+                                                    <td>8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>03/01/2023</td>
+                                                    <td>Este</td>
+                                                    <td>A</td>
+                                                    <td>€721</td>
+                                                    <td>15</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>04/01/2023</td>
+                                                    <td>Oeste</td>
+                                                    <td>C</td>
+                                                    <td>€489</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>05/01/2023</td>
+                                                    <td>Norte</td>
+                                                    <td>D</td>
+                                                    <td>€612</td>
+                                                    <td>14</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña de Visualización -->
+                <div class="tab-pane fade" id="tab-visualization" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-8">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Gráfico</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-container">
+                                        <canvas id="main-chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Tipo de Gráfico</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="btn-group-sm d-flex flex-wrap gap-2" role="group">
+                                        <button type="button" class="btn btn-outline-secondary active">Barras</button>
+                                        <button type="button" class="btn btn-outline-secondary">Líneas</button>
+                                        <button type="button" class="btn btn-outline-secondary">Pastel</button>
+                                        <button type="button" class="btn btn-outline-secondary">Dispersión</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Opciones</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="showLegend" checked>
+                                        <label class="form-check-label" for="showLegend">Mostrar Leyenda</label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="showGrid" checked>
+                                        <label class="form-check-label" for="showGrid">Mostrar Cuadrícula</label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="animateChart" checked>
+                                        <label class="form-check-label" for="animateChart">Animar Gráfico</label>
+                                    </div>
+                                    <button class="btn btn-primary btn-sm w-100">Actualizar Gráfico</button>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Exportar Gráfico</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button class="btn btn-outline-secondary btn-sm">PNG</button>
+                                        <button class="btn btn-outline-secondary btn-sm">JPG</button>
+                                        <button class="btn btn-outline-secondary btn-sm">PDF</button>
+                                        <button class="btn btn-outline-secondary btn-sm">SVG</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña de Análisis -->
+                <div class="tab-pane fade" id="tab-analysis" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Tipo de Análisis</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <button class="list-group-item list-group-item-action active">Estadísticas Descriptivas</button>
+                                        <button class="list-group-item list-group-item-action">Correlación</button>
+                                        <button class="list-group-item list-group-item-action">Distribución</button>
+                                        <button class="list-group-item list-group-item-action">Series Temporales</button>
+                                        <button class="list-group-item list-group-item-action">Regresión</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Resultados del Análisis</h5>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-3">Estadísticas Descriptivas</h6>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Estadística</th>
+                                                    <th>Ventas</th>
+                                                    <th>Unidades</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Recuento</td>
+                                                    <td>100</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Media</td>
+                                                    <td>€548.32</td>
+                                                    <td>12.45</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Desv. Estándar</td>
+                                                    <td>€152.18</td>
+                                                    <td>3.87</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mínimo</td>
+                                                    <td>€102</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25%</td>
+                                                    <td>€423</td>
+                                                    <td>9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50% (Mediana)</td>
+                                                    <td>€542</td>
+                                                    <td>12</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>75%</td>
+                                                    <td>€678</td>
+                                                    <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Máximo</td>
+                                                    <td>€987</td>
+                                                    <td>24</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña de Exportación -->
+                <div class="tab-pane fade" id="tab-export" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Exportar Datos</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exportDataset" class="form-label">Conjunto de Datos</label>
+                                            <select class="form-select" id="exportDataset">
+                                                <option value="ventas">Datos de Ventas</option>
+                                                <option value="demograficos">Datos Demográficos</option>
+                                                <option value="educacion">Datos Educativos</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Formato</label>
+                                            <div class="d-flex gap-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exportFormat" id="formatCSV" value="csv" checked>
+                                                    <label class="form-check-label" for="formatCSV">CSV</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exportFormat" id="formatExcel" value="excel">
+                                                    <label class="form-check-label" for="formatExcel">Excel</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exportFormat" id="formatJSON" value="json">
+                                                    <label class="form-check-label" for="formatJSON">JSON</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Opciones</label>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="includeHeaders" checked>
+                                                <label class="form-check-label" for="includeHeaders">Incluir Encabezados</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="includeIndex">
+                                                <label class="form-check-label" for="includeIndex">Incluir Índice</label>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">Exportar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="card-title mb-0">Exportar Informe</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="reportTitle" class="form-label">Título del Informe</label>
+                                            <input type="text" class="form-control" id="reportTitle" placeholder="Informe de Análisis de Datos">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="reportDescription" class="form-label">Descripción</label>
+                                            <textarea class="form-control" id="reportDescription" rows="3" placeholder="Breve descripción del informe..."></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Incluir</label>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="includeData" checked>
+                                                <label class="form-check-label" for="includeData">Datos</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="includeCharts" checked>
+                                                <label class="form-check-label" for="includeCharts">Gráficos</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="includeAnalysis" checked>
+                                                <label class="form-check-label" for="includeAnalysis">Análisis</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Formato</label>
+                                            <div class="d-flex gap-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="reportFormat" id="formatPDF" value="pdf" checked>
+                                                    <label class="form-check-label" for="formatPDF">PDF</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="reportFormat" id="formatHTML" value="html">
+                                                    <label class="form-check-label" for="formatHTML">HTML</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="reportFormat" id="formatDOCX" value="docx">
+                                                    <label class="form-check-label" for="formatDOCX">DOCX</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">Generar Informe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">¿Tienes preguntas o comentarios? Contáctanos</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="tu@email.com">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Asunto</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Asunto del mensaje">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="mb-3">DataAnalyzer</h5>
+                    <p class="mb-3">Una herramienta interactiva para el análisis y visualización de datos.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#hero" class="text-white text-decoration-none mb-2 d-inline-block">Inicio</a></li>
+                        <li><a href="#features" class="text-white text-decoration-none mb-2 d-inline-block">Características</a></li>
+                        <li><a href="#demo" class="text-white text-decoration-none mb-2 d-inline-block">Demo</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none d-inline-block">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">Recursos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">Documentación</a></li>
+                        <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">API</a></li>
+                        <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">Tutoriales</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-inline-block">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 DataAnalyzer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@1.1.1/dist/chartjs-chart-matrix.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

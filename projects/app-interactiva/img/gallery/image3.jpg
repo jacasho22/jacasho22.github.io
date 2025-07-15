@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <!-- Fondo de la imagen -->
+  <rect width="800" height="400" fill="#fd79a8" />
+  
+  <!-- Patrón de fondo -->
+  <defs>
+    <pattern id="pattern3" patternUnits="userSpaceOnUse" width="70" height="70" patternTransform="rotate(60)">
+      <rect width="70" height="70" fill="#e84393" />
+      <circle cx="35" cy="35" r="25" fill="#fd79a8" />
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#pattern3)" opacity="0.3" />
+  
+  <!-- Elementos decorativos -->
+  <circle cx="250" cy="200" r="120" fill="#0984e3" opacity="0.7" />
+  <rect x="450" y="80" width="220" height="220" rx="30" fill="#6c5ce7" opacity="0.7" />
+  <polygon points="400,60 500,180 300,180" fill="#00b894" opacity="0.7" />
+  
+  <!-- Texto -->
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">Imagen 3</text>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white">Diseño abstracto</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e9ecef" />
+    </linearGradient>
+    <linearGradient id="primary-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d6efd" />
+      <stop offset="100%" stop-color="#0a58ca" />
+    </linearGradient>
+    <linearGradient id="secondary-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c757d" />
+      <stop offset="100%" stop-color="#495057" />
+    </linearGradient>
+    <linearGradient id="success-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#198754" />
+      <stop offset="100%" stop-color="#157347" />
+    </linearGradient>
+    <linearGradient id="warning-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffc107" />
+      <stop offset="100%" stop-color="#ffcd39" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Dashboard principal -->
+  <rect x="100" y="100" width="600" height="400" rx="10" fill="white" stroke="#dee2e6" stroke-width="2" />
+  
+  <!-- Barra superior -->
+  <rect x="100" y="100" width="600" height="50" rx="10" fill="url(#primary-gradient)" />
+  <circle cx="130" cy="125" r="10" fill="white" opacity="0.8" />
+  <circle cx="160" cy="125" r="10" fill="white" opacity="0.8" />
+  <circle cx="190" cy="125" r="10" fill="white" opacity="0.8" />
+  
+  <!-- Menú lateral -->
+  <rect x="100" y="150" width="150" height="350" fill="#f8f9fa" />
+  
+  <!-- Elementos del menú -->
+  <rect x="110" y="170" width="130" height="40" rx="5" fill="url(#primary-gradient)" />
+  <rect x="110" y="220" width="130" height="40" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" />
+  <rect x="110" y="270" width="130" height="40" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" />
+  <rect x="110" y="320" width="130" height="40" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" />
+  
+  <!-- Área de contenido principal -->
+  <rect x="260" y="160" width="430" height="330" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" />
+  
+  <!-- Tarjetas de resumen -->
+  <rect x="280" y="180" width="180" height="100" rx="5" fill="url(#primary-gradient)" />
+  <rect x="480" y="180" width="180" height="100" rx="5" fill="url(#success-gradient)" />
+  <rect x="280" y="300" width="180" height="100" rx="5" fill="url(#warning-gradient)" />
+  <rect x="480" y="300" width="180" height="100" rx="5" fill="url(#secondary-gradient)" />
+  
+  <!-- Gráfico -->
+  <rect x="280" y="420" width="380" height="50" rx="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+  
+  <!-- Líneas de gráfico -->
+  <polyline points="290,450 320,440 350,445 380,430 410,435 440,425 470,440 500,430 530,435 560,420 590,425 620,415 650,430" 
+            fill="none" stroke="url(#primary-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Iconos en tarjetas (simplificados) -->
+  <circle cx="310" cy="210" r="15" fill="white" opacity="0.3" />
+  <circle cx="510" cy="210" r="15" fill="white" opacity="0.3" />
+  <circle cx="310" cy="330" r="15" fill="white" opacity="0.3" />
+  <circle cx="510" cy="330" r="15" fill="white" opacity="0.3" />
+  
+  <!-- Elementos decorativos -->
+  <circle cx="700" cy="500" r="80" fill="url(#primary-gradient)" opacity="0.1" />
+  <circle cx="100" cy="100" r="60" fill="url(#success-gradient)" opacity="0.1" />
+  <circle cx="750" cy="150" r="40" fill="url(#warning-gradient)" opacity="0.1" />
+</svg>

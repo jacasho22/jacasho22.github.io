@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <!-- Fondo de la imagen -->
+  <rect width="800" height="400" fill="#8e2de2" />
+  
+  <!-- Patrón de fondo -->
+  <defs>
+    <pattern id="pattern1" patternUnits="userSpaceOnUse" width="60" height="60" patternTransform="rotate(45)">
+      <rect width="60" height="60" fill="#4a00e0" />
+      <circle cx="30" cy="30" r="20" fill="#8e2de2" />
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#pattern1)" opacity="0.3" />
+  
+  <!-- Elementos decorativos -->
+  <circle cx="200" cy="150" r="100" fill="#ff7675" opacity="0.7" />
+  <rect x="500" y="100" width="200" height="200" rx="20" fill="#a29bfe" opacity="0.7" />
+  <polygon points="400,50 450,150 350,150" fill="#ffeaa7" opacity="0.7" />
+  
+  <!-- Texto -->
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">Imagen 1</text>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white">Diseño moderno y colorido</text>
+</svg>

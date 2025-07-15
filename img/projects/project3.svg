@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Fondo -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Representación de una aplicación Java -->
+  <g transform="translate(100, 50)">
+    <!-- IDE/Editor -->
+    <rect x="0" y="0" width="600" height="400" rx="10" ry="10" fill="white" stroke="#cbd5e1" stroke-width="2"/>
+    
+    <!-- Barra de herramientas -->
+    <rect x="0" y="0" width="600" height="30" rx="10" ry="10" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    
+    <!-- Botones de la barra de herramientas -->
+    <circle cx="15" cy="15" r="5" fill="#f8fafc" opacity="0.7"/>
+    <circle cx="35" cy="15" r="5" fill="#f8fafc" opacity="0.7"/>
+    <circle cx="55" cy="15" r="5" fill="#f8fafc" opacity="0.7"/>
+    
+    <!-- Panel lateral (explorador de proyectos) -->
+    <rect x="0" y="30" width="150" height="370" fill="#f1f5f9"/>
+    
+    <!-- Estructura de carpetas -->
+    <g transform="translate(10, 50)" font-family="monospace" font-size="12" fill="#334155">
+      <text x="0" y="0">📁 src</text>
+      <text x="15" y="20">📁 main</text>
+      <text x="30" y="40">📁 java</text>
+      <text x="45" y="60">📁 com.app</text>
+      <text x="60" y="80">📄 Main.java</text>
+      <text x="60" y="100">📄 User.java</text>
+      <text x="60" y="120">📄 Service.java</text>
+      <text x="45" y="140">📁 resources</text>
+      <text x="15" y="160">📁 test</text>
+      <text x="0" y="180">📁 target</text>
+      <text x="0" y="200">📄 pom.xml</text>
+    </g>
+    
+    <!-- Editor de código -->
+    <g transform="translate(170, 50)">
+      <!-- Pestaña de archivo -->
+      <rect x="0" y="0" width="120" height="25" rx="5" ry="5" fill="#3b82f6"/>
+      <text x="10" y="17" font-family="monospace" font-size="12" fill="white">User.java</text>
+      
+      <!-- Contenido del editor -->
+      <rect x="0" y="25" width="410" height="345" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+      
+      <!-- Números de línea -->
+      <rect x="0" y="25" width="30" height="345" fill="#f8fafc"/>
+      <g font-family="monospace" font-size="12" fill="#94a3b8">
+        <text x="10" y="45">1</text>
+        <text x="10" y="65">2</text>
+        <text x="10" y="85">3</text>
+        <text x="10" y="105">4</text>
+        <text x="10" y="125">5</text>
+        <text x="10" y="145">6</text>
+        <text x="10" y="165">7</text>
+        <text x="10" y="185">8</text>
+        <text x="10" y="205">9</text>
+        <text x="10" y="225">10</text>
+        <text x="10" y="245">11</text>
+        <text x="10" y="265">12</text>
+        <text x="10" y="285">13</text>
+        <text x="10" y="305">14</text>
+        <text x="10" y="325">15</text>
+        <text x="10" y="345">16</text>
+      </g>
+      
+      <!-- Código Java -->
+      <g font-family="monospace" font-size="12" fill="#334155">
+        <text x="40" y="45"><tspan fill="#8b5cf6">package</tspan> com.app;</text>
+        <text x="40" y="65"></text>
+        <text x="40" y="85"><tspan fill="#8b5cf6">import</tspan> java.util.Date;</text>
+        <text x="40" y="105"><tspan fill="#8b5cf6">import</tspan> java.util.UUID;</text>
+        <text x="40" y="125"></text>
+        <text x="40" y="145"><tspan fill="#8b5cf6">public</tspan> <tspan fill="#8b5cf6">class</tspan> <tspan fill="#2563eb">User</tspan> {</text>
+        <text x="40" y="165">    <tspan fill="#8b5cf6">private</tspan> <tspan fill="#2563eb">UUID</tspan> id;</text>
+        <text x="40" y="185">    <tspan fill="#8b5cf6">private</tspan> <tspan fill="#2563eb">String</tspan> username;</text>
+        <text x="40" y="205">    <tspan fill="#8b5cf6">private</tspan> <tspan fill="#2563eb">String</tspan> email;</text>
+        <text x="40" y="225">    <tspan fill="#8b5cf6">private</tspan> <tspan fill="#2563eb">Date</tspan> createdAt;</text>
+        <text x="40" y="245"></text>
+        <text x="40" y="265">    <tspan fill="#8b5cf6">public</tspan> <tspan fill="#2563eb">User</tspan>(<tspan fill="#2563eb">String</tspan> username, <tspan fill="#2563eb">String</tspan> email) {</text>
+        <text x="40" y="285">        <tspan fill="#8b5cf6">this</tspan>.id = <tspan fill="#2563eb">UUID</tspan>.randomUUID();</text>
+        <text x="40" y="305">        <tspan fill="#8b5cf6">this</tspan>.username = username;</text>
+        <text x="40" y="325">        <tspan fill="#8b5cf6">this</tspan>.email = email;</text>
+        <text x="40" y="345">        <tspan fill="#8b5cf6">this</tspan>.createdAt = <tspan fill="#8b5cf6">new</tspan> <tspan fill="#2563eb">Date</tspan>();</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Diagrama UML simplificado -->
+  <g transform="translate(150, 480)">
+    <!-- Clase User -->
+    <rect x="0" y="0" width="150" height="80" fill="white" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="150" height="20" fill="#e2e8f0" stroke="#334155" stroke-width="1"/>
+    <text x="75" y="15" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="middle">User</text>
+    <line x1="0" y1="40" x2="150" y2="40" stroke="#334155" stroke-width="1"/>
+    <text x="5" y="35" font-family="sans-serif" font-size="10" fill="#334155">- id: UUID</text>
+    <text x="5" y="55" font-family="sans-serif" font-size="10" fill="#334155">- username: String</text>
+    <text x="5" y="70" font-family="sans-serif" font-size="10" fill="#334155">- email: String</text>
+    
+    <!-- Clase Service -->
+    <rect x="200" y="0" width="150" height="60" fill="white" stroke="#334155" stroke-width="1"/>
+    <rect x="200" y="0" width="150" height="20" fill="#e2e8f0" stroke="#334155" stroke-width="1"/>
+    <text x="275" y="15" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="middle">Service</text>
+    <line x1="200" y1="40" x2="350" y2="40" stroke="#334155" stroke-width="1"/>
+    <text x="205" y="35" font-family="sans-serif" font-size="10" fill="#334155">- users: List<User></text>
+    
+    <!-- Relación -->
+    <line x1="150" y1="30" x2="200" y2="30" stroke="#334155" stroke-width="1"/>
+    <polygon points="190,25 200,30 190,35" fill="#334155"/>
+  </g>
+  
+  <!-- Logo de Java -->
+  <g transform="translate(600, 480)">
+    <!-- Taza de café (símbolo de Java) -->
+    <path d="M30,60 C10,60 10,30 30,30 C50,30 50,60 30,60 Z" fill="#5382a1"/>
+    <path d="M30,0 C25,10 35,20 25,30 C40,25 40,15 30,0 Z" fill="#f8981d"/>
+    <path d="M40,5 C35,15 45,25 35,35 C50,30 50,20 40,5 Z" fill="#f8981d"/>
+    <rect x="15" y="60" width="30" height="5" rx="2" ry="2" fill="#5382a1"/>
+  </g>
+</svg>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación SPA con Vue.js</title>
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#/" class="logo">
+                <img src="img/logo.svg" alt="Logo SPA">
+                <span class="logo-text">Vue SPA</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#/" class="active">Inicio</a></li>
+                <li><a href="#/about">Nosotros</a></li>
+                <li><a href="#/services">Servicios</a></li>
+                <li><a href="#/contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Contenedor para la aplicación SPA -->
+    <div id="app-root">
+        <!-- El contenido dinámico de la SPA se cargará aquí -->
+    </div>
+    
+    <!-- Sección de demo -->
+    <section class="demo">
+        <div class="section-title">
+            <h2>Demo Interactiva</h2>
+            <p>Prueba nuestra aplicación SPA en acción</p>
+        </div>
+        
+        <div class="demo-container">
+            <div class="demo-app">
+                <div class="demo-nav">
+                    <div class="demo-logo">Demo App</div>
+                    <ul class="demo-nav-links">
+                        <li><a href="#" class="active" data-view="demo-home">Inicio</a></li>
+                        <li><a href="#" data-view="demo-products">Productos</a></li>
+                        <li><a href="#" data-view="demo-blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="demo-content">
+                    <div id="demo-home" class="demo-view active">
+                        <h3>Bienvenido a la Demo</h3>
+                        <p>Esta es una demostración interactiva de nuestra aplicación SPA. Navega entre las diferentes secciones utilizando los enlaces de arriba.</p>
+                        <div style="margin-top: 1rem;">
+                            <button class="btn" onclick="document.querySelector('.demo-nav-links a[data-view=\'demo-products\']').click(); return false;">Ver productos</button>
+                        </div>
+                    </div>
+                    
+                    <div id="demo-products" class="demo-view">
+                        <h3>Nuestros Productos</h3>
+                        <p>Explora nuestra selección de productos.</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <div style="background-color: var(--white); padding: 1rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                                <div style="height: 100px; background-color: var(--light-gray); border-radius: var(--border-radius); margin-bottom: 1rem;"></div>
+                                <h4>Producto 1</h4>
+                                <p>Descripción del producto</p>
+                                <div style="margin-top: 1rem;">
+                                    <button class="btn btn-outline">Ver detalles</button>
+                                </div>
+                            </div>
+                            <div style="background-color: var(--white); padding: 1rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                                <div style="height: 100px; background-color: var(--light-gray); border-radius: var(--border-radius); margin-bottom: 1rem;"></div>
+                                <h4>Producto 2</h4>
+                                <p>Descripción del producto</p>
+                                <div style="margin-top: 1rem;">
+                                    <button class="btn btn-outline">Ver detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="demo-blog" class="demo-view">
+                        <h3>Blog</h3>
+                        <p>Últimas noticias y artículos.</p>
+                        <div style="margin-top: 1rem;">
+                            <div style="background-color: var(--white); padding: 1rem; border-radius: var(--border-radius); box-shadow: var(--shadow); margin-bottom: 1rem;">
+                                <h4>Título del artículo 1</h4>
+                                <p style="color: var(--gray); font-size: 0.9rem;">Publicado el 10 de julio, 2023</p>
+                                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies.</p>
+                                <div style="margin-top: 1rem;">
+                                    <button class="btn btn-outline">Leer más</button>
+                                </div>
+                            </div>
+                            <div style="background-color: var(--white); padding: 1rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                                <h4>Título del artículo 2</h4>
+                                <p style="color: var(--gray); font-size: 0.9rem;">Publicado el 5 de julio, 2023</p>
+                                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies.</p>
+                                <div style="margin-top: 1rem;">
+                                    <button class="btn btn-outline">Leer más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo.svg" alt="Logo SPA">
+                <span>Vue SPA</span>
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="#/">Inicio</a></li>
+                <li><a href="#/about">Nosotros</a></li>
+                <li><a href="#/services">Servicios</a></li>
+                <li><a href="#/contact">Contacto</a></li>
+                <li><a href="../index.html">Volver al Portfolio</a></li>
+            </ul>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2023 Vue SPA. Todos los derechos reservados.
+        </div>
+    </footer>
+    
+    <!-- Botón de modo oscuro -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="components/HomeComponent.js"></script>
+    <script src="components/AboutComponent.js"></script>
+    <script src="components/ServicesComponent.js"></script>
+    <script src="components/ContactComponent.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Inicializar la aplicación SPA -->
+    <script>
+        // Definir las rutas
+        const routes = [
+            { path: '/', component: HomeComponent },
+            { path: '/about', component: AboutComponent },
+            { path: '/services', component: ServicesComponent },
+            { path: '/contact', component: ContactComponent }
+        ];
+        
+        // Inicializar el router cuando el DOM esté cargado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elemento raíz para la aplicación SPA
+            const appRoot = document.getElementById('app-root');
+            
+            // Si estamos en la página de la SPA, inicializar el router
+            if (appRoot) {
+                // Crear una instancia del router
+                window.router = new Router(routes, appRoot);
+            }
+        });
+    </script>
+</body>
+</html>

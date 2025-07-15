@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Fondo con gradiente -->
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.3)" />
+    </filter>
+  </defs>
+  
+  <!-- Círculo de fondo -->
+  <circle cx="50" cy="50" r="45" fill="url(#iconGradient)" filter="url(#shadow)" />
+  
+  <!-- Documento con lista de requisitos -->
+  <rect x="30" y="25" width="40" height="50" rx="3" fill="white" stroke="#34495e" stroke-width="1" />
+  
+  <!-- Título del documento -->
+  <rect x="33" y="28" width="34" height="6" rx="1" fill="#3498db" />
+  
+  <!-- Líneas de texto (requisitos) -->
+  <line x1="33" y1="40" x2="67" y2="40" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="33" y1="45" x2="67" y2="45" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="33" y1="50" x2="67" y2="50" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="33" y1="55" x2="67" y2="55" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="33" y1="60" x2="67" y2="60" stroke="#7f8c8d" stroke-width="1" />
+  <line x1="33" y1="65" x2="67" y2="65" stroke="#7f8c8d" stroke-width="1" />
+  
+  <!-- Marcas de verificación -->
+  <circle cx="36" y="40" r="1.5" fill="#2ecc71" />
+  <circle cx="36" y="45" r="1.5" fill="#2ecc71" />
+  <circle cx="36" y="50" r="1.5" fill="#2ecc71" />
+  <circle cx="36" y="55" r="1.5" fill="#f39c12" />
+  <circle cx="36" y="60" r="1.5" fill="#f39c12" />
+  <circle cx="36" y="65" r="1.5" fill="#e74c3c" />
+  
+  <!-- Lápiz para simbolizar edición/creación -->
+  <g transform="translate(65, 30) rotate(45)">
+    <rect x="-2" y="-15" width="4" height="25" fill="#e67e22" />
+    <polygon points="-2,-15 2,-15 0,-20" fill="#d35400" />
+    <rect x="-3" y="10" width="6" height="3" rx="1" fill="#f1c40f" />
+  </g>
+</svg>

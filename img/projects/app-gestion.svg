@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#3498db" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo principal -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Dashboard principal -->
+  <rect x="50" y="50" width="700" height="500" rx="15" ry="15" fill="#fff" opacity="0.9" />
+  
+  <!-- Barra lateral de navegación -->
+  <rect x="50" y="50" width="150" height="500" rx="15" ry="15" fill="#34495e" />
+  
+  <!-- Iconos de navegación (simplificados) -->
+  <circle cx="100" cy="100" r="20" fill="#3498db" />
+  <circle cx="100" cy="170" r="20" fill="#2ecc71" />
+  <circle cx="100" cy="240" r="20" fill="#e74c3c" />
+  <circle cx="100" cy="310" r="20" fill="#f39c12" />
+  <circle cx="100" cy="380" r="20" fill="#9b59b6" />
+  
+  <!-- Área de contenido principal -->
+  <!-- Gráfico de barras -->
+  <rect x="250" y="100" width="60" height="150" rx="5" ry="5" fill="#3498db" />
+  <rect x="330" y="130" width="60" height="120" rx="5" ry="5" fill="#2ecc71" />
+  <rect x="410" y="80" width="60" height="170" rx="5" ry="5" fill="#e74c3c" />
+  <rect x="490" y="150" width="60" height="100" rx="5" ry="5" fill="#f39c12" />
+  <rect x="570" y="110" width="60" height="140" rx="5" ry="5" fill="#9b59b6" />
+  
+  <!-- Línea de base para el gráfico -->
+  <line x1="230" y1="250" x2="650" y2="250" stroke="#7f8c8d" stroke-width="2" />
+  
+  <!-- Tarjetas de información -->
+  <rect x="230" y="300" width="150" height="100" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" />
+  <rect x="400" y="300" width="150" height="100" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" />
+  <rect x="570" y="300" width="150" height="100" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" />
+  
+  <!-- Tabla de datos (simplificada) -->
+  <rect x="230" y="420" width="490" height="100" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" />
+  <line x1="230" y1="450" x2="720" y2="450" stroke="#bdc3c7" stroke-width="1" />
+  <line x1="230" y1="480" x2="720" y2="480" stroke="#bdc3c7" stroke-width="1" />
+  <line x1="230" y1="510" x2="720" y2="510" stroke="#bdc3c7" stroke-width="1" />
+  <line x1="350" y1="420" x2="350" y2="520" stroke="#bdc3c7" stroke-width="1" />
+  <line x1="470" y1="420" x2="470" y2="520" stroke="#bdc3c7" stroke-width="1" />
+  <line x1="590" y1="420" x2="590" y2="520" stroke="#bdc3c7" stroke-width="1" />
+</svg>

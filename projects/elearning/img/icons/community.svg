@@ -1,0 +1,62 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definiciones de gradientes -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="100%" stop-color="#FF9E9E" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo circular con gradiente -->
+  <circle cx="60" cy="60" r="50" fill="url(#bgGradient)" opacity="0.1" />
+  
+  <!-- Grupo de personas (comunidad) -->
+  <g transform="translate(60, 60)">
+    <!-- Persona central -->
+    <circle cx="0" cy="-5" r="12" fill="#FF6B6B" />
+    <circle cx="0" cy="-5" r="10" fill="#FF6B6B" stroke="white" stroke-width="1" />
+    <path d="M-5,-5 C-5,-2 5,-2 5,-5" stroke="white" stroke-width="1.5" fill="none" />
+    <circle cx="-3" cy="-8" r="1.5" fill="white" />
+    <circle cx="3" cy="-8" r="1.5" fill="white" />
+    <path d="M-10,15 L10,15 L10,5 C10,-5 -10,-5 -10,5 Z" fill="#FF6B6B" />
+    
+    <!-- Persona izquierda -->
+    <g transform="translate(-25, 0)">
+      <circle cx="0" cy="-5" r="10" fill="#FF9E9E" />
+      <circle cx="0" cy="-5" r="8" fill="#FF9E9E" stroke="white" stroke-width="1" />
+      <path d="M-4,-5 C-4,-2 4,-2 4,-5" stroke="white" stroke-width="1.5" fill="none" />
+      <circle cx="-2.5" cy="-8" r="1.2" fill="white" />
+      <circle cx="2.5" cy="-8" r="1.2" fill="white" />
+      <path d="M-8,12 L8,12 L8,4 C8,-4 -8,-4 -8,4 Z" fill="#FF9E9E" />
+    </g>
+    
+    <!-- Persona derecha -->
+    <g transform="translate(25, 0)">
+      <circle cx="0" cy="-5" r="10" fill="#FF9E9E" />
+      <circle cx="0" cy="-5" r="8" fill="#FF9E9E" stroke="white" stroke-width="1" />
+      <path d="M-4,-5 C-4,-2 4,-2 4,-5" stroke="white" stroke-width="1.5" fill="none" />
+      <circle cx="-2.5" cy="-8" r="1.2" fill="white" />
+      <circle cx="2.5" cy="-8" r="1.2" fill="white" />
+      <path d="M-8,12 L8,12 L8,4 C8,-4 -8,-4 -8,4 Z" fill="#FF9E9E" />
+    </g>
+    
+    <!-- Líneas de conexión -->
+    <line x1="-15" y1="0" x2="-5" y2="0" stroke="#FF6B6B" stroke-width="2" />
+    <line x1="5" y1="0" x2="15" y2="0" stroke="#FF6B6B" stroke-width="2" />
+    
+    <!-- Burbujas de diálogo -->
+    <g transform="translate(-20, -20)">
+      <path d="M-5,-5 L-5,5 L0,5 L5,10 L5,5 L5,-5 Z" fill="white" stroke="#FF6B6B" stroke-width="1" />
+      <circle cx="-2" cy="0" r="1" fill="#FF6B6B" />
+      <circle cx="0" cy="0" r="1" fill="#FF6B6B" />
+      <circle cx="2" cy="0" r="1" fill="#FF6B6B" />
+    </g>
+    
+    <g transform="translate(20, -20)">
+      <path d="M-5,-5 L-5,5 L-2,5 L0,10 L2,5 L5,5 L5,-5 Z" fill="white" stroke="#FF6B6B" stroke-width="1" />
+      <circle cx="-2" cy="0" r="1" fill="#FF6B6B" />
+      <circle cx="0" cy="0" r="1" fill="#FF6B6B" />
+      <circle cx="2" cy="0" r="1" fill="#FF6B6B" />
+    </g>
+  </g>
+</svg>

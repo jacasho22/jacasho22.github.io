@@ -1,0 +1,387 @@
+/* Variables */
+:root {
+    --primary-color: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary-color: #4cc9f0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --transition-speed: 0.3s;
+    
+    /* Colores para el modo oscuro */
+    --dark-bg: #121212;
+    --dark-card-bg: #1e1e1e;
+    --dark-text: #e0e0e0;
+    --dark-border: #333;
+    --dark-hover: #2a2a2a;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-800);
+}
+
+a {
+    color: var(--primary-color);
+    transition: all var(--transition-speed) ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Header & Navigation */
+header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all var(--transition-speed) ease;
+}
+
+header .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+#hero {
+    padding-top: 80px; /* Reducido para ajustar mejor el título */
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative; /* Para posicionamiento absoluto de elementos internos si es necesario */
+}
+
+#hero h1 {
+    font-weight: 700;
+    margin-top: 0; /* Eliminado el margen superior */
+    color: var(--gray-900);
+    animation: fadeIn 0.8s ease-out;
+    font-size: 3.5rem; /* Tamaño de fuente más grande */
+    line-height: 1.2; /* Mejor espaciado entre líneas */
+}
+
+#hero .lead {
+    color: var(--gray-700);
+    animation: fadeIn 1s ease-out 0.2s forwards;
+    opacity: 0;
+    font-size: 1.25rem; /* Tamaño de fuente más grande para mejor legibilidad */
+    margin-bottom: 2rem; /* Más espacio antes de los botones */
+}
+
+/* Hero Section */
+#inicio {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#inicio h2 {
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+#inicio .lead {
+    color: var(--gray-700);
+}
+
+/* Features Section */
+.feature-card {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card .card-body {
+    padding: 2rem 1.5rem;
+}
+
+.feature-card img {
+    transition: transform var(--transition-speed) ease;
+}
+
+.feature-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Demo Section */
+#demo .list-group-item {
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all var(--transition-speed) ease;
+}
+
+#demo .list-group-item.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+#demo .card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#demo .card-header {
+    background-color: var(--gray-100);
+    border-bottom: 1px solid var(--gray-200);
+    font-weight: 600;
+}
+
+/* Table Styles */
+.table th {
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(67, 97, 238, 0.05);
+}
+
+/* Chart Styles */
+.chart-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Controls */
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Contact Section */
+#contacto {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+}
+
+/* Footer */
+footer {
+    background-color: var(--gray-900);
+}
+
+footer .btn-outline-light:hover {
+    color: var(--primary-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* Header en modo oscuro */
+body.dark-mode header {
+    background-color: var(--dark-card-bg) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode header .nav-link {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode header .nav-link:hover {
+    background-color: var(--dark-hover);
+}
+
+/* Secciones en modo oscuro */
+body.dark-mode #inicio,
+body.dark-mode #demo {
+    background-color: var(--dark-bg);
+}
+
+body.dark-mode #caracteristicas {
+    background-color: var(--dark-card-bg);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6,
+body.dark-mode .lead {
+    color: var(--dark-text);
+}
+
+/* Tarjetas en modo oscuro */
+body.dark-mode .card {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border);
+}
+
+body.dark-mode .card-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+body.dark-mode .list-group-item {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+body.dark-mode .list-group-item.active {
+    background-color: var(--primary-color);
+}
+
+/* Tablas en modo oscuro */
+body.dark-mode .table {
+    color: var(--dark-text);
+}
+
+body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .table th {
+    color: var(--dark-text);
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+    background-color: rgba(67, 97, 238, 0.1);
+}
+
+/* Botones en modo oscuro */
+body.dark-mode .btn-outline-secondary {
+    color: var(--dark-text);
+    border-color: var(--gray-600);
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+    background-color: var(--gray-700);
+    color: var(--light-color);
+}
+
+/* Toggle para modo oscuro */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all var(--transition-speed) ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-dark);
+}
+
+.dark-mode-toggle i {
+    font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    #inicio {
+        text-align: center;
+    }
+    
+    #inicio img {
+        margin-top: 2rem;
+    }
+    
+    #demo .list-group {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        margin-bottom: 1.5rem;
+    }
+    
+    #demo .list-group-item {
+        flex: 0 0 auto;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    #demo .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #demo .card-header .btn-group {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    #demo .card-header .btn-group .btn {
+        flex: 1;
+    }
+}

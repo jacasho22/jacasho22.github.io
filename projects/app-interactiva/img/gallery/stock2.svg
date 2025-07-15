@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <!-- Fondo de la imagen -->
+  <rect width="800" height="400" fill="#f5f5f5" />
+  
+  <!-- Imagen de ciudad urbana -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A237E" />
+      <stop offset="100%" stop-color="#3949AB" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cielo nocturno -->
+  <rect width="800" height="400" fill="url(#skyGradient)" />
+  
+  <!-- Estrellas -->
+  <circle cx="100" cy="50" r="1" fill="white" />
+  <circle cx="200" cy="80" r="1.5" fill="white" />
+  <circle cx="300" cy="30" r="1" fill="white" />
+  <circle cx="400" cy="60" r="2" fill="white" />
+  <circle cx="500" cy="40" r="1" fill="white" />
+  <circle cx="600" cy="70" r="1.5" fill="white" />
+  <circle cx="700" cy="90" r="1" fill="white" />
+  <circle cx="750" cy="30" r="2" fill="white" />
+  <circle cx="150" cy="120" r="1" fill="white" />
+  <circle cx="250" cy="150" r="1.5" fill="white" />
+  <circle cx="350" cy="100" r="1" fill="white" />
+  <circle cx="450" cy="130" r="2" fill="white" />
+  <circle cx="550" cy="110" r="1" fill="white" />
+  <circle cx="650" cy="140" r="1.5" fill="white" />
+  
+  <!-- Luna -->
+  <circle cx="700" cy="80" r="30" fill="#FFF9C4" />
+  <circle cx="685" cy="70" r="10" fill="#3949AB" opacity="0.4" />
+  <circle cx="710" cy="90" r="8" fill="#3949AB" opacity="0.3" />
+  
+  <!-- Silueta de la ciudad -->
+  <rect x="50" y="200" width="40" height="200" fill="#212121" />
+  <rect x="100" y="150" width="50" height="250" fill="#263238" />
+  <rect x="160" y="220" width="30" height="180" fill="#212121" />
+  <rect x="200" y="180" width="60" height="220" fill="#263238" />
+  <rect x="270" y="250" width="40" height="150" fill="#212121" />
+  <rect x="320" y="150" width="70" height="250" fill="#263238" />
+  <rect x="400" y="200" width="50" height="200" fill="#212121" />
+  <rect x="460" y="170" width="40" height="230" fill="#263238" />
+  <rect x="510" y="220" width="60" height="180" fill="#212121" />
+  <rect x="580" y="190" width="30" height="210" fill="#263238" />
+  <rect x="620" y="240" width="50" height="160" fill="#212121" />
+  <rect x="680" y="160" width="70" height="240" fill="#263238" />
+  
+  <!-- Ventanas iluminadas -->
+  <rect x="60" y="220" width="5" height="10" fill="#FFEB3B" opacity="0.8" />
+  <rect x="70" y="250" width="5" height="10" fill="#FFEB3B" opacity="0.8" />
+  <rect x="60" y="280" width="5" height="10" fill="#FFEB3B" opacity="0.8" />
+  <rect x="70" y="310" width="5" height="10" fill="#FFEB3B" opacity="0.8" />
+  
+  <rect x="110" y="170" width="7" height="12" fill="#FFEB3B" opacity="0.8" />
+  <rect x="130" y="200" width="7" height="12" fill="#FFEB3B" opacity="0.8" />
+  <rect x="110" y="230" width="7" height="12" fill="#FFEB3B" opacity="0.8" />
+  <rect x="130" y="260" width="7" height="12" fill="#FFEB3B" opacity="0.8" />
+  <rect x="110" y="290" width="7" height="12" fill="#FFEB3B" opacity="0.8" />
+  <rect x="130" y="320" width="7" height="12" fill="#FFEB3B" opacity="0.8" />
+  
+  <!-- Más ventanas iluminadas en otros edificios -->
+  <rect x="210" y="200" width="8" height="14" fill="#FFEB3B" opacity="0.8" />
+  <rect x="230" y="240" width="8" height="14" fill="#FFEB3B" opacity="0.8" />
+  <rect x="210" y="280" width="8" height="14" fill="#FFEB3B" opacity="0.8" />
+  <rect x="230" y="320" width="8" height="14" fill="#FFEB3B" opacity="0.8" />
+  
+  <rect x="330" y="180" width="10" height="15" fill="#FFEB3B" opacity="0.8" />
+  <rect x="360" y="220" width="10" height="15" fill="#FFEB3B" opacity="0.8" />
+  <rect x="330" y="260" width="10" height="15" fill="#FFEB3B" opacity="0.8" />
+  <rect x="360" y="300" width="10" height="15" fill="#FFEB3B" opacity="0.8" />
+  
+  <!-- Texto de atribución -->
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white">Ciudad Nocturna</text>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">Foto de stock gratuita de Pixabay</text>
+</svg>

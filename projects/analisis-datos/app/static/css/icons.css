@@ -1,0 +1,2719 @@
+/* Estilos para los iconos SVG */
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+/* Tamaños de iconos */
+.icon-xs {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-md {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-xl {
+  width: 48px;
+  height: 48px;
+}
+
+/* Colores de iconos */
+.icon-primary {
+  color: var(--primary);
+}
+
+.icon-secondary {
+  color: var(--secondary);
+}
+
+.icon-success {
+  color: var(--success);
+}
+
+.icon-danger {
+  color: var(--danger);
+}
+
+.icon-warning {
+  color: var(--warning);
+}
+
+.icon-info {
+  color: var(--info);
+}
+
+.icon-light {
+  color: var(--light);
+}
+
+.icon-dark {
+  color: var(--dark);
+}
+
+/* Efectos de iconos */
+.icon-spin {
+  animation: icon-spin 2s infinite linear;
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-pulse {
+  animation: icon-spin 1s infinite steps(8);
+}
+
+.icon-flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.icon-flip-vertical {
+  transform: scaleY(-1);
+}
+
+/* Iconos en botones */
+.btn .icon {
+  margin-right: 0.5rem;
+}
+
+.btn-icon {
+  padding: 0.375rem;
+  line-height: 1;
+}
+
+.btn-icon .icon {
+  margin-right: 0;
+}
+
+/* Iconos en tarjetas */
+.card-header .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en navegación */
+.nav-link .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en alertas */
+.alert .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en listas */
+.list-group-item .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en formularios */
+.form-label .icon {
+  margin-right: 0.25rem;
+}
+
+.input-group-text .icon {
+  margin-right: 0;
+}
+
+/* Iconos en tablas */
+.table th .icon,
+.table td .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en badges */
+.badge .icon {
+  margin-right: 0.25rem;
+}
+
+/* Iconos en tooltips */
+.tooltip .icon {
+  margin-right: 0.25rem;
+}
+
+/* Iconos en modales */
+.modal-title .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en breadcrumbs */
+.breadcrumb-item .icon {
+  margin-right: 0.25rem;
+}
+
+/* Iconos en paginación */
+.page-link .icon {
+  margin-right: 0;
+}
+
+/* Iconos en acordeones */
+.accordion-button .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en pestañas */
+.nav-tabs .nav-link .icon,
+.nav-pills .nav-link .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en dropdowns */
+.dropdown-item .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en spinners */
+.spinner-border .icon,
+.spinner-grow .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en toasts */
+.toast-header .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en offcanvas */
+.offcanvas-header .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en popovers */
+.popover-header .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en progress bars */
+.progress-bar .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en listados */
+.list-group-item .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en tarjetas de características */
+.feature-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Iconos en secciones de análisis */
+.analysis-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Iconos en botones de exportación */
+.export-btn .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en selectores de gráficos */
+.chart-selector .icon {
+  margin-right: 0.25rem;
+}
+
+/* Iconos en tarjetas de estadísticas */
+.stat-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de KPI */
+.kpi-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de datos */
+.data-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de visualización */
+.viz-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de exportación */
+.export-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de análisis */
+.analysis-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de datos */
+.data-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de filtros */
+.filter-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de configuración */
+.settings-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de usuario */
+.user-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de búsqueda */
+.search-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de información */
+.info-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Iconos en tarjetas de advertencia */
+.warning-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--warning);
+}
+
+/* Iconos en tarjetas de éxito */
+.success-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--success);
+}
+
+/* Iconos en tarjetas de error */
+.error-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--danger);
+}
+
+/* Iconos en modo oscuro */
+.dark-mode .icon {
+  color: var(--light);
+}
+
+/* Iconos en modo claro */
+.light-mode .icon {
+  color: var(--dark);
+}
+
+/* Iconos en redes sociales */
+.social-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--primary-dark);
+}
+
+/* Iconos en footer */
+.footer .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en header */
+.header .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en sidebar */
+.sidebar .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en navbar */
+.navbar .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú */
+.menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en submenu */
+.submenu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú móvil */
+.mobile-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú desplegable */
+.dropdown-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú lateral */
+.side-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú superior */
+.top-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú inferior */
+.bottom-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú principal */
+.main-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú secundario */
+.secondary-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de usuario */
+.user-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de configuración */
+.settings-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ayuda */
+.help-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de notificaciones */
+.notification-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de mensajes */
+.message-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de perfil */
+.profile-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de cuenta */
+.account-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de búsqueda */
+.search-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de filtros */
+.filter-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ordenación */
+.sort-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de exportación */
+.export-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de importación */
+.import-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de análisis */
+.analysis-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de visualización */
+.visualization-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de datos */
+.data-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estadísticas */
+.stats-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de gráficos */
+.chart-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tablas */
+.table-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de formularios */
+.form-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de botones */
+.button-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tarjetas */
+.card-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de alertas */
+.alert-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de modales */
+.modal-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tooltips */
+.tooltip-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de popovers */
+.popover-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de acordeones */
+.accordion-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pestañas */
+.tab-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de navegación */
+.nav-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de paginación */
+.pagination-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de breadcrumbs */
+.breadcrumb-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de badges */
+.badge-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de spinners */
+.spinner-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de progress bars */
+.progress-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de listados */
+.list-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de media */
+.media-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de imágenes */
+.image-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de videos */
+.video-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de audio */
+.audio-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de documentos */
+.document-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de archivos */
+.file-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de carpetas */
+.folder-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de descargas */
+.download-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de subidas */
+.upload-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de compartir */
+.share-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de favoritos */
+.favorite-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de guardados */
+.saved-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de recientes */
+.recent-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de historial */
+.history-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de actividad */
+.activity-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de calendario */
+.calendar-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de eventos */
+.event-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tareas */
+.task-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de proyectos */
+.project-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de equipos */
+.team-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de miembros */
+.member-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de roles */
+.role-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de permisos */
+.permission-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de seguridad */
+.security-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de privacidad */
+.privacy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de términos */
+.terms-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ayuda */
+.help-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de soporte */
+.support-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de contacto */
+.contact-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de feedback */
+.feedback-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de reportes */
+.report-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de bugs */
+.bug-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sugerencias */
+.suggestion-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de comentarios */
+.comment-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de valoraciones */
+.rating-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de reseñas */
+.review-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de testimonios */
+.testimonial-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de clientes */
+.client-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de proveedores */
+.provider-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de partners */
+.partner-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sponsors */
+.sponsor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de colaboradores */
+.collaborator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de contribuidores */
+.contributor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de desarrolladores */
+.developer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de diseñadores */
+.designer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de analistas */
+.analyst-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de científicos de datos */
+.data-scientist-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ingenieros de datos */
+.data-engineer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de analistas de datos */
+.data-analyst-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de visualizadores de datos */
+.data-viz-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estadísticos */
+.statistician-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de matemáticos */
+.mathematician-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de investigadores */
+.researcher-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de académicos */
+.academic-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estudiantes */
+.student-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de profesores */
+.teacher-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de instructores */
+.instructor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de mentores */
+.mentor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de coaches */
+.coach-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de consultores */
+.consultant-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de asesores */
+.advisor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de expertos */
+.expert-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de especialistas */
+.specialist-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de profesionales */
+.professional-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de practicantes */
+.practitioner-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aprendices */
+.apprentice-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de novatos */
+.novice-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de intermedios */
+.intermediate-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de avanzados */
+.advanced-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de expertos */
+.expert-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de maestros */
+.master-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de gurús */
+.guru-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ninjas */
+.ninja-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de rockstars */
+.rockstar-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de superestrellas */
+.superstar-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de leyendas */
+.legend-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de héroes */
+.hero-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de campeones */
+.champion-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ganadores */
+.winner-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de líderes */
+.leader-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de visionarios */
+.visionary-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de innovadores */
+.innovator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de creadores */
+.creator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de fundadores */
+.founder-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pioneros */
+.pioneer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de exploradores */
+.explorer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aventureros */
+.adventurer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de descubridores */
+.discoverer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de inventores */
+.inventor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de científicos */
+.scientist-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ingenieros */
+.engineer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de arquitectos */
+.architect-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de constructores */
+.builder-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de artistas */
+.artist-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de músicos */
+.musician-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de escritores */
+.writer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de poetas */
+.poet-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pintores */
+.painter-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de escultores */
+.sculptor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de fotógrafos */
+.photographer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de cineastas */
+.filmmaker-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de actores */
+.actor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de bailarines */
+.dancer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de cantantes */
+.singer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de compositores */
+.composer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de productores */
+.producer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de directores */
+.director-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de editores */
+.editor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de curadores */
+.curator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de críticos */
+.critic-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de jueces */
+.judge-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de árbitros */
+.referee-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de entrenadores */
+.trainer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de atletas */
+.athlete-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de jugadores */
+.player-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de competidores */
+.competitor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de rivales */
+.rival-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aliados */
+.ally-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de amigos */
+.friend-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de seguidores */
+.follower-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de fans */
+.fan-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de suscriptores */
+.subscriber-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de miembros */
+.member-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de invitados */
+.guest-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de visitantes */
+.visitor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de turistas */
+.tourist-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de viajeros */
+.traveler-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de exploradores */
+.explorer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aventureros */
+.adventurer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de nómadas */
+.nomad-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de residentes */
+.resident-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ciudadanos */
+.citizen-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de habitantes */
+.inhabitant-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pobladores */
+.settler-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de colonos */
+.colonist-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pioneros */
+.pioneer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de fundadores */
+.founder-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ancestros */
+.ancestor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de descendientes */
+.descendant-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de herederos */
+.heir-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sucesores */
+.successor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de predecesores */
+.predecessor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de antecesores */
+.antecessor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de progenitores */
+.progenitor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de padres */
+.parent-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de hijos */
+.child-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de hermanos */
+.sibling-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de familiares */
+.relative-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de parientes */
+.kin-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de clanes */
+.clan-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tribus */
+.tribe-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de comunidades */
+.community-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sociedades */
+.society-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de culturas */
+.culture-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de civilizaciones */
+.civilization-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de naciones */
+.nation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de países */
+.country-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de regiones */
+.region-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de provincias */
+.province-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estados */
+.state-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ciudades */
+.city-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pueblos */
+.town-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de villas */
+.village-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aldeas */
+.hamlet-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de asentamientos */
+.settlement-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de colonias */
+.colony-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de outposts */
+.outpost-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de campamentos */
+.camp-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de refugios */
+.shelter-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de santuarios */
+.sanctuary-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de oasis */
+.oasis-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de paraísos */
+.paradise-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de utopías */
+.utopia-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de distopías */
+.dystopia-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de apocalipsis */
+.apocalypse-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de renacimientos */
+.renaissance-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de revoluciones */
+.revolution-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de evoluciones */
+.evolution-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de transformaciones */
+.transformation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de mutaciones */
+.mutation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de adaptaciones */
+.adaptation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de supervivencias */
+.survival-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de extinciones */
+.extinction-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de génesis */
+.genesis-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de creaciones */
+.creation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de destrucciones */
+.destruction-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de reconstrucciones */
+.reconstruction-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de restauraciones */
+.restoration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de preservaciones */
+.preservation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de conservaciones */
+.conservation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de protecciones */
+.protection-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de defensas */
+.defense-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ataques */
+.attack-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ofensivas */
+.offensive-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de defensivas */
+.defensive-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estrategias */
+.strategy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tácticas */
+.tactic-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de maniobras */
+.maneuver-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de operaciones */
+.operation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de misiones */
+.mission-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de objetivos */
+.objective-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de metas */
+.goal-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de visiones */
+.vision-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sueños */
+.dream-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aspiraciones */
+.aspiration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ambiciones */
+.ambition-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de deseos */
+.desire-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de anhelos */
+.longing-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de esperanzas */
+.hope-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de fe */
+.faith-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de creencias */
+.belief-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de valores */
+.value-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de principios */
+.principle-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ética */
+.ethics-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de moral */
+.moral-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de virtudes */
+.virtue-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de vicios */
+.vice-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pecados */
+.sin-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de redenciones */
+.redemption-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de salvaciones */
+.salvation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de condenaciones */
+.damnation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de juicios */
+.judgment-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de veredictos */
+.verdict-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sentencias */
+.sentence-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de castigos */
+.punishment-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de recompensas */
+.reward-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de premios */
+.prize-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de trofeos */
+.trophy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de medallas */
+.medal-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de insignias */
+.badge-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de emblemas */
+.emblem-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de símbolos */
+.symbol-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de signos */
+.sign-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de señales */
+.signal-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de indicadores */
+.indicator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de marcadores */
+.marker-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de etiquetas */
+.label-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tags */
+.tag-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de categorías */
+.category-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de clasificaciones */
+.classification-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de taxonomías */
+.taxonomy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de jerarquías */
+.hierarchy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estructuras */
+.structure-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de organizaciones */
+.organization-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sistemas */
+.system-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de redes */
+.network-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de conexiones */
+.connection-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de enlaces */
+.link-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de nodos */
+.node-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de puntos */
+.point-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de líneas */
+.line-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de curvas */
+.curve-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de formas */
+.shape-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de patrones */
+.pattern-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de texturas */
+.texture-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de colores */
+.color-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de paletas */
+.palette-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de temas */
+.theme-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estilos */
+.style-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de diseños */
+.design-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de layouts */
+.layout-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de plantillas */
+.template-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de modelos */
+.model-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de prototipos */
+.prototype-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de maquetas */
+.mockup-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de wireframes */
+.wireframe-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sketches */
+.sketch-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de bocetos */
+.draft-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de dibujos */
+.drawing-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de pinturas */
+.painting-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ilustraciones */
+.illustration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de fotografías */
+.photography-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de imágenes */
+.image-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de videos */
+.video-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de audios */
+.audio-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de multimedia */
+.multimedia-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de interactivos */
+.interactive-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de animaciones */
+.animation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de transiciones */
+.transition-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de efectos */
+.effect-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de filtros */
+.filter-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de transformaciones */
+.transformation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de rotaciones */
+.rotation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de escalas */
+.scale-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de traslaciones */
+.translation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de perspectivas */
+.perspective-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de dimensiones */
+.dimension-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de espacios */
+.space-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tiempos */
+.time-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de duraciones */
+.duration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de intervalos */
+.interval-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de periodos */
+.period-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ciclos */
+.cycle-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ritmos */
+.rhythm-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tempos */
+.tempo-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de velocidades */
+.speed-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aceleraciones */
+.acceleration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de desaceleraciones */
+.deceleration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de movimientos */
+.movement-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de direcciones */
+.direction-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de orientaciones */
+.orientation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de posiciones */
+.position-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ubicaciones */
+.location-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de coordenadas */
+.coordinate-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de mapas */
+.map-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de rutas */
+.route-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de navegación */
+.navigation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de brújulas */
+.compass-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de GPS */
+.gps-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de localizadores */
+.locator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de rastreadores */
+.tracker-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de sensores */
+.sensor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de detectores */
+.detector-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de monitores */
+.monitor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de controladores */
+.controller-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de reguladores */
+.regulator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de calibradores */
+.calibrator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de medidores */
+.meter-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de indicadores */
+.indicator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de visualizadores */
+.visualizer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de analizadores */
+.analyzer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de procesadores */
+.processor-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de calculadoras */
+.calculator-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de computadoras */
+.computer-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de servidores */
+.server-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de clientes */
+.client-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de bases de datos */
+.database-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de almacenamiento */
+.storage-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de memoria */
+.memory-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de procesamiento */
+.processing-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de entrada */
+.input-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de salida */
+.output-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de interfaces */
+.interface-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de APIs */
+.api-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de protocolos */
+.protocol-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de estándares */
+.standard-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de formatos */
+.format-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de codificaciones */
+.encoding-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de decodificaciones */
+.decoding-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de encriptaciones */
+.encryption-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de desencriptaciones */
+.decryption-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de seguridad */
+.security-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de privacidad */
+.privacy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de autenticación */
+.authentication-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de autorización */
+.authorization-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de acceso */
+.access-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de permisos */
+.permission-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de roles */
+.role-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de usuarios */
+.user-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de grupos */
+.group-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de organizaciones */
+.organization-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de equipos */
+.team-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de departamentos */
+.department-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de divisiones */
+.division-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de unidades */
+.unit-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de secciones */
+.section-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de módulos */
+.module-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de componentes */
+.component-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de elementos */
+.element-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de widgets */
+.widget-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de gadgets */
+.gadget-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de dispositivos */
+.device-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de máquinas */
+.machine-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de robots */
+.robot-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de drones */
+.drone-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de vehículos */
+.vehicle-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de transportes */
+.transport-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de navegación */
+.navigation-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de viajes */
+.travel-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de rutas */
+.route-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de destinos */
+.destination-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de orígenes */
+.origin-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de puntos de interés */
+.poi-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de hitos */
+.milestone-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de marcadores */
+.marker-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de etiquetas */
+.label-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tags */
+.tag-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de categorías */
+.category-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de clasificaciones */
+.classification-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de taxonomías */
+.taxonomy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de jerarquías */
+.hierarchy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de árboles */
+.tree-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de grafos */
+.graph-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de redes */
+.network-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de conexiones */
+.connection-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de enlaces */
+.link-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de nodos */
+.node-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de vértices */
+.vertex-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aristas */
+.edge-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de caminos */
+.path-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ciclos */
+.cycle-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de circuitos */
+.circuit-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de flujos */
+.flow-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de corrientes */
+.current-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de energía */
+.energy-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de potencia */
+.power-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de fuerza */
+.force-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de masa */
+.mass-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de volumen */
+.volume-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de área */
+.area-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de longitud */
+.length-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de distancia */
+.distance-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tiempo */
+.time-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de duración */
+.duration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de frecuencia */
+.frequency-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de periodo */
+.period-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ciclo */
+.cycle-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de ritmo */
+.rhythm-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de tempo */
+.tempo-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de velocidad */
+.speed-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de aceleración */
+.acceleration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Iconos en menú de desaceleración */
+.deceleration-menu .icon {
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .icon-xl {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .icon-lg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-md {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon-sm {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .icon-xs {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-xl {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-lg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon-md {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .icon-sm {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .icon-xs {
+    width: 10px;
+    height: 10px;
+  }
+}

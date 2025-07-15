@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Javier C. Castillo Hódar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <header>
+        <nav>
+            <div class="logo">Javier C. Castillo</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Desarrollador Web & Analista Funcional</span>
+            <h1>Javier C. Castillo</h1>
+            <p>Creando soluciones digitales innovadoras con pasión y experiencia</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-outline">Contactarme</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="img/profile.svg" alt="Mi foto de perfil">
+                </div>
+                <div class="about-text">
+                    <p>Soy Javier C. Castillo Hódar, Técnico en desarrollo de aplicaciones Web con especialización en Análisis Funcional y Desarrollo multiplataformas. Actualmente estoy finalizando la carrera de Ingeniería Informática en la universidad UOC.</p>
+                    <p>Con una sólida formación técnica y experiencia en el desarrollo de soluciones web, me destaco por mi capacidad para entender las necesidades del cliente y transformarlas en soluciones tecnológicas eficientes. Mi enfoque combina habilidades técnicas con una visión analítica que me permite diseñar arquitecturas de software robustas y escalables.</p>
+                    <p>Me apasiona mantenerme actualizado con las últimas tecnologías y metodologías, lo que me permite ofrecer soluciones innovadoras y de alta calidad en cada proyecto.</p>
+                    <div class="about-buttons">
+                        <a href="#cv-modal" class="btn" id="view-cv-btn">Ver CV</a>
+                        <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="vuejs">Vue.js</button>
+                <button class="filter-btn" data-filter="uml">UML/Análisis</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-img">
+                        <img class="lazy-load" src="projects/app-interactiva/img/hero.svg" alt="Proyecto 1" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Aplicación Web Interactiva</h3>
+                        <p>Aplicación web interactiva con calculadora, lista de tareas y galería de imágenes. Desarrollada con JavaScript, HTML5 y CSS3.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/app-interactiva/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project-card" data-category="python">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/project2.svg" alt="Análisis de Datos" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Análisis de Datos</h3>
+                        <p>Herramienta interactiva para visualizar, analizar y comprender datos de manera sencilla y efectiva utilizando Python, Pandas y Matplotlib.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/analisis-datos/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/app-gestion.svg" alt="Aplicación de Gestión" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Aplicación de Gestión</h3>
+                        <p>Sistema de gestión empresarial para administrar clientes, inventario, facturación y generar informes estadísticos.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/app-gestion/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="project-card" data-category="vuejs">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/app-spa.svg" alt="Aplicación SPA" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Aplicación SPA</h3>
+                        <p>Aplicación de página única que ofrece una experiencia fluida y rápida, desarrollada con Vue.js.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>JavaScript</span>
+                            <span>API REST</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/app-spa/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 5: Análisis Funcional -->
+                <div class="project-card" data-category="uml">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/analisis-funcional.svg" alt="Análisis Funcional" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Análisis Funcional Detallado</h3>
+                        <p>Metodología completa para definir requisitos, casos de uso, arquitectura y prototipos que garantizan el éxito de proyectos de software.</p>
+                        <div class="project-tags">
+                            <span>UML</span>
+                            <span>Wireframes</span>
+                            <span>Documentación</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/analisis-funcional/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/dashboard-analitico.svg" alt="Dashboard Analítico" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analítico</h3>
+                        <p>Dashboard interactivo para visualización y análisis de datos empresariales en tiempo real.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/dashboard-analitico/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 7 -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/elearning.svg" alt="Plataforma E-Learning" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Plataforma E-Learning</h3>
+                        <p>Plataforma educativa interactiva con cursos online, sistema de progreso y certificaciones.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/elearning/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 8 -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/api-restful.svg" alt="API RESTful" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>API RESTful</h3>
+                        <p>Diseño e implementación de una API RESTful con autenticación, documentación y buenas prácticas para crear servicios web escalables y seguros.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>REST</span>
+                            <span>Documentación</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/api-restful/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La sección de la aplicación de Análisis de Datos ha sido eliminada ya que ahora se abre en una ventana separada -->
+
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2>Mis Habilidades</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Lenguajes de Programación</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Añadir más lenguajes según sea necesario -->
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tecnologías y Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                            <div class="skill-info">
+                                <h4>Vue.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h4>React</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Análisis y Diseño</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <div class="skill-info">
+                                <h4>Diagramas UML</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <div class="skill-info">
+                                <h4>Diseño UI/UX</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                            <div class="skill-info">
+                                <h4>Modelado de Procesos</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                            <div class="skill-info">
+                                <h4>Gestión de Requisitos</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>jacasho22@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h3>Teléfono</h3>
+                            <p>687088699</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h3>Ubicación</h3>
+                            <p>Torrevieja, Alicante</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-success" id="formSuccess">
+                        ¡Gracias por tu mensaje! Te responderé lo antes posible.
+                    </div>
+                    <form id="contactForm" action="https://formspree.io/f/mjkovyzw" method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde Portfolio">
+                        <input type="hidden" name="_next" value="https://jacasho22.github.io/thanks.html">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre" required minlength="2">
+                            <div class="error-message">Por favor, introduce un nombre válido</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="_replyto" placeholder="Email" required>
+                            <div class="error-message">Por favor, introduce un email válido</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Asunto" required minlength="3">
+                            <div class="error-message">Por favor, introduce un asunto válido</div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje" required minlength="10"></textarea>
+                            <div class="error-message">Por favor, introduce un mensaje de al menos 10 caracteres</div>
+                        </div>
+                        <div class="form-group" style="display:none">
+                            <input type="text" name="_gotcha" style="display:none">
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Javier C. Castillo Hódar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para mostrar el CV -->
+    <div id="cv-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Mi Currículum Vitae</h2>
+            <div class="cv-container">
+                <img id="cv-image" src="img/cv.jpg" alt="Mi Currículum Vitae" class="cv-image">
+            </div>
+            <div class="modal-buttons">
+                <a href="img/cv.jpg" download="CV_Javier_Castillo.jpg" class="btn">Descargar CV</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

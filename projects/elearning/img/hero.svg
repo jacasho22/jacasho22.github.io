@@ -1,0 +1,215 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definiciones de gradientes -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A6FFF" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#9747FF" stop-opacity="0.3" />
+    </linearGradient>
+    
+    <linearGradient id="deviceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F0F0" />
+    </linearGradient>
+    
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F0FE" />
+      <stop offset="100%" stop-color="#D4E4FA" />
+    </linearGradient>
+    
+    <linearGradient id="courseGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A6FFF" />
+      <stop offset="100%" stop-color="#6A8DFF" />
+    </linearGradient>
+    
+    <linearGradient id="courseGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9747FF" />
+      <stop offset="100%" stop-color="#B57AFF" />
+    </linearGradient>
+    
+    <linearGradient id="courseGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="100%" stop-color="#FF9E9E" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo con formas abstractas -->
+  <rect width="800" height="500" fill="white" />
+  
+  <!-- Formas decorativas de fondo -->
+  <circle cx="700" cy="100" r="180" fill="url(#bgGradient)" />
+  <circle cx="100" cy="400" r="150" fill="url(#bgGradient)" />
+  
+  <!-- Patrón de puntos decorativos -->
+  <g fill="#4A6FFF" opacity="0.2">
+    <circle cx="50" cy="50" r="3" />
+    <circle cx="80" cy="50" r="3" />
+    <circle cx="110" cy="50" r="3" />
+    <circle cx="50" cy="80" r="3" />
+    <circle cx="80" cy="80" r="3" />
+    <circle cx="110" cy="80" r="3" />
+    <circle cx="50" cy="110" r="3" />
+    <circle cx="80" cy="110" r="3" />
+    <circle cx="110" cy="110" r="3" />
+    
+    <circle cx="650" cy="350" r="3" />
+    <circle cx="680" cy="350" r="3" />
+    <circle cx="710" cy="350" r="3" />
+    <circle cx="650" cy="380" r="3" />
+    <circle cx="680" cy="380" r="3" />
+    <circle cx="710" cy="380" r="3" />
+    <circle cx="650" cy="410" r="3" />
+    <circle cx="680" cy="410" r="3" />
+    <circle cx="710" cy="410" r="3" />
+  </g>
+  
+  <!-- Dispositivos mostrando la plataforma -->
+  
+  <!-- Laptop -->
+  <g transform="translate(400, 250)">
+    <!-- Base de la laptop -->
+    <rect x="-150" y="80" width="300" height="20" rx="5" fill="#DDDDDD" />
+    
+    <!-- Pantalla de la laptop -->
+    <rect x="-150" y="-100" width="300" height="180" rx="10" fill="#333333" />
+    <rect x="-140" y="-90" width="280" height="160" rx="5" fill="url(#screenGradient)" />
+    
+    <!-- Contenido de la pantalla (interfaz de la plataforma) -->
+    
+    <!-- Barra de navegación -->
+    <rect x="-140" y="-90" width="280" height="30" rx="5" fill="#4A6FFF" />
+    <circle cx="-125" cy="-75" r="5" fill="white" />
+    <rect x="-110" y="-80" width="60" height="10" rx="2" fill="white" opacity="0.7" />
+    <rect x="-30" y="-80" width="40" height="10" rx="2" fill="white" opacity="0.7" />
+    <rect x="30" y="-80" width="40" height="10" rx="2" fill="white" opacity="0.7" />
+    <rect x="90" y="-80" width="40" height="10" rx="2" fill="white" opacity="0.7" />
+    
+    <!-- Contenido principal -->
+    <rect x="-130" y="-50" width="120" height="110" rx="5" fill="white" />
+    
+    <!-- Tarjetas de cursos -->
+    <rect x="0" y="-50" width="130" height="30" rx="5" fill="url(#courseGradient1)" />
+    <rect x="10" y="-45" width="80" height="8" rx="2" fill="white" opacity="0.7" />
+    <rect x="10" y="-32" width="50" height="6" rx="2" fill="white" opacity="0.5" />
+    
+    <rect x="0" y="-10" width="130" height="30" rx="5" fill="url(#courseGradient2)" />
+    <rect x="10" y="-5" width="80" height="8" rx="2" fill="white" opacity="0.7" />
+    <rect x="10" y="8" width="50" height="6" rx="2" fill="white" opacity="0.5" />
+    
+    <rect x="0" y="30" width="130" height="30" rx="5" fill="url(#courseGradient3)" />
+    <rect x="10" y="35" width="80" height="8" rx="2" fill="white" opacity="0.7" />
+    <rect x="10" y="48" width="50" height="6" rx="2" fill="white" opacity="0.5" />
+    
+    <!-- Imagen de curso destacado -->
+    <rect x="-120" y="-40" width="100" height="60" rx="5" fill="#4A6FFF" opacity="0.2" />
+    <rect x="-120" y="30" width="40" height="8" rx="2" fill="#333333" opacity="0.7" />
+    <rect x="-120" y="45" width="100" height="6" rx="2" fill="#666666" opacity="0.5" />
+  </g>
+  
+  <!-- Tablet -->
+  <g transform="translate(180, 280)">
+    <!-- Marco de la tablet -->
+    <rect x="-70" y="-100" width="140" height="200" rx="10" fill="#333333" />
+    <rect x="-65" y="-95" width="130" height="190" rx="5" fill="url(#screenGradient)" />
+    
+    <!-- Contenido de la pantalla (interfaz de la plataforma) -->
+    
+    <!-- Barra de navegación -->
+    <rect x="-65" y="-95" width="130" height="20" rx="5" fill="#4A6FFF" />
+    <circle cx="-55" cy="-85" r="3" fill="white" />
+    <rect x="-45" y="-88" width="30" height="6" rx="1" fill="white" opacity="0.7" />
+    <rect x="-5" y="-88" width="20" height="6" rx="1" fill="white" opacity="0.7" />
+    <rect x="25" y="-88" width="20" height="6" rx="1" fill="white" opacity="0.7" />
+    
+    <!-- Contenido principal -->
+    <rect x="-55" y="-65" width="110" height="150" rx="5" fill="white" />
+    
+    <!-- Reproductor de video -->
+    <rect x="-45" y="-55" width="90" height="50" rx="5" fill="#333333" />
+    <polygon points="-10,-30 -25,-40 -25,-20" fill="white" opacity="0.8" />
+    
+    <!-- Título y descripción del curso -->
+    <rect x="-45" y="5" width="60" height="8" rx="2" fill="#333333" opacity="0.7" />
+    <rect x="-45" y="20" width="90" height="6" rx="2" fill="#666666" opacity="0.5" />
+    <rect x="-45" y="30" width="90" height="6" rx="2" fill="#666666" opacity="0.5" />
+    
+    <!-- Botones de acción -->
+    <rect x="-45" y="45" width="40" height="15" rx="7.5" fill="#4A6FFF" />
+    <rect x="5" y="45" width="40" height="15" rx="7.5" fill="white" stroke="#4A6FFF" stroke-width="1" />
+    
+    <!-- Progreso del curso -->
+    <rect x="-45" y="70" width="90" height="6" rx="3" fill="#EEEEEE" />
+    <rect x="-45" y="70" width="40" height="6" rx="3" fill="#4A6FFF" />
+    <rect x="-45" y="85" width="30" height="8" rx="2" fill="#333333" opacity="0.7" />
+  </g>
+  
+  <!-- Smartphone -->
+  <g transform="translate(620, 300)">
+    <!-- Marco del smartphone -->
+    <rect x="-40" y="-80" width="80" height="160" rx="10" fill="#333333" />
+    <rect x="-35" y="-75" width="70" height="150" rx="5" fill="url(#screenGradient)" />
+    
+    <!-- Contenido de la pantalla (interfaz de la plataforma) -->
+    
+    <!-- Barra de navegación -->
+    <rect x="-35" y="-75" width="70" height="15" rx="5" fill="#4A6FFF" />
+    <circle cx="-25" cy="-67.5" r="2" fill="white" />
+    <rect x="-20" y="-70" width="15" height="5" rx="1" fill="white" opacity="0.7" />
+    <rect x="0" y="-70" width="10" height="5" rx="1" fill="white" opacity="0.7" />
+    <rect x="15" y="-70" width="10" height="5" rx="1" fill="white" opacity="0.7" />
+    
+    <!-- Contenido principal -->
+    <rect x="-30" y="-55" width="60" height="125" rx="5" fill="white" />
+    
+    <!-- Tarjetas de cursos (versión móvil) -->
+    <rect x="-25" y="-50" width="50" height="25" rx="5" fill="url(#courseGradient1)" />
+    <rect x="-20" y="-45" width="30" height="5" rx="1" fill="white" opacity="0.7" />
+    <rect x="-20" y="-35" width="20" height="4" rx="1" fill="white" opacity="0.5" />
+    
+    <rect x="-25" y="-20" width="50" height="25" rx="5" fill="url(#courseGradient2)" />
+    <rect x="-20" y="-15" width="30" height="5" rx="1" fill="white" opacity="0.7" />
+    <rect x="-20" y="-5" width="20" height="4" rx="1" fill="white" opacity="0.5" />
+    
+    <rect x="-25" y="10" width="50" height="25" rx="5" fill="url(#courseGradient3)" />
+    <rect x="-20" y="15" width="30" height="5" rx="1" fill="white" opacity="0.7" />
+    <rect x="-20" y="25" width="20" height="4" rx="1" fill="white" opacity="0.5" />
+    
+    <!-- Barra de navegación inferior -->
+    <rect x="-30" y="45" width="60" height="20" rx="5" fill="#F5F5F5" />
+    <circle cx="-15" cy="55" r="5" fill="#4A6FFF" />
+    <circle cx="0" cy="55" r="5" fill="#CCCCCC" />
+    <circle cx="15" cy="55" r="5" fill="#CCCCCC" />
+  </g>
+  
+  <!-- Elementos flotantes (iconos educativos) -->
+  <g opacity="0.8">
+    <!-- Libro -->
+    <g transform="translate(150, 150)">
+      <rect x="-15" y="-20" width="30" height="40" rx="2" fill="#4A6FFF" />
+      <rect x="-10" y="-15" width="20" height="5" rx="1" fill="white" opacity="0.5" />
+      <rect x="-10" y="-5" width="20" height="5" rx="1" fill="white" opacity="0.5" />
+      <rect x="-10" y="5" width="20" height="5" rx="1" fill="white" opacity="0.5" />
+    </g>
+    
+    <!-- Certificado -->
+    <g transform="translate(650, 180)">
+      <rect x="-20" y="-15" width="40" height="30" rx="2" fill="#9747FF" />
+      <circle cx="0" cy="0" r="8" fill="#FFD700" />
+      <polygon points="0,-6 2,-2 6,-1 3,2 4,6 0,4 -4,6 -3,2 -6,-1 -2,-2" fill="white" />
+    </g>
+    
+    <!-- Bombilla (idea) -->
+    <g transform="translate(250, 400)">
+      <circle cx="0" cy="-5" r="15" fill="#FFD700" />
+      <rect x="-3" y="10" width="6" height="10" rx="2" fill="#FFD700" />
+      <path d="M-8,0 C-8,-8 8,-8 8,0 C8,6 3,10 0,10 C-3,10 -8,6 -8,0 Z" fill="#FFD700" />
+    </g>
+    
+    <!-- Gráfico de progreso -->
+    <g transform="translate(550, 420)">
+      <rect x="-20" y="-20" width="40" height="40" rx="5" fill="#FF6B6B" />
+      <circle cx="0" cy="0" r="15" fill="white" stroke="#FF6B6B" stroke-width="2" />
+      <path d="M0,-15 A15,15 0 0,1 13,7.5 L0,0 Z" fill="#FF6B6B" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FF6B6B" text-anchor="middle">75%</text>
+    </g>
+  </g>
+</svg>

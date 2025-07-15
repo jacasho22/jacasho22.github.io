@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <!-- Fondo del logo (opcional) -->
+  <rect width="200" height="60" fill="transparent" />
+  
+  <!-- Elemento gráfico del logo -->
+  <circle cx="30" cy="30" r="20" fill="#8e2de2" />
+  <circle cx="30" cy="30" r="15" fill="white" />
+  <circle cx="30" cy="30" r="10" fill="#4a00e0" />
+  
+  <!-- Líneas decorativas -->
+  <line x1="55" y1="15" x2="75" y2="15" stroke="#8e2de2" stroke-width="3" stroke-linecap="round" />
+  <line x1="55" y1="30" x2="85" y2="30" stroke="#8e2de2" stroke-width="3" stroke-linecap="round" />
+  <line x1="55" y1="45" x2="65" y2="45" stroke="#8e2de2" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Texto del logo -->
+  <text x="90" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#333333">InterApp</text>
+  
+  <!-- Elemento decorativo adicional -->
+  <path d="M180,20 L190,30 L180,40" fill="none" stroke="#8e2de2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

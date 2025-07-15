@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Analítico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="img/logo.svg" alt="Logo" width="40" class="me-2">
+                    <span>Dashboard Analítico</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="#caracteristicas" class="nav-link">Características</a></li>
+                        <li class="nav-item"><a href="#demo" class="nav-link">Demo</a></li>
+                        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <a href="../../index.html" class="btn btn-outline-light btn-sm">Volver al Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animate-on-scroll">
+                    <h1 class="display-4 fw-bold">Visualiza y analiza tus datos empresariales</h1>
+                    <p class="lead">Una solución completa para monitorizar, analizar y visualizar métricas clave de tu negocio en tiempo real.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#demo" class="btn btn-primary">Ver Demo</a>
+                        <a href="#caracteristicas" class="btn btn-outline-secondary">Características</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <img src="img/hero.svg" alt="Dashboard Analítico" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="fw-bold">Características Principales</h2>
+                <p class="lead text-muted">Descubre todo lo que nuestro dashboard puede hacer por tu negocio</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card feature-card h-100">
+                        <img src="img/icons/chart.svg" class="card-img-top" alt="Visualización de Datos">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Visualización de Datos</h3>
+                            <p class="card-text">Gráficos interactivos y personalizables para visualizar tus datos de forma clara e intuitiva.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card feature-card h-100">
+                        <img src="img/icons/data.svg" class="card-img-top" alt="Análisis en Tiempo Real">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Análisis en Tiempo Real</h3>
+                            <p class="card-text">Monitoriza tus métricas clave en tiempo real y toma decisiones basadas en datos actualizados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card feature-card h-100">
+                        <img src="img/icons/report.svg" class="card-img-top" alt="Informes Personalizados">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Informes Personalizados</h3>
+                            <p class="card-text">Crea y programa informes personalizados para compartir con tu equipo o clientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card feature-card h-100">
+                        <img src="img/icons/alert.svg" class="card-img-top" alt="Alertas Inteligentes">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Alertas Inteligentes</h3>
+                            <p class="card-text">Configura alertas para ser notificado cuando tus métricas alcancen ciertos umbrales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="fw-bold">Demo Interactiva</h2>
+                <p class="lead text-muted">Explora nuestro dashboard en acción</p>
+            </div>
+            
+            <div class="dashboard-demo animate-on-scroll">
+                <div class="dashboard-header">
+                    <h3 class="dashboard-title">Panel de Control</h3>
+                    <div class="dashboard-controls">
+                        <select id="date-range-filter" class="form-select form-select-sm">
+                            <option value="hoy">Hoy</option>
+                            <option value="semana">Esta semana</option>
+                            <option value="mes" selected>Este mes</option>
+                            <option value="año">Este año</option>
+                        </select>
+                        <select class="form-select form-select-sm data-selector" data-target="sales-trend-chart">
+                            <option value="ventas" selected>Ventas (€)</option>
+                            <option value="unidades">Unidades</option>
+                            <option value="clientes">Clientes</option>
+                        </select>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Actualizar datos">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Exportar datos">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- KPI Cards -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="kpi-card">
+                            <div class="kpi-title">Ventas Totales</div>
+                            <div class="kpi-value" id="kpi-ventas">76.500 €</div>
+                            <div class="kpi-change positive">
+                                <i class="fas fa-arrow-up me-1"></i> 12.5% vs mes anterior
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="kpi-card">
+                            <div class="kpi-title">Pedidos</div>
+                            <div class="kpi-value" id="kpi-pedidos">583</div>
+                            <div class="kpi-change positive">
+                                <i class="fas fa-arrow-up me-1"></i> 8.2% vs mes anterior
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="kpi-card">
+                            <div class="kpi-title">Tasa de Conversión</div>
+                            <div class="kpi-value" id="kpi-conversion">4.1%</div>
+                            <div class="kpi-change positive">
+                                <i class="fas fa-arrow-up me-1"></i> 0.3% vs mes anterior
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="kpi-card">
+                            <div class="kpi-title">Ticket Medio</div>
+                            <div class="kpi-value" id="kpi-ticket">131 €</div>
+                            <div class="kpi-change positive">
+                                <i class="fas fa-arrow-up me-1"></i> 3.1% vs mes anterior
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts -->
+                <div class="row g-3 mb-4">
+                    <div class="col-lg-8">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h4 class="chart-title">Tendencia de Ventas</h4>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Más opciones">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <canvas id="sales-trend-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h4 class="chart-title">Distribución de Clientes</h4>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Más opciones">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <canvas id="customer-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h4 class="chart-title">Ventas por Categoría</h4>
+                                <div>
+                                    <select class="form-select form-select-sm data-selector" data-target="category-chart">
+                                        <option value="ventas" selected>Ventas (€)</option>
+                                        <option value="unidades">Unidades</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <canvas id="category-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h4 class="chart-title">Tráfico del Sitio Web</h4>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Más opciones">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <canvas id="traffic-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Table -->
+                <div class="data-table mt-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="chart-title">Últimas Transacciones</h4>
+                        <div>
+                            <button class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-filter me-1"></i> Filtrar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Cliente</th>
+                                    <th>Fecha</th>
+                                    <th>Producto</th>
+                                    <th>Importe</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#12345</td>
+                                    <td>María García</td>
+                                    <td>15/07/2025</td>
+                                    <td>Portátil Pro X5</td>
+                                    <td>899 €</td>
+                                    <td><span class="badge bg-success">Completado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#12346</td>
+                                    <td>Juan Pérez</td>
+                                    <td>15/07/2025</td>
+                                    <td>Monitor UltraWide 34"</td>
+                                    <td>449 €</td>
+                                    <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#12347</td>
+                                    <td>Ana Martínez</td>
+                                    <td>14/07/2025</td>
+                                    <td>Teclado Mecánico RGB</td>
+                                    <td>129 €</td>
+                                    <td><span class="badge bg-success">Completado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#12348</td>
+                                    <td>Carlos Rodríguez</td>
+                                    <td>14/07/2025</td>
+                                    <td>Auriculares Bluetooth</td>
+                                    <td>89 €</td>
+                                    <td><span class="badge bg-success">Completado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#12349</td>
+                                    <td>Laura Sánchez</td>
+                                    <td>13/07/2025</td>
+                                    <td>Ratón Gaming</td>
+                                    <td>59 €</td>
+                                    <td><span class="badge bg-danger">Cancelado</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div>Mostrando 5 de 583 transacciones</div>
+                        <nav aria-label="Paginación">
+                            <ul class="pagination pagination-sm mb-0">
+                                <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center animate-on-scroll">
+                    <h2 class="fw-bold mb-4">¿Listo para potenciar tu negocio con datos?</h2>
+                    <p class="lead mb-5">Contacta con nosotros para obtener más información sobre cómo nuestro dashboard analítico puede ayudarte a tomar mejores decisiones basadas en datos.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">Solicitar Demo</a>
+                        <a href="../../index.html" class="btn btn-outline-secondary">Volver al Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logo.svg" alt="Logo" width="30" class="me-2">
+                        <span class="fw-bold">Dashboard Analítico</span>
+                    </div>
+                    <p class="small">Una solución completa para visualizar y analizar datos empresariales en tiempo real.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="small mb-0">© 2025 Dashboard Analítico. Todos los derechos reservados.</p>
+                    <p class="small">Proyecto creado con fines demostrativos.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de cambio de tema -->
+    <button id="theme-toggle" class="dark-mode-toggle" data-bs-toggle="tooltip" title="Cambiar tema">
+        <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+
+    <!-- Indicador de carga -->
+    <div id="loading-indicator" class="loading-indicator" style="display: none;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

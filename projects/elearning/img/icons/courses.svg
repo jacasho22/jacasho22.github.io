@@ -1,0 +1,42 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definiciones de gradientes -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A6FFF" />
+      <stop offset="100%" stop-color="#6A8DFF" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo circular con gradiente -->
+  <circle cx="60" cy="60" r="50" fill="url(#bgGradient)" opacity="0.1" />
+  
+  <!-- Libros apilados -->
+  <g transform="translate(60, 60)">
+    <!-- Libro 1 (abajo) -->
+    <g transform="rotate(-10)">
+      <rect x="-30" y="-5" width="60" height="40" rx="3" fill="#4A6FFF" />
+      <rect x="-28" y="-3" width="56" height="36" rx="2" fill="white" opacity="0.3" />
+      <rect x="-20" y="5" width="40" height="4" rx="1" fill="white" opacity="0.6" />
+      <rect x="-20" y="15" width="40" height="4" rx="1" fill="white" opacity="0.6" />
+      <rect x="-20" y="25" width="25" height="4" rx="1" fill="white" opacity="0.6" />
+    </g>
+    
+    <!-- Libro 2 (medio) -->
+    <g transform="rotate(5)">
+      <rect x="-30" y="-15" width="60" height="40" rx="3" fill="#6A8DFF" />
+      <rect x="-28" y="-13" width="56" height="36" rx="2" fill="white" opacity="0.3" />
+      <rect x="-20" y="-5" width="40" height="4" rx="1" fill="white" opacity="0.6" />
+      <rect x="-20" y="5" width="40" height="4" rx="1" fill="white" opacity="0.6" />
+      <rect x="-20" y="15" width="25" height="4" rx="1" fill="white" opacity="0.6" />
+    </g>
+    
+    <!-- Libro 3 (arriba) -->
+    <g transform="rotate(-5)">
+      <rect x="-30" y="-25" width="60" height="40" rx="3" fill="#9747FF" />
+      <rect x="-28" y="-23" width="56" height="36" rx="2" fill="white" opacity="0.3" />
+      <rect x="-20" y="-15" width="40" height="4" rx="1" fill="white" opacity="0.6" />
+      <rect x="-20" y="-5" width="40" height="4" rx="1" fill="white" opacity="0.6" />
+      <rect x="-20" y="5" width="25" height="4" rx="1" fill="white" opacity="0.6" />
+    </g>
+  </g>
+</svg>
