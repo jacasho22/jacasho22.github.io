@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Javier C. Castillo Hódar</title>
+    <title data-i18n="page_title">Javier C. Castillo Hódar - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,13 +11,14 @@
     <div class="scroll-progress"></div>
     <header>
         <nav>
-            <div class="logo">Javier C. Castillo</div>
+            <div class="logo" data-i18n="logo_text">Javier C. Castillo</div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" data-i18n="nav_home">Home</a></li>
+                <li><a href="#sobre-mi" data-i18n="nav_about">About Me</a></li>
+                <li><a href="#proyectos" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#habilidades" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#contacto" data-i18n="nav_contact">Contact</a></li>
+                <li class="lang-switch"><button id="lang-toggle">ES</button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -38,12 +39,12 @@
             <div class="particles"></div>
         </div>
         <div class="hero-content">
-            <span class="hero-subtitle">Desarrollador Web & Analista Funcional</span>
+            <span class="hero-subtitle" data-i18n="hero_subtitle">Web Developer & Functional Analyst</span>
             <h1>Javier C. Castillo</h1>
-            <p>Creando soluciones digitales innovadoras con pasión y experiencia</p>
+            <p data-i18n="hero_description">Creating innovative digital solutions with passion and expertise</p>
             <div class="hero-buttons">
-                <a href="#proyectos" class="btn">Ver Proyectos</a>
-                <a href="#contacto" class="btn btn-outline">Contactarme</a>
+                <a href="#proyectos" class="btn" data-i18n="hero_btn_projects">View Projects</a>
+                <a href="#contacto" class="btn btn-outline" data-i18n="hero_btn_contact">Contact Me</a>
             </div>
         </div>
 
@@ -51,18 +52,18 @@
 
     <section id="sobre-mi" class="about">
         <div class="container">
-            <h2>Sobre Mí</h2>
+            <h2 data-i18n="about_title">Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="img/profile.svg" alt="Mi foto de perfil">
+                    <img src="img/profile-photo.jpg" alt="Mi foto de perfil" data-i18n-alt="about_profile_photo">
                 </div>
                 <div class="about-text">
                     <p>Soy Javier C. Castillo Hódar, Técnico en desarrollo de aplicaciones Web con especialización en Análisis Funcional y Desarrollo multiplataformas. Actualmente estoy finalizando la carrera de Ingeniería Informática en la universidad UOC.</p>
                     <p>Con una sólida formación técnica y experiencia en el desarrollo de soluciones web, me destaco por mi capacidad para entender las necesidades del cliente y transformarlas en soluciones tecnológicas eficientes. Mi enfoque combina habilidades técnicas con una visión analítica que me permite diseñar arquitecturas de software robustas y escalables.</p>
                     <p>Me apasiona mantenerme actualizado con las últimas tecnologías y metodologías, lo que me permite ofrecer soluciones innovadoras y de alta calidad en cada proyecto.</p>
                     <div class="about-buttons">
-                        <a href="#cv-modal" class="btn" id="view-cv-btn">Ver CV</a>
-                        <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+                        <a href="#cv-modal" class="btn" id="view-cv-btn" data-i18n="about_btn_cv">Ver CV</a>
+                        <a href="#contacto" class="btn btn-secondary" data-i18n="hero_btn_contact">Contactarme</a>
                     </div>
                 </div>
             </div>
@@ -71,20 +72,19 @@
 
     <section id="proyectos" class="projects">
         <div class="container">
-            <h2>Mis Proyectos</h2>
+            <h2 data-i18n="projects_title">Mis Proyectos</h2>
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="javascript">JavaScript</button>
-                <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="java">Java</button>
-                <button class="filter-btn" data-filter="vuejs">Vue.js</button>
-                <button class="filter-btn" data-filter="uml">UML/Análisis</button>
+                <button class="filter-btn active" data-filter="all" data-i18n="projects_filter_all">Todos</button>
+                <button class="filter-btn" data-filter="javascript" data-i18n="projects_filter_js">JavaScript</button>
+                <button class="filter-btn" data-filter="python" data-i18n="projects_filter_python">Python</button>
+                <button class="filter-btn" data-filter="vuejs" data-i18n="projects_filter_vue">Vue.js</button>
+                <button class="filter-btn" data-filter="uml" data-i18n="projects_filter_uml">UML/Análisis</button>
             </div>
             <div class="projects-grid">
                 <!-- Proyecto 1 -->
                 <div class="project-card" data-category="javascript">
                     <div class="project-img">
-                        <img class="lazy-load" src="projects/app-interactiva/img/hero.svg" alt="Proyecto 1" loading="lazy">
+                        <img class="lazy-load" src="img/projects/project1.svg" alt="Proyecto 1" data-i18n-alt="project_interactive_app_alt" loading="lazy">
                     </div>
                     <div class="project-info">
                         <h3>Aplicación Web Interactiva</h3>
@@ -102,11 +102,11 @@
                 <!-- Proyecto 2 -->
                 <div class="project-card" data-category="python">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/project2.svg" alt="Análisis de Datos" loading="lazy">
+                        <img class="lazy-load" src="img/projects/project2.svg" alt="Análisis de Datos" data-i18n-alt="project1_alt" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>Análisis de Datos</h3>
-                        <p>Herramienta interactiva para visualizar, analizar y comprender datos de manera sencilla y efectiva utilizando Python, Pandas y Matplotlib.</p>
+                        <h3 data-i18n="project1_title">Análisis de Datos</h3>
+                        <p data-i18n="project1_description">Herramienta interactiva para visualizar, analizar y comprender datos de manera sencilla y efectiva utilizando Python, Pandas y Matplotlib.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Pandas</span>
@@ -120,11 +120,11 @@
                 <!-- Proyecto 3 -->
                 <div class="project-card" data-category="javascript">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/app-gestion.svg" alt="Aplicación de Gestión" loading="lazy">
+                        <img class="lazy-load" src="img/projects/app-gestion.svg" alt="Aplicación de Gestión" data-i18n-alt="project2_alt" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>Aplicación de Gestión</h3>
-                        <p>Sistema de gestión empresarial para administrar clientes, inventario, facturación y generar informes estadísticos.</p>
+                        <h3 data-i18n="project2_title">Aplicación de Gestión</h3>
+                        <p data-i18n="project2_description">Sistema de gestión empresarial para administrar clientes, inventario, facturación y generar informes estadísticos.</p>
                         <div class="project-tags">
                             <span>JavaScript</span>
                             <span>Bootstrap</span>
@@ -138,11 +138,11 @@
                 <!-- Proyecto 4 -->
                 <div class="project-card" data-category="vuejs">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/app-spa.svg" alt="Aplicación SPA" loading="lazy">
+                        <img class="lazy-load" src="img/projects/app-spa.svg" alt="Aplicación SPA" data-i18n-alt="project3_alt" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>Aplicación SPA</h3>
-                        <p>Aplicación de página única que ofrece una experiencia fluida y rápida, desarrollada con Vue.js.</p>
+                        <h3 data-i18n="project3_title">Aplicación SPA</h3>
+                        <p data-i18n="project3_description">Aplicación de página única que ofrece una experiencia fluida y rápida, desarrollada con Vue.js.</p>
                         <div class="project-tags">
                             <span>Vue.js</span>
                             <span>JavaScript</span>
@@ -156,11 +156,11 @@
                 <!-- Proyecto 5: Análisis Funcional -->
                 <div class="project-card" data-category="uml">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/analisis-funcional.svg" alt="Análisis Funcional" loading="lazy">
+                        <img class="lazy-load" src="img/projects/analisis-funcional.svg" alt="Análisis Funcional" data-i18n-alt="project4_alt" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>Análisis Funcional Detallado</h3>
-                        <p>Metodología completa para definir requisitos, casos de uso, arquitectura y prototipos que garantizan el éxito de proyectos de software.</p>
+                        <h3 data-i18n="project4_title">Análisis Funcional Detallado</h3>
+                        <p data-i18n="project4_description">Metodología completa para definir requisitos, casos de uso, arquitectura y prototipos que garantizan el éxito de proyectos de software.</p>
                         <div class="project-tags">
                             <span>UML</span>
                             <span>Wireframes</span>
@@ -174,11 +174,11 @@
                 <!-- Proyecto 6 -->
                 <div class="project-card" data-category="javascript">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/dashboard-analitico.svg" alt="Dashboard Analítico" loading="lazy">
+                        <img class="lazy-load" src="img/projects/dashboard-analitico.svg" alt="Dashboard Analítico" data-i18n-alt="project5_alt" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>Dashboard Analítico</h3>
-                        <p>Dashboard interactivo para visualización y análisis de datos empresariales en tiempo real.</p>
+                        <h3 data-i18n="project5_title">Dashboard Analítico</h3>
+                        <p data-i18n="project5_description">Dashboard interactivo para visualización y análisis de datos empresariales en tiempo real.</p>
                         <div class="project-tags">
                             <span>JavaScript</span>
                             <span>Chart.js</span>
@@ -192,11 +192,11 @@
                 <!-- Proyecto 7 -->
                 <div class="project-card" data-category="javascript">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/elearning.svg" alt="Plataforma E-Learning" loading="lazy">
+                        <img class="lazy-load" src="img/projects/elearning.svg" alt="Plataforma E-Learning" data-i18n-alt="project6_alt" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>Plataforma E-Learning</h3>
-                        <p>Plataforma educativa interactiva con cursos online, sistema de progreso y certificaciones.</p>
+                        <h3 data-i18n="project6_title">Plataforma E-Learning</h3>
+                        <p data-i18n="project6_description">Plataforma educativa interactiva con cursos online, sistema de progreso y certificaciones.</p>
                         <div class="project-tags">
                             <span>JavaScript</span>
                             <span>Bootstrap</span>
@@ -210,11 +210,11 @@
                 <!-- Proyecto 8 -->
                 <div class="project-card" data-category="javascript">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/api-restful.svg" alt="API RESTful" loading="lazy">
+                        <img class="lazy-load" src="img/projects/api-restful.svg" alt="API RESTful" data-i18n-alt="project7_alt" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>API RESTful</h3>
-                        <p>Diseño e implementación de una API RESTful con autenticación, documentación y buenas prácticas para crear servicios web escalables y seguros.</p>
+                        <h3 data-i18n="project7_title">API RESTful</h3>
+                        <p data-i18n="project7_description">Diseño e implementación de una API RESTful con autenticación, documentación y buenas prácticas para crear servicios web escalables y seguros.</p>
                         <div class="project-tags">
                             <span>JavaScript</span>
                             <span>REST</span>
@@ -225,24 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Proyecto 9: Java Inventory Manager -->
-                <div class="project-card" data-category="java">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/java-app.svg" alt="Java Inventory Manager" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3>Java Inventory Manager</h3>
-                        <p>Sistema de gestión de inventario desarrollado en Java con interfaz gráfica, base de datos, generación de informes y aplicación móvil complementaria.</p>
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>SQL</span>
-                            <span>Swing/JavaFX</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/java-app/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -251,15 +234,15 @@
 
     <section id="habilidades" class="skills">
         <div class="container">
-            <h2>Mis Habilidades</h2>
+            <h2 data-i18n="skills_title">Mis Habilidades</h2>
             <div class="skills-content">
                 <div class="skill-category">
-                    <h3>Lenguajes de Programación</h3>
+                    <h3 data-i18n="skills_languages">Lenguajes de Programación</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-js"></i></div>
                             <div class="skill-info">
-                                <h4>JavaScript</h4>
+                                <h4 data-i18n="skill_javascript">JavaScript</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 90%;"></div>
                                 </div>
@@ -268,7 +251,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-python"></i></div>
                             <div class="skill-info">
-                                <h4>Python</h4>
+                                <h4 data-i18n="skill_python">Python</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 90%;"></div>
                                 </div>
@@ -277,7 +260,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-java"></i></div>
                             <div class="skill-info">
-                                <h4>Java</h4>
+                                <h4 data-i18n="skill_java">Java</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 70%;"></div>
                                 </div>
@@ -286,7 +269,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-html5"></i></div>
                             <div class="skill-info">
-                                <h4>HTML</h4>
+                                <h4 data-i18n="skill_html">HTML</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 90%;"></div>
                                 </div>
@@ -295,7 +278,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
                             <div class="skill-info">
-                                <h4>CSS</h4>
+                                <h4 data-i18n="skill_css">CSS</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 70%;"></div>
                                 </div>
@@ -305,12 +288,12 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tecnologías y Frameworks</h3>
+                    <h3 data-i18n="skills_frameworks">Tecnologías y Frameworks</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
                             <div class="skill-info">
-                                <h4>Vue.js</h4>
+                                <h4 data-i18n="skill_vuejs">Vue.js</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 90%;"></div>
                                 </div>
@@ -319,7 +302,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-react"></i></div>
                             <div class="skill-info">
-                                <h4>React</h4>
+                                <h4 data-i18n="skill_react">React</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 70%;"></div>
                                 </div>
@@ -328,7 +311,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fab fa-node-js"></i></div>
                             <div class="skill-info">
-                                <h4>Node.js</h4>
+                                <h4 data-i18n="skill_nodejs">Node.js</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 70%;"></div>
                                 </div>
@@ -337,7 +320,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fas fa-database"></i></div>
                             <div class="skill-info">
-                                <h4>SQL</h4>
+                                <h4 data-i18n="skill_sql">SQL</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 70%;"></div>
                                 </div>
@@ -346,12 +329,12 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Análisis y Diseño</h3>
+                    <h3 data-i18n="skills_analysis">Análisis y Diseño</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
                             <div class="skill-info">
-                                <h4>Diagramas UML</h4>
+                                <h4 data-i18n="skill_uml">Diagramas UML</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 85%;"></div>
                                 </div>
@@ -360,7 +343,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
                             <div class="skill-info">
-                                <h4>Diseño UI/UX</h4>
+                                <h4 data-i18n="skill_uiux">Diseño UI/UX</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 80%;"></div>
                                 </div>
@@ -369,7 +352,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
                             <div class="skill-info">
-                                <h4>Modelado de Procesos</h4>
+                                <h4 data-i18n="skill_process_modeling">Modelado de Procesos</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 85%;"></div>
                                 </div>
@@ -378,7 +361,7 @@
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fas fa-tasks"></i></div>
                             <div class="skill-info">
-                                <h4>Gestión de Requisitos</h4>
+                                <h4 data-i18n="skill_requirements">Gestión de Requisitos</h4>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 90%;"></div>
                                 </div>
@@ -392,58 +375,58 @@
 
     <section id="contacto" class="contact">
         <div class="container">
-            <h2>Contacto</h2>
+            <h2 data-i18n="contact_title">Contacto</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div class="contact-text">
-                            <h3>Email</h3>
+                            <h3 data-i18n="contact_email_label">Email</h3>
                             <p>jacasho22@hotmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <div class="contact-text">
-                            <h3>Teléfono</h3>
+                            <h3 data-i18n="contact_phone">Teléfono</h3>
                             <p>687088699</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="contact-text">
-                            <h3>Ubicación</h3>
+                            <h3 data-i18n="contact_location">Ubicación</h3>
                             <p>Torrevieja, Alicante</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
                     <div class="form-success" id="formSuccess">
-                        ¡Gracias por tu mensaje! Te responderé lo antes posible.
+                        <span data-i18n="contact_success">¡Gracias por tu mensaje! Te responderé lo antes posible.</span>
                     </div>
                     <form id="contactForm" action="https://formspree.io/f/mjkovyzw" method="POST">
                         <input type="hidden" name="_subject" value="Nuevo mensaje desde Portfolio">
                         <input type="hidden" name="_next" value="https://jacasho22.github.io/thanks.html">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nombre" required minlength="2">
-                            <div class="error-message">Por favor, introduce un nombre válido</div>
+                            <input type="text" id="name" name="name" placeholder="Nombre" data-i18n-placeholder="contact_name" required minlength="2">
+                            <div class="error-message" data-i18n="error_name">Por favor, introduce un nombre válido</div>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="_replyto" placeholder="Email" required>
-                            <div class="error-message">Por favor, introduce un email válido</div>
+                            <input type="email" id="email" name="_replyto" placeholder="Email" data-i18n-placeholder="contact_email" required>
+                            <div class="error-message" data-i18n="error_email">Por favor, introduce un email válido</div>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Asunto" required minlength="3">
-                            <div class="error-message">Por favor, introduce un asunto válido</div>
+                            <input type="text" id="subject" name="subject" placeholder="Asunto" data-i18n-placeholder="contact_subject" required minlength="3">
+                            <div class="error-message" data-i18n="error_subject">Por favor, introduce un asunto válido</div>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Mensaje" required minlength="10"></textarea>
-                            <div class="error-message">Por favor, introduce un mensaje de al menos 10 caracteres</div>
+                            <textarea id="message" name="message" placeholder="Mensaje" data-i18n-placeholder="contact_message" required minlength="10"></textarea>
+                            <div class="error-message" data-i18n="error_message">Por favor, introduce un mensaje de al menos 10 caracteres</div>
                         </div>
                         <div class="form-group" style="display:none">
                             <input type="text" name="_gotcha" style="display:none">
                         </div>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
+                        <button type="submit" class="btn" data-i18n="contact_btn_send">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>
@@ -452,7 +435,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Javier C. Castillo Hódar. Todos los derechos reservados.</p>
+            <p data-i18n="footer.copyright">&copy; 2025 Javier C. Castillo Hódar. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -460,16 +443,17 @@
     <div id="cv-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h2>Mi Currículum Vitae</h2>
+            <h2 data-i18n="cv_title">Mi Currículum Vitae</h2>
             <div class="cv-container">
-                <img id="cv-image" src="img/cv.jpg" alt="Mi Currículum Vitae" class="cv-image">
+                <img id="cv-image" src="img/cv.jpg" alt="Mi Currículum Vitae" data-i18n-alt="cv_alt" class="cv-image">
             </div>
             <div class="modal-buttons">
-                <a href="img/cv.jpg" download="CV_Javier_Castillo.jpg" class="btn">Descargar CV</a>
+                <a href="img/cv.jpg" download="CV_Javier_Castillo.jpg" class="btn" data-i18n="cv_download">Descargar CV</a>
             </div>
         </div>
     </div>
 
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

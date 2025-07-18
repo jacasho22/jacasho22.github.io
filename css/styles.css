@@ -408,6 +408,15 @@ nav {
     box-shadow: var(--box-shadow);
 }
 
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
 .about-img::before {
     content: '';
     position: absolute;
@@ -944,14 +953,17 @@ footer {
 .cv-container {
     margin: 20px 0;
     text-align: center;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 .cv-image {
     max-width: 100%;
-    max-height: 70vh;
+    height: auto;
     margin: 0 auto;
     border: 1px solid #e2e8f0;
     box-shadow: var(--box-shadow);
+    display: block;
 }
 
 .modal-buttons {
@@ -965,7 +977,33 @@ footer {
         margin: 10% auto;
     }
     
-    .cv-image {
+    .cv-container {
         max-height: 60vh;
+    }
+}
+
+/* Estilos para el botón de cambio de idioma */
+.lang-switch {
+    margin-left: 15px;
+}
+
+#lang-toggle {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#lang-toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .lang-switch {
+        margin: 10px 0;
     }
 }

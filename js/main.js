@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const scrollProgress = document.querySelector('.scroll-progress');
     const lazyImages = document.querySelectorAll('.lazy-load');
+    
+    // Variables para el cambio de idioma
+    let currentLang = localStorage.getItem('portfolioLang') || 'en';
+    const langToggle = document.getElementById('lang-toggle');
+    
+    // Inicializar el idioma
+    setLanguage(currentLang);
 
     // Navegación móvil
     burger.addEventListener('click', () => {
@@ -296,4 +303,72 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // La funcionalidad para mostrar/ocultar la aplicación de Análisis de Datos ha sido eliminada
     // ya que ahora la aplicación se abre en una ventana separada
+    
+    // Funcionalidad de cambio de idioma
+    function setLanguage(lang) {
+        if (!translations || !translations[lang]) {
+            console.error('Translations not available');
+            return;
+        }
+        
+        currentLang = lang;
+        localStorage.setItem('portfolioLang', lang);
+        
+        // Actualizar el texto del botón de idioma
+        if (langToggle) {
+            langToggle.textContent = lang === 'en' ? 'ES' : 'EN';
+        }
+        
+        // Actualizar todos los elementos con atributo data-i18n
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+        
+        // Actualizar atributos placeholder
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            if (translations[lang][key]) {
+                element.placeholder = translations[lang][key];
+            }
+        });
+        
+        // Actualizar atributos title
+        document.querySelectorAll('[data-i18n-title]').forEach(element => {
+            const key = element.getAttribute('data-i18n-title');
+            if (translations[lang][key]) {
+                element.title = translations[lang][key];
+            }
+        });
+        
+        // Actualizar atributos alt
+        document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+            const key = element.getAttribute('data-i18n-alt');
+            if (translations[lang][key]) {
+                element.alt = translations[lang][key];
+            }
+        });
+        
+        // Actualizar el título de la página
+        const titleElement = document.querySelector('title[data-i18n]');
+        if (titleElement) {
+            const key = titleElement.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                titleElement.textContent = translations[lang][key];
+            }
+        }
+        
+        // Actualizar el atributo lang del HTML
+        document.documentElement.lang = lang;
+    }
+    
+    // Evento para cambiar de idioma
+    if (langToggle) {
+        langToggle.addEventListener('click', function() {
+            const newLang = currentLang === 'en' ? 'es' : 'en';
+            setLanguage(newLang);
+        });
+    }
 });
