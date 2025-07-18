@@ -218,9 +218,7 @@ const translations = {
         project7_description: "Diseño e implementación de una API RESTful con autenticación, documentación y buenas prácticas para crear servicios web escalables y seguros.",
         project7_alt: "Proyecto de API RESTful",
         
-        project9_title: "Java Inventory Manager",
-        project9_description: "Sistema robusto de gestión de inventario desarrollado con Java, con seguimiento de productos e informes.",
-        project9_alt: "Proyecto de Java Inventory Manager",
+        // Proyecto 9 eliminado
         
         // Etiquetas de proyectos
         tag_python: "Python",
