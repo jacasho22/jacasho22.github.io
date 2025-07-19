@@ -1,0 +1,641 @@
+/* Estilos para el proyecto Buceo React */
+
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #00b4d8;
+  --accent-color: #48cae4;
+  --light-color: #ade8f4;
+  --dark-color: #03045e;
+  --white: #ffffff;
+  --gray-light: #f8f9fa;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --border-radius: 8px;
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--gray-dark);
+  background-color: var(--gray-light);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  color: var(--white);
+  padding: 2rem 0;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.back-btn i {
+  margin-right: 0.5rem;
+}
+
+.back-btn:hover {
+  color: var(--light-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.project-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Project Overview Styles */
+.project-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+  align-items: center;
+}
+
+.project-image {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.project-image img:hover {
+  transform: scale(1.02);
+}
+
+.project-description h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.project-description p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.tech-stack {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.tech-stack h3 {
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.tech-stack ul {
+  list-style: none;
+}
+
+.tech-stack li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.tech-tag {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 0.8rem;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* Features Styles */
+.project-features {
+  margin: 4rem 0;
+}
+
+.project-features h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: var(--dark-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* Implementation Styles */
+.project-implementation {
+  margin: 4rem 0;
+}
+
+.project-implementation h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.implementation-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.implementation-text h3 {
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.implementation-text h3:first-child {
+  margin-top: 0;
+}
+
+.implementation-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.code-snippet {
+  background-color: var(--gray-dark);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.code-snippet h3 {
+  color: var(--light-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.code-snippet pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+.code-snippet code {
+  display: block;
+  color: var(--white);
+  font-family: 'Consolas', 'Monaco', 'Andale Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+/* Conclusion Styles */
+.project-conclusion {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin: 4rem 0;
+  box-shadow: var(--shadow);
+}
+
+.project-conclusion h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.project-conclusion p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.project-conclusion p:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .back-btn {
+  margin-bottom: 0;
+}
+
+/* Course Detail Component Styles */
+.course-detail {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--light-color);
+  padding-bottom: 1rem;
+}
+
+.course-header h1 {
+  font-size: 1.8rem;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.course-level {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.course-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.course-image {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.course-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  background-color: var(--gray-light);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.meta-item i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.course-info h3 {
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Instructor Card Styles */
+.instructor-card {
+  background-color: var(--gray-light);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.instructor-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1.5rem;
+  border: 3px solid var(--primary-color);
+}
+
+.instructor-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor-info {
+  flex: 1;
+}
+
+.instructor-info h4 {
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.instructor-info p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.instructor-rating {
+  display: flex;
+  align-items: center;
+}
+
+.instructor-rating i {
+  color: var(--warning);
+  margin-right: 0.2rem;
+  font-size: 0.9rem;
+}
+
+/* Booking Form Styles */
+.booking-form {
+  background-color: var(--gray-light);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 119, 182, 0.2);
+}
+
+.date-picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.date-option {
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  padding: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.date-option:hover {
+  border-color: var(--primary-color);
+}
+
+.date-option.selected {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.8rem 1.5rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-color);
+  transform: translateY(-2px);
+}
+
+/* UI Components Styles */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid var(--primary-color);
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  background-color: var(--danger);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .project-overview,
+  .implementation-details,
+  .course-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .meta-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .project-subtitle {
+    font-size: 1rem;
+  }
+  
+  .project-description h2,
+  .project-features h2,
+  .project-implementation h2,
+  .project-conclusion h2 {
+    font-size: 1.6rem;
+  }
+  
+  .tech-stack li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tech-tag {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  
+  .feature-card {
+    padding: 1.2rem;
+  }
+  
+  .code-snippet {
+    padding: 1rem;
+  }
+  
+  .code-snippet code {
+    font-size: 0.8rem;
+  }
+  
+  .course-meta {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

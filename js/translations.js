@@ -69,9 +69,9 @@ const translations = {
         project7_description: "Design and implementation of a RESTful API with authentication, documentation, and best practices for creating scalable and secure web services.",
         project7_alt: "RESTful API Project",
         
-        project9_title: "Java Inventory Manager",
-        project9_description: "Robust inventory management system developed with Java, featuring product tracking and reporting.",
-        project9_alt: "Java Inventory Manager Project",
+        project9_title: "Diving React",
+        project9_description: "Website for a diving course company developed with React. Includes course catalog, instructor information and booking system.",
+        project9_alt: "Diving React project image",
         
         // Etiquetas de proyectos
         tag_python: "Python",
@@ -146,9 +146,11 @@ const translations = {
         footer_copyright: "© 2025 Javier C. Castillo Hódar. All rights reserved.",
         
         // CV Modal
-        cv_title: "My Curriculum Vitae",
-        cv_alt: "My Curriculum Vitae",
-        cv_download: "Download CV",
+    cv_title: "My Curriculum Vitae",
+    cv_alt: "My Curriculum Vitae",
+    cv_download: "Download CV",
+    cv_pdf_fallback: "Your browser cannot display the PDF. Click here to download.",
+    cv_not_available: "CV is temporarily unavailable. Please contact directly to request a copy.",
     },
     es: {
         // General
@@ -219,9 +221,9 @@ const translations = {
         project7_alt: "Proyecto de API RESTful",
         
         // Proyecto Java Inventory Manager eliminado
-        project9_title: "",
-        project9_description: "",
-        project9_alt: "",
+        project9_title: "Buceo React",
+        project9_description: "Página web para una empresa de cursos de buceo desarrollada con React. Incluye catálogo de cursos, información sobre instructores y sistema de reservas.",
+        project9_alt: "Imagen del proyecto Buceo React",
         
         // Etiquetas de proyectos
         tag_python: "Python",
@@ -296,8 +298,10 @@ const translations = {
         footer_copyright: "© 2025 Javier C. Castillo Hódar. Todos los derechos reservados.",
         
         // CV Modal
-        cv_title: "Mi Currículum Vitae",
-        cv_alt: "Mi Currículum Vitae",
-        cv_download: "Descargar CV",
+    cv_title: "Mi Currículum Vitae",
+    cv_alt: "Mi Currículum Vitae",
+    cv_download: "Descargar CV",
+    cv_pdf_fallback: "Tu navegador no puede mostrar el PDF. Haz clic aquí para descargar.",
+    cv_not_available: "El CV no está disponible temporalmente. Por favor, contacta directamente para solicitar una copia.",
     }
 };

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buceo React - Proyecto de Javier Castillo</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Proyecto de página web para una empresa de cursos de buceo desarrollada con React, mostrando catálogo de cursos, perfiles de instructores y sistema de reservas.">
+</head>
+<body>
+    <header style="background-image: url('img/hero-bg.svg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="header-content">
+                <a href="../../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Volver al Portfolio</a>
+                <img src="img/logo.svg" alt="Buceo React Logo" class="logo" style="max-width: 200px; margin-bottom: 1rem;">
+                <h1>Buceo React</h1>
+                <p class="project-subtitle">Página web para una empresa de cursos de buceo desarrollada con React</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="project-overview">
+                <div class="project-image">
+                    <img src="img/diving-course.svg" alt="Buceo React" class="project-main-image">
+                </div>
+                <div class="project-description">
+                    <h2>Descripción del Proyecto</h2>
+                    <p>Este proyecto consiste en una página web moderna y responsive para una empresa de cursos de buceo, desarrollada utilizando React como framework principal. La aplicación ofrece una experiencia de usuario fluida y atractiva, con un diseño centrado en mostrar los cursos de buceo disponibles, información sobre instructores y un sistema de reservas.</p>
+                    
+                    <div class="tech-stack">
+                        <h3>Tecnologías Utilizadas</h3>
+                        <ul>
+                            <li><span class="tech-tag">React</span> - Framework principal para el desarrollo de la interfaz de usuario</li>
+                            <li><span class="tech-tag">JavaScript ES6+</span> - Lenguaje de programación base</li>
+                            <li><span class="tech-tag">CSS3</span> - Estilos y animaciones personalizadas</li>
+                            <li><span class="tech-tag">React Router</span> - Navegación entre páginas</li>
+                            <li><span class="tech-tag">Context API</span> - Gestión del estado de la aplicación</li>
+                            <li><span class="tech-tag">Responsive Design</span> - Adaptación a diferentes dispositivos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-features">
+                <h2>Características Principales</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-book"></i></div>
+                        <h3>Catálogo de Cursos</h3>
+                        <p>Visualización detallada de todos los cursos de buceo disponibles, con filtros por nivel, duración y precio.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Perfiles de Instructores</h3>
+                        <p>Información detallada sobre los instructores, incluyendo experiencia, especialidades y valoraciones.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Sistema de Reservas</h3>
+                        <p>Interfaz intuitiva para reservar cursos, seleccionar fechas disponibles y realizar pagos online.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <h3>Ubicaciones de Buceo</h3>
+                        <p>Mapa interactivo con las diferentes ubicaciones donde se realizan los cursos y actividades.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Testimonios</h3>
+                        <p>Sección de valoraciones y comentarios de clientes que han participado en los cursos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Diseño Responsive</h3>
+                        <p>Experiencia de usuario optimizada para dispositivos móviles, tablets y ordenadores.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-implementation">
+                <h2>Implementación</h2>
+                <div class="implementation-details">
+                    <div class="implementation-text">
+                        <h3>Arquitectura de la Aplicación</h3>
+                        <p>La aplicación sigue una arquitectura de componentes modular, utilizando React Hooks para la gestión del estado y efectos secundarios. Se implementó Context API para compartir datos entre componentes sin necesidad de prop drilling, mejorando la mantenibilidad del código.</p>
+                        
+                        <h3>Optimización de Rendimiento</h3>
+                        <p>Se aplicaron técnicas de optimización como lazy loading para imágenes, memoización de componentes con React.memo y división de código (code splitting) para mejorar los tiempos de carga y la experiencia del usuario.</p>
+                        
+                        <h3>Integración con APIs</h3>
+                        <p>La aplicación se conecta a un backend simulado mediante una API REST para obtener datos de cursos, instructores y gestionar las reservas, implementando manejo de errores y estados de carga para una experiencia fluida.</p>
+                    </div>
+                    <div class="code-snippet">
+                        <h3>Ejemplo de Código: Componente de Curso</h3>
+                        <pre><code>
+import React, { useState, useEffect, useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import { CourseContext } from '../context/CourseContext';
+import BookingForm from './BookingForm';
+import InstructorCard from './InstructorCard';
+import LoadingSpinner from '../ui/LoadingSpinner';
+import ErrorMessage from '../ui/ErrorMessage';
+
+const CourseDetail = () => {
+  const { courseId } = useParams();
+  const { getCourseById } = useContext(CourseContext);
+  const [course, setCourse] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchCourse = async () => {
+      try {
+        setLoading(true);
+        const courseData = await getCourseById(courseId);
+        setCourse(courseData);
+        setError(null);
+      } catch (err) {
+        setError('No se pudo cargar la información del curso');
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCourse();
+  }, [courseId, getCourseById]);
+
+  if (loading) return <LoadingSpinner />;
+  if (error) return <ErrorMessage message={error} />;
+  if (!course) return <ErrorMessage message="Curso no encontrado" />;
+
+  return (
+    <div className="course-detail">
+      <div className="course-header">
+        <h1>{course.title}</h1>
+        <span className="course-level">{course.level}</span>
+      </div>
+      
+      <div className="course-content">
+        <div className="course-image">
+          <img src={course.imageUrl} alt={course.title} />
+        </div>
+        
+        <div className="course-info">
+          <p className="course-description">{course.description}</p>
+          
+          <div className="course-meta">
+            <div className="meta-item">
+              <i className="fas fa-clock"></i>
+              <span>{course.duration}</span>
+            </div>
+            <div className="meta-item">
+              <i className="fas fa-euro-sign"></i>
+              <span>{course.price}</span>
+            </div>
+            <div className="meta-item">
+              <i className="fas fa-users"></i>
+              <span>{course.groupSize} personas máx.</span>
+            </div>
+          </div>
+          
+          <h3>Instructor</h3>
+          <InstructorCard instructor={course.instructor} />
+          
+          <h3>Reserva este curso</h3>
+          <BookingForm courseId={course.id} availableDates={course.availableDates} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CourseDetail;
+                        </code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-conclusion">
+                <h2>Conclusión</h2>
+                <p>Este proyecto demuestra mis habilidades en el desarrollo de aplicaciones web modernas utilizando React, implementando buenas prácticas de desarrollo y diseño de interfaces de usuario. La aplicación no solo cumple con los requisitos funcionales de una empresa de cursos de buceo, sino que también ofrece una experiencia de usuario atractiva y optimizada para diferentes dispositivos.</p>
+                <p>El uso de componentes reutilizables, gestión eficiente del estado y técnicas de optimización de rendimiento hacen que esta aplicación sea escalable y mantenible, preparada para futuras ampliaciones de funcionalidades.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Javier Castillo - Desarrollador Web</p>
+            <a href="../../index.html" class="back-btn">Volver al Portfolio</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

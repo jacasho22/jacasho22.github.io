@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="400" viewBox="0 0 1440 400">
+  <defs>
+    <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077b6" />
+      <stop offset="100%" stop-color="#03045e" />
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1440" height="400" fill="url(#hero-gradient)" />
+  
+  <!-- Bubbles -->
+  <g opacity="0.2" filter="url(#blur)">
+    <circle cx="200" cy="100" r="50" fill="#ffffff" />
+    <circle cx="400" cy="200" r="70" fill="#ffffff" />
+    <circle cx="600" cy="150" r="40" fill="#ffffff" />
+    <circle cx="800" cy="250" r="60" fill="#ffffff" />
+    <circle cx="1000" cy="100" r="80" fill="#ffffff" />
+    <circle cx="1200" cy="300" r="50" fill="#ffffff" />
+    <circle cx="1400" cy="200" r="70" fill="#ffffff" />
+  </g>
+  
+  <!-- Wave Pattern -->
+  <path d="M0,320 C240,280 480,400 720,320 C960,240 1200,360 1440,320 L1440,400 L0,400 Z" fill="#ade8f4" opacity="0.3" />
+  <path d="M0,340 C240,300 480,420 720,340 C960,260 1200,380 1440,340 L1440,400 L0,400 Z" fill="#48cae4" opacity="0.3" />
+  <path d="M0,360 C240,320 480,440 720,360 C960,280 1200,400 1440,360 L1440,400 L0,400 Z" fill="#00b4d8" opacity="0.3" />
+  
+  <!-- Diving Icons -->
+  <g opacity="0.6">
+    <!-- Diver Silhouette -->
+    <path d="M120,200 C120,200 130,190 140,190 C150,190 160,200 160,200 C160,200 170,210 170,220 C170,230 160,240 160,240 L140,240 C140,240 130,230 130,220 C130,210 120,200 120,200 Z" fill="#ffffff" />
+    <path d="M140,240 L140,270 C140,270 150,280 160,280 C170,280 180,270 180,270 L180,250 C180,250 170,240 160,240 L140,240 Z" fill="#ffffff" />
+    <path d="M180,250 L200,240" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Fish -->
+    <path d="M1000,150 C1020,140 1040,140 1060,150 C1080,160 1080,180 1060,190 C1040,200 1020,200 1000,190 C980,180 980,160 1000,150 Z" fill="#ffffff" />
+    <path d="M1060,150 L1080,140 L1080,160 Z" fill="#ffffff" />
+    <circle cx="1010" cy="160" r="5" fill="#03045e" />
+    
+    <!-- Coral -->
+    <path d="M300,350 C300,330 310,320 320,320 C330,320 340,330 340,350 L340,380 L300,380 Z" fill="#ffffff" />
+    <path d="M320,350 C320,330 330,320 340,320 C350,320 360,330 360,350 L360,380 L320,380 Z" fill="#ffffff" />
+    <path d="M340,350 C340,330 350,320 360,320 C370,320 380,330 380,350 L380,380 L340,380 Z" fill="#ffffff" />
+    
+    <!-- Bubbles Trail -->
+    <circle cx="900" cy="100" r="5" fill="#ffffff" />
+    <circle cx="910" cy="120" r="4" fill="#ffffff" />
+    <circle cx="905" cy="140" r="6" fill="#ffffff" />
+    <circle cx="915" cy="160" r="3" fill="#ffffff" />
+    <circle cx="900" cy="180" r="5" fill="#ffffff" />
+    <circle cx="910" cy="200" r="4" fill="#ffffff" />
+  </g>
+</svg>

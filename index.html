@@ -54,9 +54,7 @@
         <div class="container">
             <h2 data-i18n="about_title">Sobre Mí</h2>
             <div class="about-content">
-                <div class="about-img">
-                    <img src="img/profile-photo.jpg" alt="Mi foto de perfil" data-i18n-alt="about_profile_photo">
-                </div>
+                <!-- Imagen de perfil eliminada temporalmente -->
                 <div class="about-text">
                     <p>Soy Javier C. Castillo Hódar, Técnico en desarrollo de aplicaciones Web con especialización en Análisis Funcional y Desarrollo multiplataformas. Actualmente estoy finalizando la carrera de Ingeniería Informática en la universidad UOC.</p>
                     <p>Con una sólida formación técnica y experiencia en el desarrollo de soluciones web, me destaco por mi capacidad para entender las necesidades del cliente y transformarlas en soluciones tecnológicas eficientes. Mi enfoque combina habilidades técnicas con una visión analítica que me permite diseñar arquitecturas de software robustas y escalables.</p>
@@ -222,6 +220,24 @@
                         </div>
                         <div class="project-links">
                             <a href="projects/api-restful/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 9: Buceo React -->
+                <div class="project-card" data-category="react">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/buceo-react.svg" alt="Buceo React" data-i18n-alt="project9_alt" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project9_title">Buceo React</h3>
+                        <p data-i18n="project9_description">Página web para una empresa de cursos de buceo desarrollada con React. Incluye catálogo de cursos, información sobre instructores y sistema de reservas.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/buceo-react/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -445,10 +461,9 @@
             <span class="close-modal">&times;</span>
             <h2 data-i18n="cv_title">Mi Currículum Vitae</h2>
             <div class="cv-container">
-                <img id="cv-image" src="img/cv.jpg" alt="Mi Currículum Vitae" data-i18n-alt="cv_alt" class="cv-image">
-            </div>
-            <div class="modal-buttons">
-                <a href="img/cv.jpg" download="CV_Javier_Castillo.jpg" class="btn" data-i18n="cv_download">Descargar CV</a>
+                <div class="cv-message">
+                    <p data-i18n="cv_not_available">El CV no está disponible temporalmente. Por favor, contacta directamente para solicitar una copia.</p>
+                </div>
             </div>
         </div>
     </div>
