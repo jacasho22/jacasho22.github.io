@@ -725,6 +725,17 @@ nav {
     font-size: 1.2rem;
 }
 
+.contact-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-text a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 .social-links {
     display: flex;
     gap: 15px;
