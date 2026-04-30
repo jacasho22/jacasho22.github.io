@@ -263,43 +263,85 @@ document.addEventListener('DOMContentLoaded', function() {
         lazyLoadObserver.observe(image);
     });
 
-    // Funcionalidad del modal del CV
+    // Funcionalidad de Modal Genérico (CV y Proyectos)
     const viewCvBtn = document.getElementById('view-cv-btn');
-    const cvModal = document.getElementById('cv-modal');
+    const projectBtns = document.querySelectorAll('.view-project-btn');
+    const documentModal = document.getElementById('cv-modal');
     const closeModal = document.querySelector('.close-modal');
+    const modalIframe = document.getElementById('cv-iframe');
+    const modalDownloadBtn = document.getElementById('cv-download-btn');
+    const modalTitle = documentModal ? documentModal.querySelector('h2') : null;
 
-    if (viewCvBtn && cvModal) {
-        // Abrir modal al hacer clic en el botón
+    function openModal(srcPath, titleText, downloadText, isProject = false) {
+        if (!documentModal) return;
+        
+        if (modalTitle) {
+            modalTitle.textContent = titleText;
+            if (isProject) {
+                modalTitle.removeAttribute('data-i18n');
+            } else {
+                modalTitle.setAttribute('data-i18n', 'cv_title');
+            }
+        }
+        
+        if (modalIframe) modalIframe.src = srcPath;
+        
+        if (modalDownloadBtn) {
+            modalDownloadBtn.href = srcPath;
+            modalDownloadBtn.innerHTML = '<i class="fas fa-download"></i> <span ' + (isProject ? '' : 'data-i18n="cv_download"') + '>' + downloadText + '</span>';
+        }
+        
+        documentModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeDocumentModal() {
+        if (!documentModal) return;
+        documentModal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+        if (modalIframe) modalIframe.src = ''; // free memory
+    }
+
+    if (viewCvBtn && documentModal) {
         viewCvBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            cvModal.classList.add('show');
-            document.body.style.overflow = 'hidden'; // Evitar scroll en el body
+            const path = currentLang === 'es' ? 'CV_es.pdf' : 'CV_en.pdf';
+            const title = translations && translations[currentLang] ? translations[currentLang]['cv_title'] : 'Mi Currículum Vitae';
+            const dlText = translations && translations[currentLang] ? translations[currentLang]['cv_download'] : 'Descargar CV';
+            openModal(path, title, dlText, false);
         });
+    }
 
-        // Cerrar modal al hacer clic en la X
-        if (closeModal) {
-            closeModal.addEventListener('click', function() {
-                cvModal.classList.remove('show');
-                document.body.style.overflow = 'auto'; // Restaurar scroll
+    if (projectBtns.length > 0 && documentModal) {
+        projectBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const path = this.getAttribute('href');
+                const title = this.getAttribute('data-modal-title') || 'Documento';
+                const dlText = currentLang === 'es' ? 'Descargar Documento' : 'Download Document';
+                openModal(path, title, dlText, true);
             });
+        });
+    }
+
+    if (documentModal) {
+        if (closeModal) {
+            closeModal.addEventListener('click', closeDocumentModal);
         }
 
-        // Cerrar modal al hacer clic fuera del contenido
-        cvModal.addEventListener('click', function(e) {
-            if (e.target === cvModal) {
-                cvModal.classList.remove('show');
-                document.body.style.overflow = 'auto'; // Restaurar scroll
+        documentModal.addEventListener('click', function(e) {
+            if (e.target === documentModal) {
+                closeDocumentModal();
             }
         });
 
-        // Cerrar modal con la tecla ESC
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && cvModal.classList.contains('show')) {
-                cvModal.classList.remove('show');
-                document.body.style.overflow = 'auto'; // Restaurar scroll
+            if (e.key === 'Escape' && documentModal.classList.contains('show')) {
+                closeDocumentModal();
             }
         });
     }
+
     
     // La funcionalidad para mostrar/ocultar la aplicación de Análisis de Datos ha sido eliminada
     // ya que ahora la aplicación se abre en una ventana separada

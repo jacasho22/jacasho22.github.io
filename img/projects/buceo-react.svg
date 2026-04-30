@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Fondo azul degradado para representar el agua -->
+  <defs>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0077be;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00334d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="reactGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61dafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo de agua -->
+  <rect width="800" height="600" fill="url(#water)" />
+  
+  <!-- Burbujas de aire -->
+  <circle cx="100" cy="150" r="15" fill="white" opacity="0.6" />
+  <circle cx="150" cy="250" r="10" fill="white" opacity="0.5" />
+  <circle cx="80" cy="350" r="12" fill="white" opacity="0.4" />
+  <circle cx="200" cy="450" r="8" fill="white" opacity="0.5" />
+  <circle cx="700" cy="200" r="14" fill="white" opacity="0.6" />
+  <circle cx="650" cy="300" r="9" fill="white" opacity="0.5" />
+  <circle cx="720" cy="400" r="11" fill="white" opacity="0.4" />
+  
+  <!-- Buzo con equipo de buceo -->
+  <g transform="translate(300, 300)">
+    <!-- Cuerpo del buzo -->
+    <path d="M0,0 C20,-40 60,-40 80,0 L100,100 L-20,100 Z" fill="#333" />
+    
+    <!-- Tanque de oxígeno -->
+    <rect x="20" y="-20" width="40" height="100" rx="5" fill="#555" />
+    
+    <!-- Máscara de buceo -->
+    <ellipse cx="40" cy="-60" rx="30" ry="25" fill="#222" />
+    <ellipse cx="40" cy="-60" rx="25" ry="20" fill="#88ccff" />
+    
+    <!-- Tubo respirador -->
+    <path d="M60,-50 Q80,-60 80,-30 L75,-30" stroke="#444" stroke-width="5" fill="none" />
+    
+    <!-- Aletas -->
+    <path d="M-20,100 L-50,130 L100,130 L130,100 Z" fill="#222" />
+  </g>
+  
+  <!-- Logo de React -->
+  <g transform="translate(600, 150) scale(0.8)">
+    <!-- Órbitas -->
+    <ellipse cx="0" cy="0" rx="80" ry="30" fill="none" stroke="url(#reactGradient)" stroke-width="6" transform="rotate(30)" />
+    <ellipse cx="0" cy="0" rx="80" ry="30" fill="none" stroke="url(#reactGradient)" stroke-width="6" transform="rotate(90)" />
+    <ellipse cx="0" cy="0" rx="80" ry="30" fill="none" stroke="url(#reactGradient)" stroke-width="6" transform="rotate(150)" />
+    
+    <!-- Núcleo -->
+    <circle cx="0" cy="0" r="15" fill="url(#reactGradient)" />
+  </g>
+  
+  <!-- Texto: Buceo React -->
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">Buceo React</text>
+</svg>

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="page_title">Javier C. Castillo Hódar - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -13,12 +16,13 @@
         <nav>
             <div class="logo" data-i18n="logo_text">Javier C. Castillo</div>
             <ul class="nav-links">
-                <li><a href="#inicio" data-i18n="nav_home">Home</a></li>
-                <li><a href="#sobre-mi" data-i18n="nav_about">About Me</a></li>
-                <li><a href="#proyectos" data-i18n="nav_projects">Projects</a></li>
-                <li><a href="#habilidades" data-i18n="nav_skills">Skills</a></li>
-                <li><a href="#contacto" data-i18n="nav_contact">Contact</a></li>
-                <li class="lang-switch"><button id="lang-toggle">ES</button></li>
+                <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#valor" data-i18n="nav_value">Servicios</a></li>
+                <li><a href="#sobre-mi" data-i18n="nav_about">Sobre Mí</a></li>
+                <li><a href="#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+                <li><a href="#habilidades" data-i18n="nav_skills">Habilidades</a></li>
+                <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+                <li class="lang-switch"><button id="lang-toggle">EN</button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -29,41 +33,161 @@
     </header>
 
     <section id="inicio" class="hero">
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-            <div class="shape shape-6"></div>
-            <div class="particles"></div>
-        </div>
         <div class="hero-content">
-            <span class="hero-subtitle" data-i18n="hero_subtitle">Web Developer & Functional Analyst</span>
+            <div class="hero-availability-badge">
+                <span class="availability-dot"></span>
+                <span data-i18n="hero_available">Disponible para nuevas oportunidades</span>
+            </div>
+            <span class="hero-role" data-i18n="hero_role">Analista Funcional &amp; Consultor Preventa</span>
             <h1>Javier C. Castillo</h1>
-            <p data-i18n="hero_description">Creating innovative digital solutions with passion and expertise</p>
+            <p data-i18n="hero_description">Transformo necesidades de negocio en soluciones tecnológicas. Especializado en levantamiento de requisitos, análisis funcional y consultoría preventa de software.</p>
             <div class="hero-buttons">
-                <a href="#proyectos" class="btn" data-i18n="hero_btn_projects">View Projects</a>
-                <a href="#contacto" class="btn btn-outline" data-i18n="hero_btn_contact">Contact Me</a>
+                <a href="#proyectos" class="btn" data-i18n="hero_btn_projects"><i class="fas fa-folder-open"></i> Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-outline" data-i18n="hero_btn_contact"><i class="fas fa-paper-plane"></i> Contactarme</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">5+</span>
+                    <span class="hero-stat-label" data-i18n="stat_years">Años Exp.</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">9+</span>
+                    <span class="hero-stat-label" data-i18n="stat_projects">Proyectos</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">100%</span>
+                    <span class="hero-stat-label" data-i18n="stat_agile">Metodología Ágil</span>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+                <span data-i18n="scroll_hint">Scroll</span>
             </div>
         </div>
+    </section>
 
+    <!-- ── Propuesta de Valor ── -->
+    <section id="valor" class="value-section">
+        <div class="container">
+            <div class="value-header">
+                <span class="section-label" data-i18n="value_label">¿Por qué contar conmigo?</span>
+                <h2 data-i18n="value_title">Lo que aporto a tu equipo</h2>
+            </div>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-search-plus"></i></div>
+                    <h3 data-i18n="val1_title">Análisis Funcional</h3>
+                    <p data-i18n="val1_desc">Levantamiento y documentación de requisitos funcionales y no funcionales. Casos de uso, historias de usuario y especificaciones detalladas para proyectos de software.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 data-i18n="val2_title">Consultoría Preventa</h3>
+                    <p data-i18n="val2_desc">Acompañamiento al cliente en fases de preventa: demos, propuestas técnicas, estimaciones de esfuerzo y presentación de soluciones adaptadas a sus necesidades.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3 data-i18n="val3_title">Modelado de Procesos</h3>
+                    <p data-i18n="val3_desc">Diseño y documentación de procesos de negocio con diagramas BPMN, UML y flujos de trabajo. Identificación de mejoras y optimización de procesos existentes.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3 data-i18n="val4_title">Gestión con Stakeholders</h3>
+                    <p data-i18n="val4_desc">Comunicación efectiva entre equipos técnicos y de negocio. Capacidad para traducir requisitos técnicos en lenguaje comprensible para cualquier perfil.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-tasks"></i></div>
+                    <h3 data-i18n="val5_title">Gestión de Proyectos</h3>
+                    <p data-i18n="val5_desc">Experiencia en metodologías ágiles (Scrum, Kanban). Planificación de sprints, seguimiento de tareas y coordinación entre equipos multidisciplinares.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-code"></i></div>
+                    <h3 data-i18n="val6_title">Perfil Técnico-Funcional</h3>
+                    <p data-i18n="val6_desc">Sólida base técnica en desarrollo web que me permite entender y comunicarme con los equipos de desarrollo, validar soluciones y proponer alternativas viables.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="sobre-mi" class="about">
         <div class="container">
             <h2 data-i18n="about_title">Sobre Mí</h2>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="img/profile-photo.jpg" alt="Mi foto de perfil" data-i18n-alt="about_profile_photo">
-                </div>
+            <div class="about-content about-content--text-only">
                 <div class="about-text">
-                    <p>Soy Javier C. Castillo Hódar, Técnico en desarrollo de aplicaciones Web con especialización en Análisis Funcional y Desarrollo multiplataformas. Actualmente estoy finalizando la carrera de Ingeniería Informática en la universidad UOC.</p>
-                    <p>Con una sólida formación técnica y experiencia en el desarrollo de soluciones web, me destaco por mi capacidad para entender las necesidades del cliente y transformarlas en soluciones tecnológicas eficientes. Mi enfoque combina habilidades técnicas con una visión analítica que me permite diseñar arquitecturas de software robustas y escalables.</p>
-                    <p>Me apasiona mantenerme actualizado con las últimas tecnologías y metodologías, lo que me permite ofrecer soluciones innovadoras y de alta calidad en cada proyecto.</p>
+                    <div class="about-badge"><i class="fas fa-map-marker-alt"></i> Torrevieja, Alicante</div>
+                    <p data-i18n="about_p1">Soy Javier C. Castillo Hódar, Analista Funcional y Consultor Preventa con más de 5 años de experiencia en el sector tecnológico. Actualmente finalizando el Grado en Ingeniería Informática en la UOC.</p>
+                    <p data-i18n="about_p2">Me especializo en el puente entre negocio y tecnología: recojo necesidades de los stakeholders, las transformo en requisitos claros y acompaño al equipo de desarrollo hasta la entrega final. He trabajado en proyectos de análisis funcional, modelado de procesos y demos de producto en contextos de preventa.</p>
+                    <p data-i18n="about_p3">Mi perfil técnico (desarrollo web full-stack, APIs, SQL) me permite entender al equipo de desarrollo y proponer soluciones realistas. Mi perfil funcional me permite comunicarme con cualquier área de negocio con claridad y rigor.</p>
+                    <!-- Quick stats -->
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label" data-i18n="stat_years">Años experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">9+</span>
+                            <span class="stat-label" data-i18n="stat_projects">Proyectos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-i18n="stat_techs">Tecnologías</span>
+                        </div>
+                    </div>
                     <div class="about-buttons">
                         <a href="#cv-modal" class="btn" id="view-cv-btn" data-i18n="about_btn_cv">Ver CV</a>
                         <a href="#contacto" class="btn btn-secondary" data-i18n="hero_btn_contact">Contactarme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Metodología de trabajo ── -->
+    <section id="metodologia" class="workspace-section">
+        <div class="container">
+            <div class="workspace-inner">
+                <div class="workspace-text">
+                    <span class="workspace-label"><i class="fas fa-cogs"></i> <span data-i18n="method_label">Mi metodología</span></span>
+                    <h2 class="workspace-title" data-i18n="workspace_title">Cómo trabajo contigo</h2>
+                    <p data-i18n="workspace_desc">Cada proyecto comienza con escucha activa. Identifico los objetivos reales del negocio antes de proponer ninguna solución tecnológica.</p>
+                    <ul class="workspace-highlights">
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="wh_1">Entrevistas y talleres con stakeholders</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="wh_2">Documentación funcional clara y estructurada</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="wh_3">Validación iterativa con el cliente</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="wh_4">Seguimiento hasta la puesta en producción</span></li>
+                    </ul>
+                </div>
+                <div class="workspace-media">
+                    <div class="methodology-steps">
+                        <div class="method-step">
+                            <div class="method-step-num">01</div>
+                            <div class="method-step-content">
+                                <h4 data-i18n="ms1_title">Descubrimiento</h4>
+                                <p data-i18n="ms1_desc">Análisis del contexto, objetivos de negocio y restricciones del proyecto.</p>
+                            </div>
+                        </div>
+                        <div class="method-step">
+                            <div class="method-step-num">02</div>
+                            <div class="method-step-content">
+                                <h4 data-i18n="ms2_title">Análisis &amp; Documentación</h4>
+                                <p data-i18n="ms2_desc">Requisitos funcionales, casos de uso, diagramas UML/BPMN y especificaciones.</p>
+                            </div>
+                        </div>
+                        <div class="method-step">
+                            <div class="method-step-num">03</div>
+                            <div class="method-step-content">
+                                <h4 data-i18n="ms3_title">Propuesta de Solución</h4>
+                                <p data-i18n="ms3_desc">Diseño de la solución técnica, estimaciones y presentación al cliente.</p>
+                            </div>
+                        </div>
+                        <div class="method-step">
+                            <div class="method-step-num">04</div>
+                            <div class="method-step-content">
+                                <h4 data-i18n="ms4_title">Seguimiento &amp; Entrega</h4>
+                                <p data-i18n="ms4_desc">Acompañamiento al equipo de desarrollo y validación final con el cliente.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,157 +199,66 @@
             <h2 data-i18n="projects_title">Mis Proyectos</h2>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all" data-i18n="projects_filter_all">Todos</button>
-                <button class="filter-btn" data-filter="javascript" data-i18n="projects_filter_js">JavaScript</button>
-                <button class="filter-btn" data-filter="python" data-i18n="projects_filter_python">Python</button>
-                <button class="filter-btn" data-filter="vuejs" data-i18n="projects_filter_vue">Vue.js</button>
-                <button class="filter-btn" data-filter="uml" data-i18n="projects_filter_uml">UML/Análisis</button>
+                <button class="filter-btn" data-filter="analisis" data-i18n="projects_filter_analisis">Análisis Funcional</button>
+                <button class="filter-btn" data-filter="preventa" data-i18n="projects_filter_preventa">Consultoría Preventa</button>
             </div>
             <div class="projects-grid">
-                <!-- Proyecto 1 -->
-                <div class="project-card" data-category="javascript">
+                <!-- Proyecto 1: Análisis Funcional -->
+                <div class="project-card" data-category="analisis">
                     <div class="project-img">
-                        <img class="lazy-load" src="img/projects/project1.svg" alt="Proyecto 1" data-i18n-alt="project_interactive_app_alt" loading="lazy">
+                        <img class="lazy-load" src="img/projects/crm_flow_project.png" alt="CRMFlow RetailPro" data-i18n-alt="p_crm_title" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3>Aplicación Web Interactiva</h3>
-                        <p>Aplicación web interactiva con calculadora, lista de tareas y galería de imágenes. Desarrollada con JavaScript, HTML5 y CSS3.</p>
+                        <h3 data-i18n="p_crm_title">Implantación CRMFlow para RetailPro</h3>
+                        <p data-i18n="p_crm_desc">Levantamiento de requisitos y análisis funcional para la implantación de un sistema CRM B2B, mejorando la visibilidad del pipeline comercial.</p>
                         <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
+                            <span data-i18n="tag_analisis">Análisis Funcional</span>
+                            <span data-i18n="tag_crm">CRM</span>
+                            <span data-i18n="tag_b2b">B2B SaaS</span>
                         </div>
                         <div class="project-links">
-                            <a href="projects/app-interactiva/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 2 -->
-                <div class="project-card" data-category="python">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/project2.svg" alt="Análisis de Datos" data-i18n-alt="project1_alt" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="project1_title">Análisis de Datos</h3>
-                        <p data-i18n="project1_description">Herramienta interactiva para visualizar, analizar y comprender datos de manera sencilla y efectiva utilizando Python, Pandas y Matplotlib.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>Matplotlib</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/analisis-datos/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 3 -->
-                <div class="project-card" data-category="javascript">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/app-gestion.svg" alt="Aplicación de Gestión" data-i18n-alt="project2_alt" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="project2_title">Aplicación de Gestión</h3>
-                        <p data-i18n="project2_description">Sistema de gestión empresarial para administrar clientes, inventario, facturación y generar informes estadísticos.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>Bootstrap</span>
-                            <span>Chart.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/app-gestion/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 4 -->
-                <div class="project-card" data-category="vuejs">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/app-spa.svg" alt="Aplicación SPA" data-i18n-alt="project3_alt" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="project3_title">Aplicación SPA</h3>
-                        <p data-i18n="project3_description">Aplicación de página única que ofrece una experiencia fluida y rápida, desarrollada con Vue.js.</p>
-                        <div class="project-tags">
-                            <span>Vue.js</span>
-                            <span>JavaScript</span>
-                            <span>API REST</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/app-spa/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 5: Análisis Funcional -->
-                <div class="project-card" data-category="uml">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/analisis-funcional.svg" alt="Análisis Funcional" data-i18n-alt="project4_alt" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="project4_title">Análisis Funcional Detallado</h3>
-                        <p data-i18n="project4_description">Metodología completa para definir requisitos, casos de uso, arquitectura y prototipos que garantizan el éxito de proyectos de software.</p>
-                        <div class="project-tags">
-                            <span>UML</span>
-                            <span>Wireframes</span>
-                            <span>Documentación</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/analisis-funcional/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 6 -->
-                <div class="project-card" data-category="javascript">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/dashboard-analitico.svg" alt="Dashboard Analítico" data-i18n-alt="project5_alt" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="project5_title">Dashboard Analítico</h3>
-                        <p data-i18n="project5_description">Dashboard interactivo para visualización y análisis de datos empresariales en tiempo real.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>Chart.js</span>
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/dashboard-analitico/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 7 -->
-                <div class="project-card" data-category="javascript">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/elearning.svg" alt="Plataforma E-Learning" data-i18n-alt="project6_alt" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="project6_title">Plataforma E-Learning</h3>
-                        <p data-i18n="project6_description">Plataforma educativa interactiva con cursos online, sistema de progreso y certificaciones.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>Bootstrap</span>
-                            <span>HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/elearning/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 8 -->
-                <div class="project-card" data-category="javascript">
-                    <div class="project-img">
-                        <img class="lazy-load" src="img/projects/api-restful.svg" alt="API RESTful" data-i18n-alt="project7_alt" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="project7_title">API RESTful</h3>
-                        <p data-i18n="project7_description">Diseño e implementación de una API RESTful con autenticación, documentación y buenas prácticas para crear servicios web escalables y seguros.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>REST</span>
-                            <span>Documentación</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/api-restful/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="projects/portfolio_AF_RetailPro.pdf" class="view-project-btn" data-modal-title="Implantación CRMFlow para RetailPro" title="Ver Documento"><i class="fas fa-file-pdf"></i></a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Proyecto 2: Consultoría Preventa -->
+                <div class="project-card" data-category="preventa">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/logigroup_project.png" alt="Propuesta LogiGroup" data-i18n-alt="p_logi_title" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="p_logi_title">Propuesta Preventa para LogiGroup</h3>
+                        <p data-i18n="p_logi_desc">Elaboración de propuesta comercial y caso de negocio para implantar un SaaS de Field Service Management en logística.</p>
+                        <div class="project-tags">
+                            <span data-i18n="tag_preventa">Preventa</span>
+                            <span data-i18n="tag_saas">SaaS</span>
+                            <span data-i18n="tag_logistica">Logística</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/portfolio_Preventa_LogiGroup.pdf" class="view-project-btn" data-modal-title="Propuesta Preventa para LogiGroup" title="Ver Documento"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Demo de Producto -->
+                <div class="project-card" data-category="preventa">
+                    <div class="project-img">
+                        <img class="lazy-load" src="img/projects/fieldservice_demo_project.png" alt="Demo FieldService360" data-i18n-alt="p_demo_title" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="p_demo_title">Demo de FieldService360</h3>
+                        <p data-i18n="p_demo_desc">Preparación y presentación de demostración de producto de FieldService360 orientada al cliente.</p>
+                        <div class="project-tags">
+                            <span data-i18n="tag_demo">Demostración</span>
+                            <span data-i18n="tag_preventa">Preventa</span>
+                            <span data-i18n="tag_presentacion">Presentación</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/Demo_FieldService360.pdf" class="view-project-btn" data-modal-title="Demo de FieldService360" title="Ver Documento"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -399,6 +432,13 @@
                             <p>Torrevieja, Alicante</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-text">
+                            <h3 data-i18n="contact_linkedin">LinkedIn</h3>
+                            <p><a href="https://es.linkedin.com/in/javierccastillohodar" target="_blank" rel="noopener noreferrer">javierccastillohodar</a></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-form">
                     <div class="form-success" id="formSuccess">
@@ -441,14 +481,14 @@
 
     <!-- Modal para mostrar el CV -->
     <div id="cv-modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content modal-content--cv">
             <span class="close-modal">&times;</span>
             <h2 data-i18n="cv_title">Mi Currículum Vitae</h2>
             <div class="cv-container">
-                <img id="cv-image" src="img/cv.jpg" alt="Mi Currículum Vitae" data-i18n-alt="cv_alt" class="cv-image">
+                <iframe id="cv-iframe" src="" title="CV" class="cv-iframe"></iframe>
             </div>
             <div class="modal-buttons">
-                <a href="img/cv.jpg" download="CV_Javier_Castillo.jpg" class="btn" data-i18n="cv_download">Descargar CV</a>
+                <a id="cv-download-btn" href="" download class="btn"><i class="fas fa-download"></i> <span data-i18n="cv_download">Descargar CV</span></a>
             </div>
         </div>
     </div>
